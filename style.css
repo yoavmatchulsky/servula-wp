@@ -6,7 +6,6 @@ Author: Yoav Matchulsky
 Author URI: http://matchulsky.com/
 Version: 1.0
 Tags: servula, left-sidebar
-
 */
 
 * {
@@ -96,7 +95,8 @@ th { font-weight: bold; text-align: left; background: #EEEEE0; }
 th, td { padding: 5px 10px; border: 1px solid #E6E6D2; }
 
 .container {
-  width: 925px;
+/* width: 925px; */
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -105,27 +105,15 @@ th, td { padding: 5px 10px; border: 1px solid #E6E6D2; }
  * Header
  * ---------------------- */
 header {
-height: 120px;
+height: 83px;
 width: 100%;
 position: relative;
+background: url(images/header-bg.png) top left repeat-x;
+margin-bottom: 10px;
 }
 
-/* = logo */
-h1#logo {
-font-size: 2.8em;
-font-weight: 700;
-position: absolute;
-top: 25px;
-}
-
-h1#logo a {
-height: 80px;
-color: #fff;
-text-decoration: none;
-}
-
-h1#logo a:hover, h1#logo a:active {
-color: #fff;
+header #logo-wrapper {
+  float: left;
 }
 
 p.description { display: none; }
@@ -133,16 +121,11 @@ p.description { display: none; }
 /* = nav menu */
 ul.menu {
   list-style-type: none;
-  position: absolute;
-  height: 38px;
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
-
-  left: 195px;
-  top: 66px;
-  width: 730px;
-  border-bottom: 5px solid #6F4C22;
+  height: 82px;
+  border-right: 1px solid #ccc;
+  float: left;
 }
 
 ul.menu li {
@@ -150,36 +133,168 @@ ul.menu li {
   font-size: 1.2em;
   margin: 0;
   display: inline;
-  padding: 8px 12px 3px;
-  border-right: 1px solid #CCCCCC;
+  padding: 36px 20px 18px;
+  border-width: 0 0 0 1px;
+  border-style: solid;
+  border-color: #ccc;
 }
 
 ul.menu li a {
-  -webkittransition: color 0.3s ease 0s;
-  -moz-transition: color 0.3s ease 0s;
-  -o-transition: color 0.3s ease 0s;
-  transition: color 0.3s ease 0s;
-  color: #6F4C22;
+  color: #aaa;
   font-size: 17px;
-  font-weight: bold;
+  font-weight: normal;
   text-decoration: none;
   float: left;
 }
 
 ul.menu li.current_page_item {
-  background-color: #6F4C22;
-  -webkit-border-radius: 8px 8px 0 0;
-  -moz-border-radius: 8px 8px 0 0;
-  -o-border-radius: 8px 8px 0 0;
-  border-radius: 8px 8px 0 0;
-  border-right: 0 none;
+  color: orange;
+  font-weight: bold;
+  border-bottom: 3px solid #fbbc7b;
+  padding-bottom: 16px;
+  position: relative;
+}
+ul.menu li.current_page_item a { color: #fbbc7b; }
+
+ul.menu li.current_page_item:after {
+  border-color: transparent transparent #fbbc7b;
+  border-style: solid;
+  border-width: 0 8px 8px;
+  bottom: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 40%;
+  width: 0;
 }
 
-ul.menu li.page_item a:hover {
-color: #e6c601;
+ul.menu li.menu-item a:hover {
+  color: #fbbc7b;
 }
 
-ul.menu li.current_page_item a { color: #FEEA2D; }
+.info-wrapper {
+  float: left;
+  width: 144px;
+  padding: 20px 0 4px 12px;
+  border-right: 1px solid #ccc;  
+  font-size: 12px;
+}
+
+.info-wrapper div {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+.info-wrapper div strong {
+  color: #666;
+}
+
+.login-register-wrapper {
+  float: left;
+  padding: 36px 70px 19px 25px;
+  font-size: 17px;
+  color: #73b1eb;
+  position: relative;
+  cursor: pointer;
+}
+
+.login-register-wrapper img {
+  margin-right: 3px;
+  vertical-align: baseline;
+}
+
+.login-register-wrapper .login-form-wrapper {
+  cursor: default;
+  position: absolute;
+  top: 82px;
+  left: -1px;
+  width: 220px;
+  height: 230px;
+  background: #e9edf1;
+  border: 1px solid #aaa;
+  border-top-width: 0;
+  padding: 10px;
+  font-size: 13px;
+  color: #898a8e;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 0 0 4px 4px;
+}
+
+.login-register-wrapper.my-dashboard-wrapper .login-form-wrapper {
+  height: 204px;
+}
+
+.login-register-wrapper .login-form-wrapper .form-item {
+  margin-top: 15px;
+  margin-bottom: 17px;
+}
+
+.login-register-wrapper .login-form-wrapper input[type="text"],
+.login-register-wrapper .login-form-wrapper input[type="password"] {
+  width: 210px;
+  padding: 0 5px;
+  background: white;
+  height: 30px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.login-register-wrapper .login-form-wrapper input[type="submit"] {
+  color: white;
+  padding: 4px 8px;
+  border: 1px solid #4476cc;
+  
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #4476cc;
+  background-repeat: repeat-x;
+  
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4476cc), to(#223388));
+  background: -webkit-linear-gradient(top, #4476cc, #223388);
+  background: -moz-linear-gradient(top, #4476cc, #223388);
+  background: -ms-linear-gradient(top, #4476cc, #223388);
+  background: -o-linear-gradient(top, #4476cc, #223388);
+  margin-right: 8px;
+}
+
+.login-register-wrapper .login-form-wrapper .forgot-password {
+  float: right;
+}
+
+.login-register-wrapper .login-form-wrapper ul {
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+}
+
+.login-register-wrapper .login-form-wrapper ul li {
+  list-style: none;
+  padding: 8px 10px;
+  margin: 0;
+}
+
+.login-register-wrapper .login-form-wrapper ul li a {
+  text-decoration: none;
+  color: #73B1EB;
+  cursor: pointer;
+}
+
+.login-register-wrapper .login-form-wrapper hr {
+  border-bottom: 1px solid #ccc;
+  clear: both;
+  height: 0;
+  margin-bottom: 11px;
+  padding-top: 15px;
+  background: none;
+}
 
 /* -------------------------
  * main
@@ -187,7 +302,11 @@ ul.menu li.current_page_item a { color: #FEEA2D; }
 #content-wrapper {
   background: white;
   border: 1px solid #ccc;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  -o-border-radius: 8px 8px 8px 8px;
   border-radius: 8px 8px 8px 8px;
+  padding: 20px;
 }
 
 #leftcolumn {
@@ -461,3 +580,34 @@ height: 0;
 }
 
 * html .clearfix { height: 1%; }
+
+#homepage-wrapper {
+  text-align: left;
+}
+
+#homepage-wrapper h1 {
+  color: #60604C;
+  text-shadow: 2px 2px 1px #EEE, 2px 2px 1px #FE7A15;
+  font-size: 29px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#homepage-wrapper h2 {
+  text-align: center;
+  font-size: 17px;
+  font-weight: normal;
+  color: #ebac6b;
+}
+
+#homepage-wrapper #what-our-clients-say {
+  clear: both;
+}
+
+#homepage-wrapper #all-services {
+}
+
+.hidden {
+  display: none;
+}
