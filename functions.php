@@ -24,21 +24,27 @@ function servula_register_menu() {
 add_action('init', 'servula_check_login');
 function servula_check_login() {
   global $servula;
-  $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, servula_info('system_url') . '/sessions/info');
-  curl_setopt($ch, CURLOPT_PORT, servula_info('system_port'));
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-  $cookies = array('auth_token=' . $_COOKIE['auth_token']);
-  curl_setopt($ch, CURLOPT_COOKIE, implode('; ', $cookies));
-  
-  $response = curl_exec($ch);
-  $login_data = json_decode($response);
-  $servula['logged_in'] = $login_data->logged_in;
-  if ($servula['logged_in']) {
-    $servula['user_id'] = $login_data->user->id;
-    $servula['user_name'] = $login_data->user->name;
-    $servula['user_email'] = $login_data->user->email;
-    $servula['user_credits'] = floatval($login_data->user->credits);
+  $servula['logged_in'] = false;
+
+  if (function_exists('curl_init')) {
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, servula_info('system_url') . '/sessions/info');
+    curl_setopt($ch, CURLOPT_PORT, servula_info('system_port'));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $cookies = array('auth_token=' . $_COOKIE['auth_token']);
+    curl_setopt($ch, CURLOPT_COOKIE, implode('; ', $cookies));
+    
+    $response = curl_exec($ch);
+    if ($response) {
+      $login_data = json_decode($response);
+      $servula['logged_in'] = $login_data->logged_in;
+      if ($servula['logged_in']) {
+        $servula['user_id'] = $login_data->user->id;
+        $servula['user_name'] = $login_data->user->name;
+        $servula['user_email'] = $login_data->user->email;
+        $servula['user_credits'] = floatval($login_data->user->credits);
+      }
+    }
   }
 }
 
