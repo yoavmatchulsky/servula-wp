@@ -581,8 +581,24 @@ height: 0;
 
 * html .clearfix { height: 1%; }
 
+body {
+  background: white;
+}
+
+@font-face {
+  font-family: SegueUILight;
+  src: url("segoeuil.eot");
+  src: local("Segoe UI Light"), url(segoeuil.ttf) format("truetype");
+}
+
 #homepage-wrapper {
   text-align: left;
+  font-family: SegueUILight;
+}
+
+#homepage-wrapper h2, #homepage-wrapper h3,
+#homepage-wrapper h4, #homepage-wrapper h5 {
+  font-family: SegueUILight;
 }
 
 #homepage-wrapper h1 {
@@ -599,10 +615,36 @@ height: 0;
   font-size: 17px;
   font-weight: normal;
   color: #ebac6b;
+  margin-bottom: 20px;
+}
+
+#homepage-wrapper #leftcolumn {
+  text-align: center;
+}
+
+#homepage-wrapper #leftcolumn p {
+  font-size: 24px;
+}
+
+#homepage-wrapper #leftcolumn p img {
+  border: 0;
+}
+
+#homepage-wrapper #rightcolumn {
+  min-height: 400px;
 }
 
 #homepage-wrapper #what-our-clients-say {
+  padding-top: 20px;
   clear: both;
+}
+
+#homepage-wrapper #what-our-clients-say h4 {
+  font-size: 20px;
+}
+
+#homepage-wrapper #what-our-clients-say h4 img {
+  vertical-align: text-bottom;
 }
 
 #homepage-wrapper #all-services {
