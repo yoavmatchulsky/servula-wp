@@ -658,6 +658,9 @@ body {
 .page-services #leftcolumn {
   background: #eee;
   border: 1px solid #eee;
+  -webkit-border-radius: 0 20px 0 0;
+  -moz-border-radius: 0 20px 0 0;
+  -o-border-radius: 0 20px 0 0;
   border-radius: 0 20px 0 0;
   width: 180px;
   margin-right: 10px;
@@ -794,6 +797,9 @@ body {
 .page-services .post-header .post-header-order a {
   padding: 10px 15px 7px;
   color: white;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -o-border-radius: 6px 6px 6px 6px;
   border-radius: 6px 6px 6px 6px;
   background: #588CD8;
   font-size: 14px;
