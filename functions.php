@@ -21,6 +21,31 @@ function servula_register_menu() {
     ));
 }
 
+add_filter('the_content', 'servula_service_column');
+function servula_service_column($content) {
+  if (preg_match_all('!\[\[service\-column\s+(\{[^\]]+\})\s*\]\]!', $content, $matches)) {
+    foreach ($matches[1] as $encoded_service_column) {    
+      $service_column_info = json_decode($encoded_service_column);
+      if ($service_column_info) {
+        $service_column = <<< END_OF_COLUMN_SERVICE
+        <div class="service-column" id="{$service_column_info->id}">
+          <div class="service-header"><img src="{$service_column_info->image}" />
+          <p class="service-header-text">
+            <span class="service-header-text-big">{$service_column_info->title_big}</span>
+            {$service_column_info->title}
+          </p>
+        </div>
+END_OF_COLUMN_SERVICE;
+      }
+      
+      $content = preg_replace('!\[\[service\-column\s+[^\]]+\]\]!', $service_column, $content, 1);
+    }
+  }
+  
+  $content = preg_replace('!\[\[service-column-end\]\]!', '</div>', $content);
+  return $content;	
+}
+
 add_action('init', 'servula_check_login');
 function servula_check_login() {
   global $servula;
