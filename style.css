@@ -713,33 +713,37 @@ body {
 .page-services .sub-menu li.current-menu-item a {
   color: white !important;
   font-weight: bold;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  -o-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
 }
 
-.page-services #menu-item-91 .sub-menu a {
+.page-services .menu-item-content-writing-wrapper .sub-menu a {
   color: #00ADEE;
 }
 
-.page-services #menu-item-91 .sub-menu li.current-menu-item a {
+.page-services .menu-item-content-writing-wrapper .sub-menu li.current-menu-item a {
   background: #00adee;
 }
 
-.page-services li#menu-item-90 a {
+.page-services li.menu-item-page-30 a {
   background-image: url('https://s3.amazonaws.com/servula/services/1/icon-thumb-pen_alt2.png');
 }
 
-.page-services li#menu-item-89 a {
+.page-services li.menu-item-page-34 a {
   background-image: url('https://s3.amazonaws.com/servula/services/6/icon-thumb-sun_fill.png');
 }
 
-.page-services #menu-item-92 .sub-menu a {
+.page-services .menu-item-link-building-wrapper .sub-menu a {
   color: #86C440;
 }
 
-.page-services #menu-item-92 .sub-menu li.current-menu-item a {
+.page-services .menu-item-link-building-wrapper .sub-menu li.current-menu-item a {
   background: #86C440;
 }
 
-.page-services li#menu-item-88 a {
+.page-services li.menu-item-page-37 a {
   background-image: url('https://s3.amazonaws.com/servula/services/2/icon-thumb-book_alt2.png');
 }
 

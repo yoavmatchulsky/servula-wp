@@ -73,6 +73,21 @@ function servula_check_login() {
   }
 }
 
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10, 2);
+function special_nav_class($classes, $item) {
+  // Add classes to menu-items
+  // if its a dead item, add the post_name as a wrapper
+  if ($item->url == '#') {
+    $classes[] = "menu-item-{$item->post_name}-wrapper";
+    $next = true;
+  }
+  // if its a child item, add the page's object_id
+  elseif ($item->menu_item_parent > 0) {
+    $classes[] = "menu-item-page-{$item->object_id}";
+  }
+  return $classes;
+}
+
 function servula_info($key = '') {
   global $servula;
     
