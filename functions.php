@@ -50,19 +50,28 @@ function servula_check_login() {
 
 function servula_info($key = '') {
   global $servula;
-  
+    
   if (!empty($key) and isset($servula[$key])) {
     return $servula[$key];
   }
-  else {  
+  else {
+    $env = servula_get_env();
     switch ($key) {
-      case 'full_url'  : return servula_info('system_url') . ':' . servula_info('system_port');
-      case 'system_url'       : return 'http://test.servula.local';
-      case 'system_port'      : return 3000;
+      case 'full_url'     : return servula_info('system_url') . ':' . servula_info('system_port');
+      case 'system_url'   : return $env == 'production' ? 'http://test.servula.com' : 'http://test.servula.local';
+      case 'system_port'  : return $env == 'production' ? 80 : 3000;
+      case 'env'          : return $env;
     }
   }
   
   return false;
 }
 
+function servula_get_env() {
+  $env = 'production';
+  if (preg_match('!\.local$!', site_url()) > 0) {
+    $env = 'development';
+  }
+  return $env;
+}
 ?>

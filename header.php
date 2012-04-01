@@ -85,7 +85,7 @@
         <img src="<?php bloginfo('template_url'); ?>/images/down-arrow-16x16.png" width="16" height="16" />
         <span class="login-register-button">Login/Register</span>
         <div class="login-form-wrapper hidden">
-          <form action="http://test.servula.local:3000/sessions" method="POST" accept-charset="UTF-8">
+          <form action="<?php print servula_info('full_url'); ?>/sessions" method="POST" accept-charset="UTF-8">
             <input type="hidden" value="✓" name="utf8">
             
             <div class="form-item">
@@ -94,7 +94,7 @@
             </div>
             
             <div class="form-item">
-              <span class="forgot-password"><a href="http://test.servula.local:3000/password_resets/new">Forgot Password?</a></span>
+              <span class="forgot-password"><a href="<?php print servula_info('full_url'); ?>/password_resets/new">Forgot Password?</a></span>
               <label for="session_password">Password:</label>
               <input type="password" tabindex="2" size="35" name="session[password]" id="session_password">
             </div>
@@ -106,7 +106,7 @@
             
             <input type="submit" value="Login" tabindex="3" name="commit">
             Or
-            <a href="http://test.servula.local:3000/register">Register now</a>
+            <a href="<?php print servula_info('full_url'); ?>/register">Register now</a>
           </form>
         </div>
       </div>
