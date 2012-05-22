@@ -4,6 +4,8 @@
  * @subpackage Hello_D
  */
 
+add_theme_support('post-thumbnails');
+
 if ( function_exists('register_sidebar') )
 	register_sidebar(array(
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
@@ -101,6 +103,17 @@ function servula_info($key = '') {
       case 'system_url'   : return $env == 'production' ? 'http://test.servula.com' : 'http://test.servula.local';
       case 'system_port'  : return $env == 'production' ? 80 : 3000;
       case 'env'          : return $env;
+      
+      case 'dashboard_url'  : return servula_info('full_url') . '/users/' . $servula['user_id'];
+      case 'credits_url'    : return servula_info('full_url') . '/credits/plans';
+      
+      case 'header_credits_text' : 
+        if (!$servula['logged_in'] or $servula['user_credits'] <= 0) {
+          return 'No Credits, Yet';
+        }
+        else {
+          return "<strong>" . intval($servula['user_credits']) . "</strong> Credits Left";
+        }
     }
   }
   

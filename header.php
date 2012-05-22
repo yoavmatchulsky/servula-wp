@@ -1,4 +1,5 @@
 <?php
+  global $servula;
 ?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 <head profile="http://gmpg.org/xfn/11">
@@ -22,6 +23,10 @@
 		  $('#search').prepend('<h2 style="text-align: left;">Search</h2>');
 	  });
   }
+  
+  var Servula = {
+    system_url : "<?php print servula_info('full_url'); ?>"
+  }
   /* ]]> */
   </script>
 
@@ -38,7 +43,7 @@
 
 <body>
 	<header id="header">
-	  <div class="container">
+	  <div class="wrapper">
 	    <div id="logo-wrapper">
 	      <a href="<?php print get_option('home'); ?>/">
 	        <img src="<?php bloginfo('template_url'); ?>/images/logo.png" />
@@ -51,28 +56,35 @@
               'fallback_cb' => '', ) ); ?>
 
       <div class="info-wrapper">
-        <div>
-          <img src="<?php bloginfo('template_url'); ?>/images/users-20x18.png" width="20" height="18" />
-          <strong>322</strong> Freelancers
+        <div class='info-item-wrapper'>
+          <img alt="Currency dollar" height="24" src="<?php bloginfo('template_url'); ?>/images/header/currency-dollar-24x24.png" width="24" />
+          <div class='info-item-text'>
+            <div class='uppercase'>
+              <?php print servula_info('header_credits_text'); ?>
+            </div>
+            <a href="<?php print servula_info('full_url'); ?>/credits/plans">Buy Credits <span class="arrow-sign">&#9654;</span></a>
+          </div>
         </div>
-        
-        <div>
-          <img src="<?php bloginfo('template_url'); ?>/images/cog-16x16.png" width="16" height="16" style="margin-left: 2px; margin-right: 2px;" />
-          <strong>12</strong> Services
+        <div class='info-item-wrapper'>
+          <a href="<?php print servula_info('full_url'); ?>/orders/checkout"><img alt="Go to Cart" height="24" src="<?php bloginfo('template_url'); ?>/images/header/cart-24x24.png" width="24" /></a>
+          <div class='info-item-text'>
+            <div class='uppercase'><strong>2</strong> Services in Cart</div>
+            <a href="<?php print servula_info('full_url'); ?>/orders/all_services">Order Services <span class="arrow-sign">&#9654;</span></a>
+          </div>
         </div>
       </div>
       
       <?php if (servula_info('logged_in')) : ?>
       <div class="login-register-wrapper my-dashboard-wrapper">
-        <img src="<?php bloginfo('template_url'); ?>/images/down-arrow-16x16.png" width="16" height="16" />
-        My Dashboard
+        <img src="<?php bloginfo('template_url'); ?>/images/header/down-arrow-16x16.png" width="16" height="16" />
+        <?php print $servula['user_name']; ?>
         <div class="login-form-wrapper hidden">
           <ul>
-            <li><a href="<?php print servula_info('full_url'); ?>/users/<?php print servula_info('user_id'); ?>">Dashboard</a></li>
-            <li><a href="<?php print servula_info('full_url'); ?>/users/<?php print servula_info('user_id'); ?>/edit">Account Settings</a></li>
+            <li><a href="<?php print servula_info('dashboard_url'); ?>">Dashboard</a></li>
+            <li><a href="<?php print servula_info('dashboard_url'); ?>/edit">Account Settings</a></li>
             <li>
-              <a href="<?php print servula_info('full_url'); ?>/credits/plans">Buy Credits</a>
-              <span>(<?php print servula_info('user_credits'); ?> left)</span>
+              <a href="<?php print servula_info('credits_url'); ?>">Buy Credits</a>
+              <span>(<?php print intval(servula_info('user_credits')); ?> left)</span>
             </li>
             <hr />
             <li><a href="<?php print servula_info('full_url'); ?>/logout">Logout</a></li>
@@ -82,7 +94,7 @@
       
       <?php else : ?>
       <div class="login-register-wrapper">
-        <img src="<?php bloginfo('template_url'); ?>/images/down-arrow-16x16.png" width="16" height="16" />
+        <img src="<?php bloginfo('template_url'); ?>/images/header/down-arrow-16x16.png" width="16" height="16" />
         <span class="login-register-button">Login/Register</span>
         <div class="login-form-wrapper hidden">
           <form action="<?php print servula_info('full_url'); ?>/sessions" method="POST" accept-charset="UTF-8">
@@ -114,4 +126,4 @@
       
     </div>
   </header>
-  <div class="container clearfix">
+  <div class="wrapper clearfix">
