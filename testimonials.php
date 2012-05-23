@@ -81,10 +81,11 @@ $testimonials = array(
     'text'      => 'Servula is a great company, run by brilliant people. When managing multiple clients across several continents, our teams must stay focused. Servula helps us through outsourcing work such as: content writing and link building, thus allowing our project managers to stay efficient.',
   ),  
   array(
+    'active'    => false,
     'name'      => 'Roie Speiser',
     'company'   => 'Agent Interactive',
     'position'  => 'SEM Team Leader',
-    'img'       => 'roie-speiser',
+    'img'       => '',
     'text'      => "Servula has really taken the load off our internal team and allowed us to focus on more critical aspects of our work. We receive a courteous, professional service which we fully trust and has proved to be invaluable to us, not only saving time but also lowering total cost per project. We highly recommend Servula's SEO services and can easily vouch for their quality.",
   ),
   array(
