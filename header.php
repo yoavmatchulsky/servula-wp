@@ -13,6 +13,7 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/homepage.js" type="text/javascript"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/testimonials.js" type="text/javascript"></script>
   <script type="text/javascript">
   /* <![CDATA[ */
   if (false) {
@@ -25,7 +26,8 @@
   }
   
   var Servula = {
-    system_url : "<?php print servula_info('full_url'); ?>"
+    system_url : "<?php print servula_info('full_url'); ?>",
+    testimonials : {}
   }
   /* ]]> */
   </script>

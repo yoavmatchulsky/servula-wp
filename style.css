@@ -780,18 +780,6 @@ body {
   clear: both;
 }
 
-#homepage-wrapper #what-our-clients-say {
-  padding-top: 20px;
-  clear: both;
-}
-
-#homepage-wrapper #what-our-clients-say h3 {
-}
-
-#homepage-wrapper #what-our-clients-say h3 img {
-  vertical-align: text-bottom;
-}
-
 #homepage-wrapper .start-shopping-button {
   width: 150px;
   background: yellow;
@@ -912,6 +900,143 @@ body {
 #services-wrapper .services-column:hover li.service-item a.service-name:hover { text-decoration: none; }
 #services-wrapper .services-column:hover li.service-item a { color: #3a7bcd; }
 #services-wrapper .services-column:hover li.service-item a:hover { text-decoration: underline; }
+
+#homepage-wrapper #what-our-clients-say {
+  padding-top: 20px;
+  clear: both;
+  font-family: Arial;
+}
+
+#homepage-wrapper .testimonials-wrapper {
+/*  height: 207px;
+  overflow: hidden;*/
+  width: 960px;
+  position: relative;
+}
+
+.testimonials-wrapper .testimonials-buttons-wrapper {
+  background: #d6d6d6;
+  width: 47px;
+  height: 205px;
+  border: 1px solid #cecece;
+  border-radius: 4px;
+  display: block;
+  float: left;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.testimonials-wrapper .testimonials-buttons-wrapper:hover {
+  background: black;
+}
+
+.testimonials-wrapper .testimonials-next-wrapper {
+  margin-right: 0;
+  margin-left: 7px;
+}
+
+.testimonials-wrapper .testimonials-buttons-wrapper img {
+  margin-top: 87px;
+}
+
+.testimonials-wrapper .testimonials-strip {
+  height: 207px;
+  width: 848px;
+  float: left;
+  overflow: hidden;
+}
+
+.testimonials-wrapper ul {
+  min-width: 2000px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  left: 0;
+}
+
+.testimonials-wrapper .testimonial-wrapper {
+  float: left;
+  width: 109px;
+  margin-right: 7px;
+}
+
+.testimonial-wrapper img {
+  margin-bottom: 3px;
+  height: 144px;
+}
+
+.testimonial-wrapper .testimonial-title {
+  background: #021d23;
+  color: white;
+  height: 50px;
+  padding: 5px 0 5px 3px;
+}
+
+.testimonial-title .testimonial-name {
+  font-weight: bold;
+  display: block;
+  font-size: 15px;
+}
+
+.testimonial-title .testimonial-company {
+  font-size: 14px;
+}
+
+.testimonials-wrapper .testimonials-text-wrapper {
+  position: absolute;
+  top: 147px;
+  left: 0;
+  background: #bebebe;
+  min-height: 200px;
+  width: 400px;
+  z-index: 100;
+  padding: 10px;
+  border: 1px solid #7e7e7e;
+  box-shadow: 0 5px 5px #7e7e7e;
+}
+
+.testimonials-wrapper .testimonials-text-wrapper:before,
+.testimonials-wrapper .testimonials-text-wrapper:after {
+  border-color: transparent transparent #7e7e7e;
+  border-style: solid;
+  border-width: 0 10px 26px;
+  content: "";
+  display: block;
+  height: 0;
+  left: 43px;
+  position: absolute;
+  top: -26px;
+  width: 0;
+}
+
+.testimonials-wrapper .testimonials-text-wrapper:after {
+  top: -25px;
+  border-color: transparent transparent #bebebe;
+}
+
+.testimonials-wrapper .testimonials-text-wrapper .testimonial-title {
+  position: relative;
+  left: -10px;
+  background: #a3a3a3;
+  color: white;
+  width: 200px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+
+.testimonials-text-wrapper .testimonial-title .testimonial-name {
+  font-size: 17px;
+}
+
+.testimonials-text-wrapper .testimonial-title .testimonial-position {
+  font-size: 15px;
+}
+
+#homepage-wrapper #recent-posts {
+  clear: both;
+  padding-top: 20px;
+}
 
 #homepage-wrapper #recent-posts #posts-wrapper {
   border-top: 1px solid #ccc;

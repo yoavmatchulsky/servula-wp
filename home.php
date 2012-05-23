@@ -107,7 +107,7 @@
       <img src="<?php bloginfo('template_url'); ?>/images/homepage/heart.png" />
       Servula is trusted by...
     </h3>
-    CLIENTS roll
+    <?php include TEMPLATEPATH . '/testimonials.php'; ?>
   </div>
   
   <div id="recent-posts">
