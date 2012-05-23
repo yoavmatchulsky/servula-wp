@@ -132,14 +132,14 @@
       </article>
   	  <?php endwhile; ?>
   	  
-  	  <a class="to-all-posts" href="/">All Posts &gt;</a>
+  	  <a class="to-all-posts" href="<?php print site_url('blog'); ?>">All Posts &gt;</a>
     </div>
   </div>
   
   <div id="interested">
     If you're interested in getting high quality Inbound Marketing Services, 
     you can start using Servula now
-    <a href="<?php servula_info('full_url'); ?>" class="to-get-started">
+    <a href="<?php print servula_info('full_url'); ?>" class="to-get-started">
       Get Started Now
     </a>
   </div>

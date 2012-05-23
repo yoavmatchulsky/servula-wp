@@ -41,15 +41,21 @@
       i = new Image();
       i.src = image.data('image-over');
     });
-    
-    $('.service-item').on({
-      mouseover : function (e) {
-        img = $(this).find('img');
-        img.attr('src', img.data('image-over'));
+
+    $('.services-column').on({
+      mouseover : function(e) {
+        imgs = $(this).find('img');
+        imgs.each(function (i, obj) {
+          img = $(obj);
+          img.attr('src', img.data('image-over'));
+        });
       },
       mouseout : function(e) {
-        img = $(this).find('img');
-        img.attr('src', img.data('image-original'));
+        imgs = $(this).find('img');
+        imgs.each(function(i, obj) {
+          img = $(obj);
+          img.attr('src', img.data('image-original'));
+        });
       }
     });
   });

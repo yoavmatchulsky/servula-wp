@@ -898,6 +898,7 @@ body {
 #services-wrapper .services-column li.service-item a {
   text-decoration: none;
   color: #7e7e7e;
+  font-size: 13px;
 }
 
 #services-wrapper .services-column li.service-item a.service-name {
@@ -907,17 +908,10 @@ body {
   font-weight: bold;
 }
 
-#services-wrapper #service-content-writing.services-column li.service-item:hover { color: #00ADEE; }
-#services-wrapper #service-content-writing.services-column li.service-item:hover a { color: #00ADEE; }
-
-#services-wrapper #service-link-building.services-column li.service-item:hover { color: #86C440; }
-#services-wrapper #service-link-building.services-column li.service-item:hover a { color: #86C440; }
-
-#services-wrapper #service-social-media.services-column li.service-item:hover { color: #2E52A4; }
-#services-wrapper #service-social-media.services-column li.service-item:hover a { color: #2E52A4; }
-
-#services-wrapper #service-special-premium.services-column li.service-item:hover { color: #F9A31A; }
-#services-wrapper #service-special-premium.services-column li.service-item:hover a { color: #F9A31A; }
+#services-wrapper .services-column:hover li.service-item a.service-name { color: #17365d; }
+#services-wrapper .services-column:hover li.service-item a.service-name:hover { text-decoration: none; }
+#services-wrapper .services-column:hover li.service-item a { color: #3a7bcd; }
+#services-wrapper .services-column:hover li.service-item a:hover { text-decoration: underline; }
 
 #homepage-wrapper #recent-posts #posts-wrapper {
   border-top: 1px solid #ccc;
