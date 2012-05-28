@@ -127,4 +127,19 @@ function servula_get_env() {
   }
   return $env;
 }
-?>
+
+function servula_get_feed_items() {
+  if(!function_exists('fetch_feed')) { return; }
+  
+  include_once(ABSPATH . WPINC . '/feed.php');
+  $feed = fetch_feed('http://www.servula.com/blog/feed');
+
+  if (!is_wp_error( $feed )) {
+    $limit = $feed->get_item_quantity(3);
+    if ($limit > 0) {
+    	$feed_items = $feed->get_items(0, $limit);
+  	}
+	}
+	
+	return $feed_items;
+}

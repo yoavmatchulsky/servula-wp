@@ -127,21 +127,28 @@
     </h3>
     
 	  <div id="posts-wrapper">
-  	  <?php while (have_posts()) : the_post(); ?>
-      <article>
-	      <div class="post" id="post-<?php the_ID(); ?>">
-	        <?php the_post_thumbnail(); ?>
-		      <h2 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+    
+<?php
 
-		      <div class="entry">
-			      <?php the_excerpt('Read More...'); ?>
-		      </div>
-		      
-		      <?php the_date(); ?>
-	      </div>
+  $feed_items = servula_get_feed_items();
+    foreach ($feed_items as $item) : ?>
+      <?php $title = $item->get_title(); ?>
+      <article>
+        <div class="post">
+          <?php $enclosure = $item->get_enclosure(); ?>
+          <img src="<?php print $enclosure->link; ?>" width="73" height="66" title="<?php print esc_attr(strip_tags($title)); ?>" class="attachment-post-thumbnail wp-post-image" />
+          
+          <h2 class="title"><a href="<?php print $item->get_permalink() ?>" rel="bookmark" title="Permanent Link to <?php print esc_attr(strip_tags($title)); ?>"><?php print $title; ?></a></h2>
+
+          <div class="entry">
+	          <?php print $item->get_description('Read More...'); ?>
+          </div>
+          
+          <?php print $item->get_date(); ?>
+        </div>
       </article>
-  	  <?php endwhile; ?>
-  	  
+  <?php endforeach; ?>
+      	  
   	  <a class="to-all-posts" href="<?php print site_url('blog'); ?>">All Posts &gt;</a>
     </div>
   </div>
