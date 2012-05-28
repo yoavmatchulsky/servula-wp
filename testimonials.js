@@ -46,8 +46,14 @@ $(function () {
         testimonials_wrapper.find('.testimonials-text-wrapper').addClass('hidden');
       }, 500);
     }
-  })
+  });
+  
   testimonials_wrapper.on('mouseenter', '.testimonials-text-wrapper', function (e) { clearTimeout(timer); });
+  testimonials_wrapper.on('mouseleave', function (e) {
+    setTimeout(function() {
+      testimonials_wrapper.find('.testimonials-text-wrapper').addClass('hidden');
+    }, 300);
+  });
 
   $.extend(Servula.testimonials, {
     step : 300,
