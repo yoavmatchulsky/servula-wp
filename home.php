@@ -21,12 +21,22 @@
   
   <div id="rightcolumn">
     <div id="bee-wrapper">
-      <img src="<?php bloginfo('template_url'); ?>/images/homepage/bee.png" data-image-original="<?php bloginfo('template_url'); ?>/images/homepage/bee.png" />
+      <img src="<?php bloginfo('template_url'); ?>/images/homepage/bee.png" data-image-original="<?php bloginfo('template_url'); ?>/images/homepage/bee.png" class="bee-image" />
       
-      <div class="floor" style="left: 85px; top: 9px; width: 248px; height: 125px;" data-image-over="<?php bloginfo('template_url'); ?>/images/homepage/bee-3.png"></div>
-      <div class="floor" style="left: 66px; top: 135px; width: 283px; height: 139px;" data-image-over="<?php bloginfo('template_url'); ?>/images/homepage/bee-2.png"></div>
-      <div class="floor" style="left: 67px; top: 275px; width: 285px; height: 100px;" data-image-over="<?php bloginfo('template_url'); ?>/images/homepage/bee-1.png"></div>
-    </div>    
+      <div class="floor" style="top: 9px; height: 125px;" data-image-over="<?php bloginfo('template_url'); ?>/images/homepage/bee-3.png" data-text-id="floor-text-top" data-text-top="0px"></div>
+      <div class="floor" style="top: 135px; height: 139px;" data-image-over="<?php bloginfo('template_url'); ?>/images/homepage/bee-2.png" data-text-id="floor-text-middle" data-text-top="135px"></div>
+      <div class="floor" style="top: 275px; height: 100px;" data-image-over="<?php bloginfo('template_url'); ?>/images/homepage/bee-1.png" data-text-id="floor-text-bottom" data-text-top="230px"></div>
+      
+      <span class="our-process">
+        <img src="<?php bloginfo('template_url'); ?>/images/homepage/our-process.png" />
+      </span>
+      
+      <div class="bee-text-wrapper">
+        <p class="floor-text" id="floor-text-top">Our professional staff of online marketers, is always willing to help you with any question.</p>
+        <p class="floor-text" id="floor-text-middle">Your order taken care by our awesome team of razor-sharp, creative and witty freelancers.</p>
+        <p class="floor-text" id="floor-text-bottom">After your order is done, we check its' quality and send you full detailed report.</p>
+      </div>
+    </div>
   </div>
   
   <div id="all-services">
