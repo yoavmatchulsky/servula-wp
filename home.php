@@ -163,10 +163,3 @@
 </div>
 
 <?php get_footer(); ?>
-
-<!--     <p>
-      Move your mouse
-      <img src="<?php bloginfo('template_url'); ?>/images/homepage/mouse.png" /><br />
-      on each floor to see how it works
-    </p>
- -->

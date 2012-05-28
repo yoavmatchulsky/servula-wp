@@ -10,27 +10,27 @@
   <div class="wrapper">
     <ul>
       <li>
-        <h3>About Us</h3>
+        <h3>Learn About Us</h3>
         <ul>
-          <li>How it works?</li>
-          <li>Contact Us</li>
+          <li>What we do?</li>
           <li>FAQ</li>
+          <li>Jobs</li>
         </ul>
       </li>
       <li>
-        <h3>Company</h3>
         <ul>
-          <li>How it works?</li>
+          <h3>&nbsp;</h3>
           <li>Contact Us</li>
-          <li>FAQ</li>
+          <li>Support</li>
+          <li><a href="<?php print site_url('blog/'); ?>">Blog</a></li>
         </ul>
       </li>
       <li>
-        <h3>Recent Posts</h3>
+        <h3>General</h3>
         <ul>
-          <li>How it works?</li>
-          <li>Contact Us</li>
-          <li>FAQ</li>
+          <li><a href="<?php print site_url('services/'); ?>">Our Services</li>
+          <li><a href="<?php print servula_info('full_url'); ?>/register">Register Now!</a></li>
+          <li>Terms of Service</li>
         </ul>
       </li>
       <li>
