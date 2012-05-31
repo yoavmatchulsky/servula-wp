@@ -66,7 +66,7 @@ function servula_check_login() {
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $cookies = array('auth_token=' . $_COOKIE['auth_token']);
     curl_setopt($ch, CURLOPT_COOKIE, implode('; ', $cookies));
-    
+
     $response = curl_exec($ch);
     if ($response) {
       $login_data = json_decode($response);
@@ -76,6 +76,7 @@ function servula_check_login() {
         $servula['user_name'] = $login_data->user->name;
         $servula['user_email'] = $login_data->user->email;
         $servula['user_credits'] = floatval($login_data->user->credits);
+        $servula['user_services'] = intval($login_data->user->services);
       }
     }
   }
@@ -120,6 +121,16 @@ function servula_info($key = '') {
         else {
           return "<strong>" . intval($servula['user_credits']) . "</strong> Credits Left";
         }
+      case 'header_services_in_cart' :
+        if ($servula['user_services'] > 1) {
+          return '<strong>' . $servula['user_services'] . '</strong> Services in Cart';
+        }
+        elseif ($servula['user_services'] == 1) {
+          return '<strong>1</strong> Service in Cart';
+        }
+        else {
+          return 'Cart is Empty';
+        }                
     }
   }
   
