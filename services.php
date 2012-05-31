@@ -2,8 +2,7 @@
 /*
 Template Name: Service
 */
-
-get_header(); ?>
+?><?php get_header(); ?>
 
 <div id="page-services-<?php print $post->ID; ?>" class="page-services">
   <div id="leftcolumn">
