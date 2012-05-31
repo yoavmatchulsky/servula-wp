@@ -23,8 +23,6 @@ Template Name: Inner Page
 		  <div class="postdata"><?php edit_post_link('Edit'); ?></div>
 	  </div>
 
-	  <div class="post"><?php comments_template(); ?></div>
-
 	  <?php endwhile; ?>
 
 	  <?php else : ?>
