@@ -13,10 +13,6 @@
       }
     });
     
-    $('.start-shopping-button').on('click', function (e) {
-      location.href = Servula.system_url;
-    });
-    
     $('#homepage-wrapper .floor').on('mouseover', function(e) {
       t = $(this);
       src = t.data('image-over');

@@ -7,15 +7,13 @@
     <h2>Servula is a place where you can order inbound marketing services easily and be sure they will done by the best freelancers in the world.</h2>
 
     <div class="start-shopping-button">
-      Start Shopping
-      <hr />
-      <span class="get-credits-free">And Get 10 Free Credits</span>
+      <a href="<?php print servula_info('full_url'); ?>">Start Shopping</a>
     </div>
     
     <img class="or-separator" src="<?php bloginfo('template_url'); ?>/images/homepage/or-separator.png" />
     
     <div class="learn-more">
-      <a href="/services">Learn More</a>
+      <a href="<?php print site_url('about/'); ?>">Learn More</a>
     </div>
   </div>
   
@@ -149,7 +147,7 @@
       </article>
   <?php endforeach; ?>
       	  
-  	  <a class="to-all-posts" href="<?php print site_url('blog'); ?>">All Posts &gt;</a>
+  	  <a class="to-all-posts" href="<?php print site_url('blog/'); ?>">All Posts &gt;</a>
     </div>
   </div>
   

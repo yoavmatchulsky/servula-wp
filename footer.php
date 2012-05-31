@@ -12,25 +12,25 @@
       <li>
         <h3>Learn About Us</h3>
         <ul>
-          <li>What we do?</li>
-          <li>FAQ</li>
-          <li>Jobs</li>
+          <li><a href="<?php print site_url('about/'); ?>">What we do?</a></li>
+          <li><a href="<?php print site_url('faq/'); ?>">FAQ</a></li>
+          <li><a href="<?php print site_url('jobs/'); ?>">Jobs</a></li>
         </ul>
       </li>
       <li>
         <ul>
           <h3>&nbsp;</h3>
-          <li>Contact Us</li>
-          <li>Support</li>
+          <li><a href="<?php print site_url('contact/'); ?>">Contact Us</a></li>
+          <li><a href="#" onclick="return false;" data-support-dialog="1">Support</a></li>
           <li><a href="<?php print site_url('blog/'); ?>">Blog</a></li>
         </ul>
       </li>
       <li>
         <h3>General</h3>
         <ul>
-          <li><a href="<?php print site_url('services/'); ?>">Our Services</li>
+          <li><a href="<?php print servula_info('full_url'); ?>">Our Services</li>
           <li><a href="<?php print servula_info('full_url'); ?>/register">Register Now!</a></li>
-          <li>Terms of Service</li>
+          <li><a href="<?php print site_url('terms_of_service/'); ?>">Terms of Service</a></li>
         </ul>
       </li>
       <li>
