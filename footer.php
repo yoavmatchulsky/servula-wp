@@ -35,7 +35,12 @@
       </li>
       <li>
         <h3>Spread the word!</h3>
-        <span class="st_sharethis" st_title="Servula Homepage" st_url="<?php site_url('/'); ?>" displayText="ShareThis"></span>
+        <ul class="social-links">
+          <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="servulashop">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+          <li><iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink() ?>&locale=en_US&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:20px;" allowTransparency="true"></iframe></li>
+          <li><g:plusone size="medium"></g:plusone></li>
+        </ul>
       </li>
     </ul>
     
@@ -50,9 +55,9 @@
         </div>
         
         <form>
+          <input type="submit" value="Sign Up" />
           <input type="text" name="name" value="Name" />
           <input type="text" name="email" value="Email" />
-          <input type="submit" value="Sign Up" />
         </form>
       </div>
     </div>
@@ -62,6 +67,15 @@
   	</div>
   </div>
 </footer>
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
 <?php wp_footer(); ?>
 </body>
 </html>

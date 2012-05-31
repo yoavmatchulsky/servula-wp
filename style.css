@@ -617,6 +617,19 @@ footer ul li ul li {
   color: #7f7f7f;
 }
 
+footer ul li ul.social-links {
+  width: 300px;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+footer ul li ul.social-links li {
+  list-style: none;
+  float: left;
+  display: inline;
+  width: 95px;
+}
+
 footer .newsletter-wrapper {
   text-align: left;
   clear: both;
@@ -625,6 +638,7 @@ footer .newsletter-wrapper {
 
 footer .newsletter-wrapper img {
   float: left;
+  margin-right: 60px;
 }
 
 footer .newsletter-wrapper .newsletter-bubble {
@@ -635,20 +649,75 @@ footer .newsletter-wrapper .newsletter-bubble {
   padding: 10px;
   height: 90px;
   width: 480px;
+  position: relative;
+}
+
+footer .newsletter-wrapper .newsletter-bubble:before {
+  border-color: transparent white transparent transparent;
+  border-style: solid;
+  border-width: 30px 60px 5px 0;
+  content: "";
+  display: block;
+  height: 0;
+  left: -60px;
+  top: 45px;
+  position: absolute;
+  width: 0;
 }
 
 .newsletter-bubble .newsletter-text {
   font-size: 11px;
   float: left;
   width: 172px;
+  margin-right: 25px;
+  min-height: 85px;
 }
 
 .newsletter-bubble form {
 }
 
-.newsletter-bubble form input {
+.newsletter-bubble form input[type="text"] {
   display: inline;
+  margin: 4px 0;
+  padding: 4px;
+  background: #e5e5e5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #bebebe;  
 }
+
+.newsletter-bubble form input[type="submit"] {
+  display: inline;
+  float: right;
+  padding: 10px;
+  height: 75px;
+  width: 85px;
+  font-weight: bold;
+  font-size: 19px;
+  
+  background: yellow;
+  color: #974806;
+  border: 1px solid orange;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #fcf33a;
+  background-repeat: repeat-x;
+  
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fcf33a), to(#e0a100));
+  background: -webkit-linear-gradient(top, #fcf33a, #e0a100);
+  background: -moz-linear-gradient(top, #fcf33a, #e0a100);
+  background: -ms-linear-gradient(top, #fcf33a, #e0a100);
+  background: -o-linear-gradient(top, #fcf33a, #e0a100);
+}
+
+.newsletter-bubble form input[type="submit"]:hover {
+  background: #e0a100;
+}
+
 
 footer .copyright-wrapper {
   position: relative;
