@@ -66,7 +66,7 @@
             <a href="<?php print servula_info('full_url'); ?>/orders/new/answers-posting">Order Now</a>
           </li>
           <li class="service-item">
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/forum-commenting" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/pin_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/pin_32x32-over.png" alt="Forum Commenting">Forum Commentings</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/forum-commenting" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/pin_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/pin_32x32-over.png" alt="Forum Commenting">Forum Commenting</a>
             <a href="<?php print servula_info('full_url'); ?>/orders/new/forum-commenting">Order Now</a>
           </li>
           <li class="service-item">

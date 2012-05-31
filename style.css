@@ -13,9 +13,13 @@ Tags: servula, left-sidebar
   padding: 0;
 }
 
+html {
+  background: #021d24;
+}
+
 body {
   color: #333;
-  background: url(images/servula-bg.png) #eeeeee repeat-x left top;
+  background: #021d24 repeat-x left top;
   font-family: "Lucida Grande", Verdana, "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
   font-size: 75%;
   line-height: 1.6;
@@ -68,10 +72,13 @@ img {
   border: none;
   vertical-align: top;
 }
+
+/*
 p img {
   padding: 1px;
   border: 3px solid #CDCDA9;
 }
+*/
 
 a {
   color: #588CD8;
@@ -394,22 +401,30 @@ header .login-register-wrapper.my-dashboard-wrapper.with-moderator form#search_o
 .post {
   padding: 0 1.8em .5em;
   text-align: left;
+  color: gray;
+  font-size: 13px;
 }
 
-h2.title {
+.post h2 {
+  clear: both;
+}
+
+.post h1.title {
+  color: #60604C;
+  text-shadow: 2px 2px 1px #EEE, 2px 2px 1px #FE7A15;
+  font-family: SegueUILight;  
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.post h1.title a {
   color: #369;
-  background: url(images/title.png) 0 5px no-repeat;
-  padding-left: 38px;
+  text-decoration: none;
 }
 
-h2.title a {
-color: #369;
-text-decoration: none;
-}
-
-h2.title a:hover {
-color: #369;
-text-decoration: underline;
+.post h2 {
+  color: #FBBC7B;
+  font-weight: bold;
 }
 
 .postdata, .postdata a {

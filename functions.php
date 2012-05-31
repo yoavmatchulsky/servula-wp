@@ -143,3 +143,16 @@ function servula_get_feed_items() {
 	
 	return $feed_items;
 }
+
+// Increase excerpt length
+function servula_template_tags($content) {
+  $search = array(
+    '[servula-system-url]'
+  );
+  $replace = array(
+    servula_info('full_url')
+  );
+  
+  return str_replace($search, $replace, $content);
+}
+add_filter('the_content', 'servula_template_tags');
