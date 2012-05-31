@@ -154,7 +154,8 @@ header ul.menu li {
   font-size: 1.2em;
   margin: 0;
   display: inline;
-  padding: 36px 20px 18px;
+  padding: 36px 17px 18px;
+/*  padding: 36px 20px 18px;*/
   border-width: 0 0 0 1px;
   border-style: solid;
   border-color: #ccc;
@@ -425,6 +426,24 @@ header .login-register-wrapper.my-dashboard-wrapper.with-moderator form#search_o
 .post h2 {
   color: #FBBC7B;
   font-weight: bold;
+}
+
+.post ul.list-with-columns {
+  margin: 0;
+  padding: 0;
+}
+
+.post ul.list-with-columns > li {
+  float: left;
+  min-width: 150px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.post ul.list-with-columns > li ul {
+  padding-left: 18px;
 }
 
 .postdata, .postdata a {
