@@ -462,6 +462,15 @@ li.widget_nav_menu {
   text-align: left;
 }
 
+li.widget {
+  text-align: left;
+  margin-top: 20px;
+}
+
+li.widget:first-child {
+  margin-top: 0;
+}
+
 li.widget ul {
   list-style-type: none;
   margin: 5px 10px 0 0;
