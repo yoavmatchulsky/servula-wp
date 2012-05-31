@@ -1,7 +1,6 @@
 <?php
 /**
- * @package WordPress
- * @subpackage Hello_D
+ * Servula
  */
 
 add_theme_support('post-thumbnails');
@@ -13,6 +12,13 @@ if ( function_exists('register_sidebar') )
         'before_title' => '<h2>',
         'after_title' => '</h2>',
     ));
+    
+  register_sidebar(array(
+    'name' => 'Contact Form Sidebar',
+    'id' => 'contact-form-sidebar',
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget' => '</div>',
+  ));
 
 add_action('init', 'servula_register_menu');
 function servula_register_menu() {

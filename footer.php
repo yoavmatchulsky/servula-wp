@@ -54,10 +54,19 @@
           Now that i have your...
         </div>
         
-        <form>
+        <form action="http://app.icontact.com/icp/signup.php" name="icpsignup" id="icpsignup5242" method="post" accept-charset="UTF-8">
+          <input type="hidden" value="http://www.icontact.com/www/signup/thanks.html" name="redirect">
+          <input type="hidden" value="http://www.icontact.com/www/signup/error.html" name="errorredirect">        
+          <input type="hidden" value="56024" name="listid">
+          <input type="hidden" value="LUVM" name="specialid:56024">
+          <input type="hidden" value="1063486" name="clientid">
+          <input type="hidden" value="5242" name="formid">
+          <input type="hidden" value="1" name="reallistid">
+          <input type="hidden" value="0" name="doubleopt">          
+
           <input type="submit" value="Sign Up" />
-          <input type="text" name="name" value="Name" />
-          <input type="text" name="email" value="Email" />
+          <input type="text" name="fields_fname" value="Name" />
+          <input type="text" name="fields_email" value="Email" />
         </form>
       </div>
     </div>
@@ -77,5 +86,10 @@
 </script>
 
 <?php wp_footer(); ?>
+
+<div class="hidden">
+  <?php include 'contact-dialog.php'; ?>
+</div>
+
 </body>
 </html>

@@ -1458,3 +1458,84 @@ body {
 #page-services-30 h1 {
   color: #00adee;
 }
+
+#contact-dialog h2.dialog-title {
+  background: #f5f9ff;
+  color: #17365d;
+  font-size: 24px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e6eeff;
+}
+
+#contact-dialog h2 {
+  margin-bottom: 5px;
+}
+
+#contact-dialog h2 img {
+  margin-right: 5px;
+}
+
+#contact-dialog .leftcolumn {
+  width: 358px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-right: 1px solid #e6eeff;
+  float: left;
+  min-height: 400px;
+}
+
+#contact-dialog .rightcolumn {
+  margin-left: 400px;
+}
+
+#contact-dialog .questions {
+  font-size: 11px;
+}
+
+#contact-dialog .questions h3 {
+  cursor: pointer;
+  font-size: 11px;
+  color: #588CD8;
+}
+
+#contact-dialog .contact-form-sidebar {
+  margin-left: 50px;
+}
+
+#contact-dialog .contact-form-sidebar input[type="text"],
+#contact-dialog .contact-form-sidebar textarea {
+  width: 190px;
+  margin: 4px 0;
+  background: #e5e5e5;
+  border: 1px solid #bebebe;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+#contact-dialog .contact-form-sidebar textarea {
+  height: 100px;
+}
+
+#contact-dialog .contact-form-sidebar p {
+  margin: 0;
+}
+
+#contact-dialog .contact-form-sidebar input[type="submit"] {
+  background: #4476CC;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  border: 0;
+  color: white;
+  float: right;
+  font-weight: bold;
+  padding: 6px 8px 4px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-right: 49px;
+  font-size: 12px;
+}
+
