@@ -595,13 +595,14 @@ footer ul li {
   list-style-type: none;
   float: left;
   text-align: left;
-  width: 150px;
+  width: 200px;
 }
 
 footer ul li h3 {
   margin-bottom: 0;
   color: #74482f;
   font-weight: bold;
+  margin-left: 0;
 }
 
 footer ul li ul {
@@ -1186,6 +1187,7 @@ body {
   margin-bottom: 0;
   padding-left: 0;
   line-height: 1;
+  clear: none;
 }
 
 #homepage-wrapper #recent-posts article p {
