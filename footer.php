@@ -69,9 +69,9 @@
           <input type="hidden" value="1" name="reallistid">
           <input type="hidden" value="0" name="doubleopt">          
 
-          <input type="submit" value="Sign Up" />
-          <input type="text" name="fields_fname" value="Name" />
-          <input type="text" name="fields_email" value="Email" />
+          <input type="submit" value="Sign Up" tabindex="102" />
+          <input type="text" name="fields_fname" value="" placeholder="Name" tabindex="100" />
+          <input type="text" name="fields_email" value="" placeholder="Email" tabindex="101" />
         </form>
       </div>
     </div>

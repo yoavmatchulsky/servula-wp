@@ -18,4 +18,25 @@ $(function () {
       contact_dialog.find('.questions .answer').hide().removeClass('hidden');
     }
   });
+
+  // Check for placeholder support  
+  placeholder_test = document.createElement('input');
+  if (!('placeholder' in test)) {
+    $('footer .newsletter-wrapper form').on({
+      focusin : function(e) {
+        t = $(this);
+        placeholder = t.attr('placeholder');
+        if (placeholder && t.val() == placeholder) {
+          t.val('');
+        }
+      },
+      focusout : function (e) {
+        t = $(this);
+        placeholder = t.attr('placeholder');
+        if (placeholder && t.val() == '') {
+          t.val(placeholder);
+        }
+      }
+    }, 'input[type="text"]').find('input[type="text"]').trigger('focusout');
+  }
 });
