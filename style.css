@@ -19,7 +19,7 @@ html {
 
 body {
   color: #333;
-  background: #021d24 repeat-x left top;
+  background: white left top;
   font-family: "Lucida Grande", Verdana, "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
   font-size: 75%;
   line-height: 1.6;
@@ -82,10 +82,10 @@ p img {
 
 a {
   color: #588CD8;
-  text-decoration: underline;
+  text-decoration: none;
   outline: none;
 }
-a:focus, a:hover { text-decoration: none; }
+a:focus, a:hover { text-decoration: underline; }
 
 ul, ol { margin: 0 0 1.5em 0; padding-left: 2em; }
 ul { list-style-type: disc; }
@@ -156,9 +156,12 @@ header ul.menu li {
   display: inline;
   padding: 36px 17px 18px;
 /*  padding: 36px 20px 18px;*/
-  border-width: 0 0 0 1px;
-  border-style: solid;
-  border-color: #ccc;
+  border-right: 1px solid white;
+  border-left: 1px solid #d7d7d7;
+}
+
+header ul.menu li:last-child {
+  border-right: 0;
 }
 
 header ul.menu li a {
@@ -229,7 +232,6 @@ header .info-wrapper img {
 }
 
 header .info-wrapper a {
-  text-decoration: none;
   font-weight: bold;
   font-size: 13px;
 }
@@ -406,26 +408,19 @@ header .login-register-wrapper.my-dashboard-wrapper.with-moderator form#search_o
   font-size: 13px;
 }
 
-.post h2 {
-  clear: both;
-}
-
 .post h1.title {
-  color: #60604C;
+/*  color: #60604C;
   text-shadow: 2px 2px 1px #EEE, 2px 2px 1px #FE7A15;
-  font-family: SegueUILight;  
+  font-family: SegueUILight;  */
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.post h1.title a {
-  color: #369;
-  text-decoration: none;
-}
-
 .post h2 {
-  color: #FBBC7B;
-  font-weight: bold;
+  clear: both;
+  color: orange;
+  font-family: SegueUILight;
+  font-weight: normal;
 }
 
 .post ul.list-with-columns {
@@ -507,13 +502,16 @@ li.widget ul {
 
 .widget ul li a {
   color: #588CD8;
-  text-decoration: none;
   font-size: 16px;
 }
 
 .widget ul li.current-menu-item {
   background: url(images/li-inner-page.png) no-repeat -2px 1px;
   width: 211px;
+}
+
+.widget ul li.current-menu-item a {
+  color: gray;
 }
 
 /* = Comment Area */
@@ -649,6 +647,7 @@ footer ul li ul.social-links {
   width: 300px;
   padding-left: 0;
   margin-top: 10px;
+  clear: both;
 }
 
 footer ul li ul.social-links li {
@@ -656,6 +655,32 @@ footer ul li ul.social-links li {
   float: left;
   display: inline;
   width: 95px;
+}
+
+footer ul li ul.social-links-images li {
+  width: 36px;
+  height: 36px;
+  margin-right: 20px;
+}
+
+footer ul li ul.social-links-images li a {
+  display: block;
+  float: left;
+  width: 36px;
+  height: 36px;
+  background: url(images/footer/linked-in.png) 0 0 no-repeat;
+}
+
+footer ul li ul.social-links-images li a:hover {
+  background-position: -36px 0;
+}
+
+footer ul li ul.social-links-images li a#social-links-image-facebook {
+  background-image: url(images/footer/facebook.png);
+}
+
+footer ul li ul.social-links-images li a#social-links-image-twitter {
+  background-image: url(images/footer/twitter.png);
 }
 
 footer .newsletter-wrapper {
@@ -667,6 +692,7 @@ footer .newsletter-wrapper {
 footer .newsletter-wrapper img {
   float: left;
   margin-right: 60px;
+  vertical-align: top;
 }
 
 footer .newsletter-wrapper .newsletter-bubble {
@@ -719,7 +745,6 @@ footer .newsletter-wrapper .newsletter-bubble:before {
 .newsletter-bubble form input[type="submit"] {
   display: inline;
   float: right;
-  padding: 10px;
   height: 75px;
   width: 85px;
   font-weight: bold;
@@ -799,10 +824,6 @@ height: 0;
 }
 
 * html .clearfix { height: 1%; }
-
-body {
-  background: white;
-}
 
 @font-face {
   font-family: SegueUILight;
@@ -981,6 +1002,10 @@ body {
   font-weight: bold;  
 }
 
+#homepage-wrapper .learn-more a {
+  text-decoration: underline;
+}
+
 #services-wrapper {
   background: #f5f5f5;
   padding: 20px 0;
@@ -993,7 +1018,12 @@ body {
 }
 
 #services-wrapper:hover {
-  border-color: #999;
+  -webkit-box-shadow: 0 3px 3px #7e7e7e;
+  -moz-box-shadow: 0 3px 3px #7e7e7e;
+  -o-box-shadow: 0 3px 3px #7e7e7e;
+  box-shadow: 0 3px 3px #7e7e7e;
+  border-color: #d4d4d4;
+  background: #f8f8f8;
 }
 
 #services-wrapper .services-column {
@@ -1119,17 +1149,18 @@ body {
   background: #021d23;
   color: white;
   height: 50px;
-  padding: 5px 0 5px 3px;
+  padding: 3px 0 5px 5px;
 }
 
 .testimonial-title .testimonial-name {
   font-weight: bold;
   display: block;
-  font-size: 15px;
+  font-size: 11px;
+  font-family: Arial;
 }
 
 .testimonial-title .testimonial-company {
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .testimonials-wrapper .testimonials-text-wrapper {
@@ -1142,6 +1173,9 @@ body {
   z-index: 100;
   padding: 10px;
   border: 1px solid #7e7e7e;
+  -webkit-box-shadow: 0 5px 5px #7e7e7e;
+  -moz-box-shadow: 0 5px 5px #7e7e7e;
+  -o-box-shadow: 0 5px 5px #7e7e7e;
   box-shadow: 0 5px 5px #7e7e7e;
 }
 
@@ -1162,6 +1196,12 @@ body {
 .testimonials-wrapper .testimonials-text-wrapper:after {
   top: -25px;
   border-color: transparent transparent #bebebe;
+}
+
+.testimonials-wrapper .testimonials-text-wrapper.tilted-left:before,
+.testimonials-wrapper .testimonials-text-wrapper.tilted-left:after {
+  left: auto;
+  right: 43px;
 }
 
 .testimonials-wrapper .testimonials-text-wrapper .testimonial-title {
@@ -1208,6 +1248,7 @@ body {
   border: 1px solid #ccc;
   float: left;
   margin-right: 10px;
+  margin-bottom: 60px;
 }
 
 #homepage-wrapper #recent-posts article h2 {
@@ -1220,6 +1261,10 @@ body {
 
 #homepage-wrapper #recent-posts article p {
   margin-bottom: 10px;
+}
+
+#homepage-wrapper #recent-posts article .post-date {
+  color: black;
 }
 
 #homepage-wrapper #recent-posts #posts-wrapper .to-all-posts {
@@ -1249,10 +1294,7 @@ body {
   background: url(images/homepage/get-started-now-arrow.png) top right no-repeat;
   padding-right: 24px;
   height: 20px;
-}
-
-#homepage-wrapper #interested .to-get-started:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .hidden {

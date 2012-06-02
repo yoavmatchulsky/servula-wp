@@ -41,9 +41,14 @@
           <li><iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink() ?>&locale=en_US&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:20px;" allowTransparency="true"></iframe></li>
           <li><g:plusone size="medium"></g:plusone></li>
         </ul>
+        
+        <ul class="social-links social-links-images">
+          <li><a id="social-links-image-linked-in" href="#"></a></li>
+          <li><a id="social-links-image-twitter" href="https://twitter.com/#!/ServulaShop"></a></li>
+          <li><a id="social-links-image-facebook" href="http://www.facebook.com/pages/Servula/181501315237979"></a></li>
+        </ul>
       </li>
     </ul>
-    
     
     <div class="newsletter-wrapper">
       <img src="<?php bloginfo('template_url'); ?>/images/footer/servula-logo.png" />
@@ -70,9 +75,8 @@
         </form>
       </div>
     </div>
-
     <div class="copyright-wrapper">
-  	  &copy; <?php echo date('Y'); ?> <a href="<?php echo get_option('home'); ?>/">Servula</a>, LLC. All right reserved.
+  	  &copy; <?php echo date('Y'); ?> <a href="<?php echo site_url(); ?>">Servula</a>, LLC. All right reserved.
   	</div>
   </div>
 </footer>

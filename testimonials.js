@@ -29,12 +29,17 @@ $(function () {
       text_div = $('<div />').text(text);
       
       text_wrapper = testimonials_wrapper.find('.testimonials-text-wrapper');
+      text_wrapper.removeClass('tilted-left');
       text_wrapper.empty().append(title, text_div);
 
       ul = testimonials_wrapper.find('ul');
       left_position_of_ul = parseInt(ul.css('left'));
       new_left = t.position().left + left_position_of_ul + 49;
-            
+      if (new_left + 400 > 960) {
+        new_left -= 300;
+        text_wrapper.addClass('tilted-left');
+      }
+
       text_wrapper.css('left', new_left).removeClass('hidden');
     },
     mouseout : function(e) {

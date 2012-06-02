@@ -142,7 +142,7 @@
 	          <?php print $item->get_description('Read More...'); ?>
           </div>
           
-          <?php print $item->get_date(); ?>
+          <div class="post-date"><?php print $item->get_date(); ?></div>
         </div>
       </article>
   <?php endforeach; ?>
