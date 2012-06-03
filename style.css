@@ -408,6 +408,10 @@ header .login-register-wrapper.my-dashboard-wrapper.with-moderator form#search_o
   font-size: 13px;
 }
 
+#rightcolumn .post {
+  float: left;
+}
+
 .post h1.title {
 /*  color: #60604C;
   text-shadow: 2px 2px 1px #EEE, 2px 2px 1px #FE7A15;
@@ -725,9 +729,16 @@ footer .newsletter-wrapper .newsletter-bubble:before {
   width: 172px;
   margin-right: 25px;
   min-height: 85px;
+  line-height: 1.5;
+}
+
+.newsletter-text strong {
+  font-size: 130%;
+  display: block;
 }
 
 .newsletter-bubble form {
+  margin-top: 7px;
 }
 
 .newsletter-bubble form input[type="text"] {

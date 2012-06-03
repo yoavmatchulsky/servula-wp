@@ -21,7 +21,7 @@ $(function () {
 
   // Check for placeholder support  
   placeholder_test = document.createElement('input');
-  if (!('placeholder' in test)) {
+  if (!('placeholder' in placeholder_test)) {
     $('footer .newsletter-wrapper form').on({
       focusin : function(e) {
         t = $(this);
