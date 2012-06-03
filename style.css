@@ -726,8 +726,8 @@ footer .newsletter-wrapper .newsletter-bubble:before {
 .newsletter-bubble .newsletter-text {
   font-size: 11px;
   float: left;
-  width: 172px;
-  margin-right: 25px;
+  width: 190px;
+  margin-right: 11px;
   min-height: 85px;
   line-height: 1.5;
 }
