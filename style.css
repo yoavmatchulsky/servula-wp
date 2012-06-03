@@ -725,9 +725,16 @@ footer .newsletter-wrapper .newsletter-bubble:before {
   width: 172px;
   margin-right: 25px;
   min-height: 85px;
+  line-height: 1.5;
+}
+
+.newsletter-text strong {
+  font-size: 130%;
+  display: block;
 }
 
 .newsletter-bubble form {
+  margin-top: 7px;
 }
 
 .newsletter-bubble form input[type="text"] {

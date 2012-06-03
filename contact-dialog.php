@@ -19,7 +19,7 @@
       <p>We work with credits (1 credit = $2). This means that in order to buy our services, you first have to purchase a credit package or a custom amount of credits. Each service has its own price in credits. Currently we support payments in Paypal and credit cards.</p>
 
 
-      <h3>Which languages do you offer services in?</a></h3>
+      <h3>Which languages do you offer services in?</h3>
       <p>Currently we support only English and Hebrew, but we are working hard to add more languages to our services.</p>
 
 

@@ -55,8 +55,9 @@
       
       <div class="newsletter-bubble">
         <div class="newsletter-text">
-          Something Soemthing
-          Now that i have your...
+          <strong>Hey! Get over here.</strong>
+          Sign up for Servula's newsletter and get updates about our latest activities,
+          blog posts, special offers and cool tips!
         </div>
         
         <form action="http://app.icontact.com/icp/signup.php" name="icpsignup" id="icpsignup5242" method="post" accept-charset="UTF-8">
