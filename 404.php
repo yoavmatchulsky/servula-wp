@@ -7,7 +7,12 @@
 get_header(); ?>
 
 <div class="container main clearfix">
+
 <div id="leftcolumn">
+  <?php get_sidebar(); ?>
+</div>
+
+<div id="rightcolumn">
 
 	<div class="post">
 		<h2 class="title">Not Found</h2>
@@ -18,8 +23,6 @@ get_header(); ?>
 		</div>
 	</div>
 
-</div><!-- end #leftcolumn -->
-     
-<?php get_sidebar(); ?>
+</div>
 
 <?php get_footer(); ?>
