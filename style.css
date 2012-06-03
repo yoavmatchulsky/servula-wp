@@ -408,6 +408,10 @@ header .login-register-wrapper.my-dashboard-wrapper.with-moderator form#search_o
   font-size: 13px;
 }
 
+#rightcolumn .post {
+  float: left;
+}
+
 .post h1.title {
 /*  color: #60604C;
   text-shadow: 2px 2px 1px #EEE, 2px 2px 1px #FE7A15;
