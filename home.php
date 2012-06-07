@@ -31,7 +31,7 @@
       
       <div class="bee-text-wrapper">
         <p class="floor-text" id="floor-text-top">Our professional staff of online marketers is always willing to help you with any question.</p>
-        <p class="floor-text" id="floor-text-middle">Your order is taken care of by our awesome team of razor-sharp, creative and witty freelancers.</p>
+        <p class="floor-text" id="floor-text-middle">Your order is taken care of by our awesome team of razor-sharp, creative &amp; witty freelancers.</p>
         <p class="floor-text" id="floor-text-bottom">After your order is complete, we check its quality and send you a detailed report.</p>
       </div>
     </div>
