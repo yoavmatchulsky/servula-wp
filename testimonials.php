@@ -27,14 +27,14 @@ $testimonials = array(
     'company'   => 'Seperia',
     'position'  => 'Co-Founder',
     'img'       => 'itai-levitan',
-    'text'      => 'Having identified quality deliverables by Servula, we\'ve hired and worked with them at a distance, and are continuing to do so. The results are positive and cost effective, and that\'s not something I take for granted.',
+    'text'      => "Having identified quality deliverables by Servula, we've hired and worked with them at a distance, and are continuing to do so. The results are positive and cost effective, and that's not something I take for granted.",
   ),  
   array(
     'name'      => 'Yuli Desiatnikov',
     'company'   => 'McCann Erickson',
     'position'  => 'Senior SEO Manager',
     'img'       => 'yuli-desiatnikov',
-    'text'      => 'We have been working with Servula closely for the past several months. As a company that work primarily on large projects, we need to be able to focus on delivering the best strategic value for our clients. Servula\'s services help us put aside most of the "rough work" of the business and make time for higher-level tasks. It also saves the leg work of contacting and paying for multiple services - with Servula we get it all in one place.',
+    'text'      => "We have been working with Servula closely for the past several months. As a company that work primarily on large projects, we need to be able to focus on delivering the best strategic value for our clients. Servula's services help us put aside most of the \\\"rough work\\\" of the business and make time for higher-level tasks. It also saves the leg work of contacting and paying for multiple services - with Servula we get it all in one place.",
   ),  
   array(
     'name'      => 'Ben Dabah',
