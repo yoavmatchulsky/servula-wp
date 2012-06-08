@@ -2,11 +2,11 @@
 
 $testimonials = array(
   array(
-    'name' => 'Lior Haner',
-    'company' => 'Convertonet',
-    'position' => 'Head of SEO',
-    'img' => 'lior-haner',
-    'text' => 'Servula has come out with a great new service that helps us outsource and automate many labor & time intensive tasks. The content & SEO services are delivered quickly, accurate and with a high level of quality, service & attention to detail.'
+    'name'      => 'Lior Haner',
+    'company'   => 'Convertonet',
+    'position'  => 'Head of SEO',
+    'img'       => 'lior-haner',
+    'text'      => 'Servula has come out with a great new service that helps us outsource and automate many labor & time intensive tasks. The content & SEO services are delivered quickly, accurate and with a high level of quality, service & attention to detail.'
   ),
   array(
     'name'      => 'Yaron Kaufman',
@@ -15,6 +15,41 @@ $testimonials = array(
     'img'       => 'yaron-kaufman',
     'text'      => 'We used Servula to create content for our blog. The service is easy to use and very fast. It allows our marketing team to focus on core marketing activities. Recommended!',
   ),
+  array(
+    'name'      => 'Rotem Amar',
+    'company'   => 'FXEmpire',
+    'position'  => 'CEO',
+    'img'       => 'rotem-amar',
+    'text'      => "Fast, high-quality and professional service. It saves time, they already know what works and what doesn't and what is the best way to operate so the I get the most professional and up-to-date service",
+  ),  
+  array(
+    'name'      => 'Itai Levitan',
+    'company'   => 'Seperia',
+    'position'  => 'Co-Founder',
+    'img'       => 'itai-levitan',
+    'text'      => 'Having identified quality deliverables by Servula, we\'ve hired and worked with them at a distance, and are continuing to do so. The results are positive and cost effective, and that\'s not something I take for granted.',
+  ),  
+  array(
+    'name'      => 'Yuli Desiatnikov',
+    'company'   => 'McCann Erickson',
+    'position'  => 'Senior SEO Manager',
+    'img'       => 'yuli-desiatnikov',
+    'text'      => 'We have been working with Servula closely for the past several months. As a company that work primarily on large projects, we need to be able to focus on delivering the best strategic value for our clients. Servula\'s services help us put aside most of the "rough work" of the business and make time for higher-level tasks. It also saves the leg work of contacting and paying for multiple services - with Servula we get it all in one place.',
+  ),  
+  array(
+    'name'      => 'Ben Dabah',
+    'company'   => 'Dynamic Search',
+    'position'  => 'Co-founder & Director of Business Development',
+    'img'       => 'ben-dabah',
+    'text'      => 'Servula are like a breath of fresh air in our area. Their staff is very professional, patient, quick and most importantly, reliable. My company resides in the U.S., and one of the most important things my customers emphasize is that the content be written at a high level and by someone local - not just someone who knows English well. The great advantage of Servula is that they are one stop shop for SEO companies, offering a variety of services in a variety of levels.',
+  ),  
+  array(
+    'name'      => 'Ori Matarasso',
+    'company'   => 'The Nation Traffic',
+    'position'  => 'Head of Search & Business Development',
+    'img'       => 'ori-matarasso',
+    'text'      => 'With years of experience, and through countless SEO outsource service providers, the work around & management efforts has always been a hassle. Working with Servula has taken a lot of the work off my guys’ back. An SEO Market-Place like Servula can provide SEO experts with the instantaneous & professional feedback they were always looking for.',
+  ),  
   array(
     'active'    => false,
     'name'      => 'Omer',
@@ -29,20 +64,6 @@ $testimonials = array(
     'position'  => 'CEO',
     'img'       => 'roei-efrat',
     'text'      => "Servula is our main service provider when it comes to content  for our company's websites and our clients' websites. We have great appreciation for Servula's professional service, the quick response time and  the  willingness to answer any questions we had regarding the finished work. We would like to thank the Servula team for the wonderful work they've done for us - keep it up!",
-  ),  
-  array(
-    'name'      => 'Rotem Amar',
-    'company'   => 'FXEmpire',
-    'position'  => 'CEO',
-    'img'       => 'rotem-amar',
-    'text'      => "Fast, high-quality and professional service. It saves time, they already know what works and what doesn't and what is the best way to operate so the I get the most professional and up-to-date service",
-  ),  
-  array(
-    'name'      => 'Ben Dabah',
-    'company'   => 'Dynamic Search',
-    'position'  => 'Co-founder & Director of Business Development',
-    'img'       => 'ben-dabah',
-    'text'      => 'Servula are like a breath of fresh air in our area. Their staff is very professional, patient, quick and most importantly, reliable. My company resides in the U.S., and one of the most important things my customers emphasize is that the content be written at a high level and by someone local - not just someone who knows English well. The great advantage of Servula is that they are one stop shop for SEO companies, offering a variety of services in a variety of levels.',
   ),  
   array(
     'active'    => false,
@@ -94,13 +115,6 @@ $testimonials = array(
     'position'  => 'Founder',
     'img'       => 'roey-hazut',
     'text'      => 'As a SEO services provider for international markets I found Servula services very effective, saveing time and money . I recommend it for any SEO professional who is looking to Save time recruiting and managing freelancers.',
-  ),  
-  array(
-    'name'      => 'Ori Matarasso',
-    'company'   => 'The Nation Traffic',
-    'position'  => 'Head of Search & Business Development',
-    'img'       => 'ori-matarasso',
-    'text'      => 'With years of experience, and through countless SEO outsource service providers, the work around & management efforts has always been a hassle. Working with Servula has taken a lot of the work off my guys’ back. An SEO Market-Place like Servula can provide SEO experts with the instantaneous & professional feedback they were always looking for.',
   ),  
   array(
     'name'      => 'Tal Gabizon',
