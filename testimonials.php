@@ -4,6 +4,7 @@ $testimonials = array(
   array(
     'name'      => 'Lior Haner',
     'company'   => 'Convertonet',
+    'company-logo' => 'convertonet',
     'position'  => 'Head of SEO',
     'img'       => 'lior-haner',
     'text'      => 'Servula has come out with a great new service that helps us outsource and automate many labor & time intensive tasks. The content & SEO services are delivered quickly, accurate and with a high level of quality, service & attention to detail.'
@@ -11,6 +12,7 @@ $testimonials = array(
   array(
     'name'      => 'Yaron Kaufman',
     'company'   => 'OneHourTranslation',
+    'company-logo' => 'onehourtranslation',
     'position'  => 'CMO',
     'img'       => 'yaron-kaufman',
     'text'      => 'We used Servula to create content for our blog. The service is easy to use and very fast. It allows our marketing team to focus on core marketing activities. Recommended!',
@@ -18,6 +20,7 @@ $testimonials = array(
   array(
     'name'      => 'Rotem Amar',
     'company'   => 'FXEmpire',
+    'company-logo' => 'fxempire',
     'position'  => 'CEO',
     'img'       => 'rotem-amar',
     'text'      => "Fast, high-quality and professional service. It saves time, they already know what works and what doesn't and what is the best way to operate so the I get the most professional and up-to-date service",
@@ -25,6 +28,7 @@ $testimonials = array(
   array(
     'name'      => 'Itai Levitan',
     'company'   => 'Seperia',
+    'company-logo' => 'seperia',
     'position'  => 'Co-Founder',
     'img'       => 'itai-levitan',
     'text'      => "Having identified quality deliverables by Servula, we've hired and worked with them at a distance, and are continuing to do so. The results are positive and cost effective, and that's not something I take for granted.",
@@ -39,6 +43,7 @@ $testimonials = array(
   array(
     'name'      => 'Ben Dabah',
     'company'   => 'Dynamic Search',
+    'company-logo' => 'dynamicsearch',
     'position'  => 'Co-founder & Director of Business Development',
     'img'       => 'ben-dabah',
     'text'      => 'Servula are like a breath of fresh air in our area. Their staff is very professional, patient, quick and most importantly, reliable. My company resides in the U.S., and one of the most important things my customers emphasize is that the content be written at a high level and by someone local - not just someone who knows English well. The great advantage of Servula is that they are one stop shop for SEO companies, offering a variety of services in a variety of levels.',
@@ -46,6 +51,7 @@ $testimonials = array(
   array(
     'name'      => 'Ori Matarasso',
     'company'   => 'The Nation Traffic',
+    'company-logo' => 'thenationtraffic',
     'position'  => 'Head of Search & Business Development',
     'img'       => 'ori-matarasso',
     'text'      => 'With years of experience, and through countless SEO outsource service providers, the work around & management efforts has always been a hassle. Working with Servula has taken a lot of the work off my guys’ back. An SEO Market-Place like Servula can provide SEO experts with the instantaneous & professional feedback they were always looking for.',
@@ -61,6 +67,7 @@ $testimonials = array(
   array(
     'name'      => 'Roei Efrat',
     'company'   => 'SEO Neto',
+    'company-logo' => 'seoneto',
     'position'  => 'CEO',
     'img'       => 'roei-efrat',
     'text'      => "Servula is our main service provider when it comes to content  for our company's websites and our clients' websites. We have great appreciation for Servula's professional service, the quick response time and  the  willingness to answer any questions we had regarding the finished work. We would like to thank the Servula team for the wonderful work they've done for us - keep it up!",
@@ -83,6 +90,7 @@ $testimonials = array(
   array(
     'name'      => 'Ido Sela',
     'company'   => 'Wisy Internet Marketing LTD',
+    'company-logo' => 'wisy',
     'position'  => 'CEO',
     'img'       => 'ido-sela',
     'text'      => "We used to work with oDesk and Elance a lot, opening many projects and dealing with many people is a big hassle. The problem is not the prices rather the enforcement of the projects which is a big time consumer. Other problem of outsourcing SEO tasks is the quality – you never know the source and nobody takes charge on their actions. In addition many people work with Automatic Tools which can harm your customer in the long run. Servula takes care for this, they are saving me time and money by knowing that a company is taking responsibility for their products and by giving me a turnkey project where I don't need to invest resources on enforcement.",
@@ -97,6 +105,7 @@ $testimonials = array(
   array(
     'name'      => 'Yuval Aloni',
     'company'   => 'InnoviNet Online Marketing',
+    'company-logo' => 'innovinet',
     'position'  => 'CEO',
     'img'       => 'yuval-aloni',
     'text'      => 'Servula is a great company, run by brilliant people. When managing multiple clients across several continents, our teams must stay focused. Servula helps us through outsourcing work such as: content writing and link building, thus allowing our project managers to stay efficient.',
@@ -112,6 +121,7 @@ $testimonials = array(
   array(
     'name'      => 'Roey Hazut',
     'company'   => 'ROI-Vision',
+    'company-logo' => 'roi-vision',
     'position'  => 'Founder',
     'img'       => 'roey-hazut',
     'text'      => 'As a SEO services provider for international markets I found Servula services very effective, saveing time and money . I recommend it for any SEO professional who is looking to Save time recruiting and managing freelancers.',
@@ -119,6 +129,7 @@ $testimonials = array(
   array(
     'name'      => 'Tal Gabizon',
     'company'   => 'Optiwise',
+    'company-logo' => 'optiwise',
     'position'  => 'Head of Off-page team',
     'img'       => 'tal-gabizon',
     'text'      => 'After changing  many content writers, I was lucky to find Servula. Servula are truly professionals, and they are the only long-term solution for our requirements. I save me a lot of time and money by using their services, and I plan on sticking to them in the future. They earned my sincere recommendation.',
@@ -126,6 +137,7 @@ $testimonials = array(
   array(
     'name'      => 'Yakir Shpenerman',
     'company'   => 'Kama Software',
+    'company-logo' => 'kama-software',
     'position'  => 'Internet Marketing Manager',
     'img'       => 'yakir-shpenerman',
     'text'      => "Servula saved my SEO team members a lot of time, by having all services in one easy-to-use platform. They now have much more free time to concentrate in strategy and high-level tasks instead of searching and managing freelancers. Servula's services are a must-have for any SEO agency.",
@@ -133,6 +145,7 @@ $testimonials = array(
   array(
     'name'      => 'Shani Salame',
     'company'   => 'iLevel',
+    'company-logo' => 'ilevel',
     'position'  => 'Founder',
     'img'       => 'shani-salame',
     'text'      => "We have been using the services of Servula ever since it began offering them. At the time, we had been looking for a high-quality outsourcing service we could count on to send us the work quickly and efficiently; and we were hoping that the level of the work would be appropriate for our clients. This is usually a lengthy process that involves interviewing freelancers and at the same time test-running pilots, as well as waiting for the final product. The platform offered by Servula presents a clever solution in which the only demand from our company is to fill out an order. From that moment on everything is left in the capable hands of Servula.",
@@ -159,7 +172,10 @@ $asset_path = 'https://s3.amazonaws.com/servula/assets/testimonials/';
     <?php foreach ($testimonials as $testimonial) : ?>
       <?php if (isset($testimonial['active']) and $testimonial['active'] == false) continue; ?>
       <li class="testimonial-wrapper" data-testimonial-text="<?php print $testimonial['img']; ?>">
-        <img src="<?php print $asset_path . $testimonial['img'] . '.png'; ?>" data-image-over="<?php print $asset_path . $testimonial['img'] . '-over.png'; ?>" width="109" height="144" />
+        <img rel="portrait" src="<?php print $asset_path . $testimonial['img'] . '.png'; ?>" data-image-over="<?php print $asset_path . $testimonial['img'] . '-over.png'; ?>" width="109" height="144" />
+        <?php if (isset($testimonial['company-logo'])) : ?>
+        <span class="testimonial-company-logo hidden"><img rel="logo" src="<?php print $asset_path . 'logos/' . $testimonial['company-logo'] . '.png'; ?>" /></span>
+        <?php endif; ?>
         <div class="testimonial-title">
           <span class="testimonial-name"><?php print $testimonial['name']; ?></span>
           <span class="testimonial-company"><?php print $testimonial['company']; ?></span>

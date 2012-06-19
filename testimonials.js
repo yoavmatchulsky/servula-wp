@@ -2,7 +2,7 @@ $(function () {
   testimonials_wrapper = $('.testimonials-wrapper')
   if (testimonials_wrapper.length < 1) return;
   
-  testimonials_wrapper.find('.testimonial-wrapper img').each(function (i, obj) {
+  testimonials_wrapper.find('.testimonial-wrapper img[rel="portrait"]').each(function (i, obj) {
     image = $(obj);
     image.data('image-original', image.attr('src'));
     
@@ -18,10 +18,11 @@ $(function () {
     mouseover : function(e) {
       clearTimeout(timer);
       t = $(this);
-      img = t.find('img');
+      img = t.find('img[rel="portrait"]');
       img.attr('src', img.data('image-over'));
 
       key = t.data('testimonial-text');
+      company_logo = t.find('.testimonial-company-logo').clone().removeClass('hidden');
       title = t.find('.testimonial-title').clone();
       title.find('.testimonial-company').remove();
       title.find('.testimonial-position').removeClass('hidden');
@@ -30,7 +31,7 @@ $(function () {
       
       text_wrapper = testimonials_wrapper.find('.testimonials-text-wrapper');
       text_wrapper.removeClass('tilted-left');
-      text_wrapper.empty().append(title, text_div);
+      text_wrapper.empty().append(company_logo, title, text_div);
 
       ul = testimonials_wrapper.find('ul');
       left_position_of_ul = parseInt(ul.css('left'));
@@ -44,7 +45,7 @@ $(function () {
     },
     mouseout : function(e) {
       t = $(this);
-      img = t.find('img');
+      img = t.find('img[rel="portrait"]');
       img.attr('src', img.data('image-original'));
       
       timer = setTimeout(function () {
