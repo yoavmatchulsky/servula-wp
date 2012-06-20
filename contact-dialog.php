@@ -42,7 +42,7 @@
   
   <div class="rightcolumn">
     <h2><img src="<?php bloginfo('template_url'); ?>/images/dialog-live-chat-icon.png" />Live Chat</h2>
-    <iframe src="http://www.google.com/talk/service/badge/Show?tk=z01q6amlqaj4ogvcdo71ipl40564s1j7kfi6m3iub0giimeh34mstc79nqv0q9vt3biqfvh3qr94diuog7hie1mspjh4rtkt8mtt5me5l9p4plmit0c4jhrl1bnkilbr4fvv0m0u8mrobrtsoun0rrg0qudphqe2j8fbcp90m&amp;w=200&amp;h=60" allowtransparency="true" frameborder="0" height="60" width="200" style="margin-left: 50px;"></iframe>
+    <iframe src="#" allowtransparency="true" frameborder="0" height="60" width="200" style="margin-left: 50px;"></iframe>
     
     <h2 style="margin-top: 20px;"><img src="<?php bloginfo('template_url'); ?>/images/dialog-write-to-us-icon.png" />Write to Us</h2>
     

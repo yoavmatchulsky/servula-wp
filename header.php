@@ -14,9 +14,9 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/jquery.fancybox.js" type="text/javascript"></script>
 
-  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script.js" type="text/javascript"></script>
-  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/homepage.js" type="text/javascript"></script>
-  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/testimonials.js" type="text/javascript"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/homepage.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/testimonials.js"></script>
   <script type="text/javascript">
   /* <![CDATA[ */
   if (false) {
