@@ -1178,11 +1178,11 @@ height: 0;
   position: absolute;
   top: 147px;
   left: 0;
-  background: #bebebe;
+  background: white;
   min-height: 200px;
   width: 400px;
   z-index: 100;
-  padding: 10px;
+  padding: 0;
   border: 1px solid #7e7e7e;
   -webkit-box-shadow: 0 5px 5px #7e7e7e;
   -moz-box-shadow: 0 5px 5px #7e7e7e;
@@ -1206,7 +1206,7 @@ height: 0;
 
 .testimonials-wrapper .testimonials-text-wrapper:after {
   top: -25px;
-  border-color: transparent transparent #bebebe;
+  border-color: transparent transparent #a3a3a3;
 }
 
 .testimonials-wrapper .testimonials-text-wrapper.tilted-left:before,
@@ -1216,26 +1216,33 @@ height: 0;
 }
 
 .testimonials-wrapper .testimonials-text-wrapper .testimonial-title {
-  position: relative;
-  left: -10px;
   background: #a3a3a3;
   color: white;
-  width: 180px;
   padding: 5px 10px;
   margin-bottom: 5px;
 }
 
+.testimonials-text-wrapper .testimonial-text {
+  padding: 0 10px;
+}
+
 .testimonials-text-wrapper .testimonial-company-logo {
-  float: right;
-  height: auto;
+  text-align: center;
+  margin: 15px 0 5px;
 }
 
 .testimonials-text-wrapper .testimonial-title .testimonial-name {
-  font-size: 17px;
+  font-size: 19px;
+  display: inline;
+}
+
+.testimonials-text-wrapper .testimonial-title .testimonial-name:after {
+  content: ', ';
 }
 
 .testimonials-text-wrapper .testimonial-title .testimonial-position {
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 #homepage-wrapper #recent-posts {

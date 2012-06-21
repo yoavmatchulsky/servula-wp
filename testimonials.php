@@ -173,14 +173,14 @@ $asset_path = 'https://s3.amazonaws.com/servula/assets/testimonials/';
       <?php if (isset($testimonial['active']) and $testimonial['active'] == false) continue; ?>
       <li class="testimonial-wrapper" data-testimonial-text="<?php print $testimonial['img']; ?>">
         <img rel="portrait" src="<?php print $asset_path . $testimonial['img'] . '.png'; ?>" data-image-over="<?php print $asset_path . $testimonial['img'] . '-over.png'; ?>" width="109" height="144" />
-        <?php if (isset($testimonial['company-logo'])) : ?>
-        <span class="testimonial-company-logo hidden"><img rel="logo" src="<?php print $asset_path . 'logos/' . $testimonial['company-logo'] . '.png'; ?>" /></span>
-        <?php endif; ?>
         <div class="testimonial-title">
           <span class="testimonial-name"><?php print $testimonial['name']; ?></span>
           <span class="testimonial-company"><?php print $testimonial['company']; ?></span>
           <span class="testimonial-position hidden"><?php print $testimonial['position']; ?></span>
         </div>
+        <?php if (isset($testimonial['company-logo'])) : ?>
+        <div class="testimonial-company-logo hidden"><img rel="logo" src="<?php print $asset_path . 'logos/' . $testimonial['company-logo'] . '.png'; ?>" /></div>
+        <?php endif; ?>
       </li>
     <?php endforeach; ?>
     </ul>
