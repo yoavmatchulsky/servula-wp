@@ -27,7 +27,7 @@ $(function () {
       title.find('.testimonial-company').remove();
       title.find('.testimonial-position').removeClass('hidden');
       text = Servula.testimonials.texts[key];
-      text_div = $('<div />').addClass('testimonial-text').text(text);
+      text_div = $('<div />').addClass('testimonial-text').text('"' + text + '"');
       
       text_wrapper = testimonials_wrapper.find('.testimonials-text-wrapper');
       text_wrapper.removeClass('tilted-left');
