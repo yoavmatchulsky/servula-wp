@@ -96,6 +96,14 @@ $testimonials = array(
     'text'      => "We used to work with oDesk and Elance a lot, opening many projects and dealing with many people is a big hassle. The problem is not the prices rather the enforcement of the projects which is a big time consumer. Other problem of outsourcing SEO tasks is the quality – you never know the source and nobody takes charge on their actions. In addition many people work with Automatic Tools which can harm your customer in the long run. Servula takes care for this, they are saving me time and money by knowing that a company is taking responsibility for their products and by giving me a turnkey project where I don't need to invest resources on enforcement.",
   ),  
   array(
+    'name'      => 'Nadav Fattal',
+    'company'   => 'Fattal',
+    'company-logo' => 'fattal',
+    'position'  => 'Digital Advertising Manager',
+    'img'       => 'nadav-fattal',
+    'text'      => 'I am pleased to recommend Servula. This company gives us outstanding, professional service never fails to meet a deadline. Working with Servula is highly convenient due to their professionalism and quality of  work, as well as the organized, timely manner in which the service is provided. We are glad to be working with Servula and highly recommend their services.',
+  ),
+  array(
     'name'      => 'Zohar Amihud',
     'company'   => 'ThinkSEO',
     'position'  => 'SEO Expert',
