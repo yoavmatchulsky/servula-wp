@@ -4,7 +4,7 @@
 
   <div id="leftcolumn">
     <h1>Outsourcing simplified</h1>
-    <h2>Servula is a place where you can order inbound marketing services easily and be sure they will done by the best freelancers in the world.</h2>
+    <h2>Servula is a place where you can order inbound marketing services easily, and be sure they will be done by the top freelancers. We monitor and <strong>check the work ourselves</strong> - saving you time so you can focus on your business.</h2>
 
     <div class="start-shopping-button">
       <a href="<?php print servula_info('full_url'); ?>">Start Shopping</a>
@@ -147,7 +147,7 @@
       </article>
   <?php endforeach; ?>
       	  
-  	  <a class="to-all-posts" href="<?php print site_url('blog/'); ?>">All Posts &gt;</a>
+  	  <a class="to-all-posts" href="<?php print site_url('blog/'); ?>">All Posts &raquo;</a>
     </div>
   </div>
   

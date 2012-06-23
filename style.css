@@ -14,7 +14,7 @@ Tags: servula, left-sidebar
 }
 
 html {
-  background: #021d24;
+  background: white;
 }
 
 body {
@@ -113,6 +113,10 @@ th, td { padding: 5px 10px; border: 1px solid #E6E6D2; }
   width: 960px;
 }
 
+body > .wrapper {
+  margin-top: 123px;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -127,9 +131,12 @@ header {
   height: 83px;
   text-align: left;
   margin-bottom: 40px;
-  position: relative;
+  position: fixed;
+  top: 0;
   line-height: 1.6;
   z-index: 101;
+  width: 100%;
+  text-align: center;
 }
 
 header .wrapper {
@@ -759,7 +766,7 @@ footer .newsletter-wrapper .newsletter-bubble:before {
   height: 75px;
   width: 85px;
   font-weight: bold;
-  font-size: 19px;
+  font-size: 18px;
   
   background: yellow;
   color: #974806;
@@ -860,10 +867,10 @@ height: 0;
 }
 
 #homepage-wrapper h2 {
-  font-weight: bold;
-  font-size: 17px;
-  color: #FAAC3B;
   margin-bottom: 40px;
+  font-size: 21px;
+  color: #974806;
+  font-family: SegueUILight;
 }
 
 #homepage-wrapper h3 {
