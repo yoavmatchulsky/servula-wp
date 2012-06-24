@@ -74,7 +74,7 @@
 	  <div class="wrapper">
 	    <div id="logo-wrapper">
 	      <a href="<?php print get_option('home'); ?>/">
-	        <img src="<?php bloginfo('template_url'); ?>/images/logo.png" />
+	        <img src="<?php bloginfo('template_url'); ?>/images/logo-beta.png" alt="Servula is currently in Beta" title="Servula is currently in Beta" />
 	      </a>
 	    </div>
 	    
