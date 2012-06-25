@@ -106,10 +106,16 @@ function servula_info($key = '') {
   else {
     $env = servula_get_env();
     switch ($key) {
-      case 'full_url'     : return servula_info('system_url') . ':' . servula_info('system_port');
-      case 'system_url'   : return $env == 'production' ? 'http://my.servula.com' : 'http://test.servula.local';
+      case 'full_url'     : 
+        $url = servula_info('system_url');
+        $port = servula_info('system_port');
+        if ($port != 80) {
+          $url .= ':' . $port;
+        }
+        return $url;
+        
+      case 'system_url'   : return $env == 'production' ? 'https://my.servula.com' : 'http://test.servula.local';
       case 'system_port'  : return 80;
-//      case 'system_port'  : return $env == 'production' ? 80 : 3000;
       case 'env'          : return $env;
       
       case 'dashboard_url'  : return servula_info('full_url') . '/users/' . $servula['user_id'];
