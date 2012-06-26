@@ -140,7 +140,7 @@ $testimonials = array(
     'company-logo' => 'optiwise',
     'position'  => 'Head of Off-page team',
     'img'       => 'tal-gabizon',
-    'text'      => 'After changing  many content writers, I was lucky to find Servula. Servula are truly professionals, and they are the only long-term solution for our requirements. I save me a lot of time and money by using their services, and I plan on sticking to them in the future. They earned my sincere recommendation.',
+    'text'      => 'After going through many content writers, I was lucky to find Servula. Servula is a truly professional company, and it is the only long-term solution for our requirements. I save me a lot of time and money by using their services, and I plan on sticking to them in the future. They earned my sincere recommendation.',
   ),  
   array(
     'name'      => 'Yakir Shpenerman',
