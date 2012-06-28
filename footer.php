@@ -30,7 +30,7 @@
         <ul>
           <li><a href="<?php print servula_info('full_url'); ?>">Our Services</li>
           <li><a href="<?php print servula_info('full_url'); ?>/register">Register Now!</a></li>
-          <li><a href="<?php print site_url('terms_of_service/'); ?>">Terms of Service</a></li>
+          <li><a href="<?php print servula_info('full_url'); ?>/terms-of-service'); ?>">Terms of Service</a></li>
         </ul>
       </li>
       <li>
