@@ -19,20 +19,14 @@
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/testimonials.js"></script>
   <script type="text/javascript">
   /* <![CDATA[ */
-  if (false) {
-	  $(document).ready(function() {
-		  $(".menu a").wrapInner($("<span></span>"));
-		  $('.post').before('<div class="post_top"></div>').after('<div class="post_end"></div>');
-		  $('.widget').before('<li class="widget_top"></li>').after('<li class="widget_end"></li>');
-		  $('#search').prepend('<h2 style="text-align: left;">Search</h2>');
-	  });
-  }
-  
   var Servula = {
     system_url : "<?php print servula_info('full_url'); ?>",
     testimonials : {}
   }
   /* ]]> */
+
+  // ClickTale Top part
+  var WRInitTime=(new Date()).getTime();
   </script>
 
 <?php
