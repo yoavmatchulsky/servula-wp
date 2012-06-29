@@ -64,6 +64,9 @@ function servula_check_login() {
     curl_setopt($ch, CURLOPT_URL, servula_info('system_url') . '/sessions/info');
     curl_setopt($ch, CURLOPT_PORT, servula_info('system_port'));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+    
     $cookies = array('auth_token=' . $_COOKIE['auth_token']);
     curl_setopt($ch, CURLOPT_COOKIE, implode('; ', $cookies));
 
@@ -109,13 +112,13 @@ function servula_info($key = '') {
       case 'full_url'     : 
         $url = servula_info('system_url');
         $port = servula_info('system_port');
-        if ($port != 80) {
+        if (!in_array($port, array(80, 443))) {
           $url .= ':' . $port;
         }
         return $url;
         
       case 'system_url'   : return $env == 'production' ? 'https://my.servula.com' : 'http://test.servula.local';
-      case 'system_port'  : return 80;
+      case 'system_port'  : return $env == 'production' ? 443 : 80;
       case 'env'          : return $env;
       
       case 'dashboard_url'  : return servula_info('full_url') . '/users/' . $servula['user_id'];
