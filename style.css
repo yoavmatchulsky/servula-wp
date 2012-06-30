@@ -161,8 +161,7 @@ header ul.menu li {
   font-size: 1.2em;
   margin: 0;
   display: inline;
-  padding: 36px 17px 18px;
-/*  padding: 36px 20px 18px;*/
+  padding: 36px 20px 18px;
   border-right: 1px solid white;
   border-left: 1px solid #d7d7d7;
 }

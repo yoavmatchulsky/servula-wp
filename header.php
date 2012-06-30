@@ -122,7 +122,7 @@
           <form action="<?php print servula_info('full_url'); ?>/sessions" method="POST" accept-charset="UTF-8">
             <input type="hidden" value="✓" name="utf8">
             
-            <div class="form-item">
+            <div class="form-item" style="margin-top: 0;">
               <label for="session_email">Email:</label>
               <input type="text" value="" tabindex="1" size="35" name="session[email]" id="session_email">
             </div>
