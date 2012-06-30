@@ -29,17 +29,10 @@
   var WRInitTime=(new Date()).getTime();
   </script>
 
-<?php
-  if(is_singular()) {
-    wp_enqueue_script('comment-reply');
-  }
-  wp_head();
-?>
-
-<title><?php wp_title(' '); ?><?php if(wp_title(' ', false)) { echo ' -'; } ?> <?php bloginfo('name'); ?></title>
-<link href="<?php bloginfo('url'); ?>/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-<script type="text/javascript">
-
+  <title><?php wp_title(' '); ?> </title>
+  <link href="<?php bloginfo('url'); ?>/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <script type="text/javascript">
+  
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-24864094-1']);
   _gaq.push(['_setDomainName', 'servula.com']);
@@ -50,8 +43,15 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
-</script>
+  
+  </script>
+  
+<?php
+  if(is_singular()) {
+    wp_enqueue_script('comment-reply');
+  }
+  wp_head();
+?>
 </head>
 
 <body>
