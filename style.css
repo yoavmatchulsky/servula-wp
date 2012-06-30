@@ -172,11 +172,13 @@ header ul.menu li:last-child {
 }
 
 header ul.menu li a {
-  color: #aaa;
-  font-size: 17px;
-  font-weight: normal;
+  color: #8596A7;
+  font-size: 14px;
+  font-weight: bold;
   text-decoration: none;
   float: left;
+  font-family: helvetica,arial,sans-serif;
+  padding: 2px;
 }
 
 header ul.menu li.current_page_item {
@@ -274,7 +276,7 @@ header .login-register-wrapper.my-dashboard-wrapper.with-moderator form#search_o
 .login-register-wrapper {
   float: right;
   padding: 36px 10px 19px;
-  font-size: 17px;
+  font-size: 14px;
   color: #73b1eb;
   position: relative;
   cursor: pointer;
@@ -293,7 +295,7 @@ header .login-register-wrapper.my-dashboard-wrapper.with-moderator form#search_o
   top: 82px;
   left: -1px;
   width: 200px;
-  height: 230px;
+  height: 220px;
   background: #e9edf1;
   border: 1px solid #aaa;
   border-top-width: 0;
@@ -420,11 +422,9 @@ header .login-register-wrapper.my-dashboard-wrapper.with-moderator form#search_o
 }
 
 .post h1.title {
-/*  color: #60604C;
-  text-shadow: 2px 2px 1px #EEE, 2px 2px 1px #FE7A15;
-  font-family: SegueUILight;  */
   font-weight: bold;
   margin-bottom: 10px;
+  color: #456;
 }
 
 .post h2 {
@@ -720,7 +720,7 @@ footer .newsletter-wrapper .newsletter-bubble {
 footer .newsletter-wrapper .newsletter-bubble:before {
   border-color: transparent white transparent transparent;
   border-style: solid;
-  border-width: 30px 60px 5px 0;
+  border-width: 20px 60px 10px 0;
   content: "";
   display: block;
   height: 0;
