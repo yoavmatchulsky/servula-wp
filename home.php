@@ -126,26 +126,26 @@
     
 	  <div id="posts-wrapper">
     
-<?php
+    <?php
 
-  $feed_items = servula_get_feed_items();
-    foreach ($feed_items as $item) : ?>
-      <?php $title = $item->get_title(); ?>
-      <article>
-        <div class="post">
-          <?php $enclosure = $item->get_enclosure(); ?>
-          <img src="<?php print $enclosure->link; ?>" width="73" height="66" title="<?php print esc_attr(strip_tags($title)); ?>" class="attachment-post-thumbnail wp-post-image" />
-          
-          <h2 class="title"><a href="<?php print $item->get_permalink() ?>" rel="bookmark" title="Permanent Link to <?php print esc_attr(strip_tags($title)); ?>"><?php print $title; ?></a></h2>
+    $feed_items_columns = servula_get_feed_items(6);
+    foreach ($feed_items_columns as $feed_items_column) : ?>
+      <div class="articles-column">
+      <?php foreach ($feed_items_column as $item) : ?>
+        <?php $title = $item->get_title(); ?>
+        <article>
+          <div class="post">
+            <?php $enclosure = $item->get_enclosure(); ?>
+            <img src="<?php print $enclosure->link; ?>" width="73" height="66" title="<?php print esc_attr(strip_tags($title)); ?>" class="attachment-post-thumbnail wp-post-image" />
+            
+            <h2 class="title"><a href="<?php print $item->get_permalink() ?>" rel="bookmark" title="Permanent Link to <?php print esc_attr(strip_tags($title)); ?>"><?php print $title; ?></a></h2>
 
-          <div class="entry">
-	          <?php print $item->get_description('Read More...'); ?>
+            <div class="post-date"><?php print $item->get_date(); ?></div>
           </div>
-          
-          <div class="post-date"><?php print $item->get_date(); ?></div>
-        </div>
-      </article>
-  <?php endforeach; ?>
+        </article>
+      <?php endforeach; ?>
+      </div>
+    <?php endforeach; ?>
       	  
   	  <a class="to-all-posts" href="<?php print site_url('blog/'); ?>">All Posts &raquo;</a>
     </div>

@@ -152,20 +152,25 @@ function servula_get_env() {
   return $env;
 }
 
-function servula_get_feed_items() {
+function servula_get_feed_items($count = 3) {
   if(!function_exists('fetch_feed')) { return; }
   
   include_once(ABSPATH . WPINC . '/feed.php');
   $feed = fetch_feed('http://www.servula.com/blog/feed');
 
   if (!is_wp_error( $feed )) {
-    $limit = $feed->get_item_quantity(3);
+    $limit = $feed->get_item_quantity($count);
     if ($limit > 0) {
     	$feed_items = $feed->get_items(0, $limit);
   	}
 	}
 	
-	return $feed_items;
+	if ($count > 3) {
+	  return array_chunk($feed_items, 3);
+  }
+	else {
+  	return array($feed_items);
+	}
 }
 
 // Increase excerpt length
