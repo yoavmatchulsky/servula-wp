@@ -46,7 +46,7 @@
       <div id="service-content-writing" class="services-column">
         <ul>
           <li class="service-item">
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/content-article" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/pen_alt2_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/pen_alt2_32x32-over.png" alt="Content Article" />Content Article</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/content-article" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/pen_alt2_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/pen_alt2_32x32-over.png" alt="Content Article" />Content Writing</a>
             <a href="<?php print servula_info('full_url'); ?>/orders/new/content-article">Order Now</a>
           </li>
           <li class="service-item">

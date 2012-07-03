@@ -19,33 +19,20 @@
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/testimonials.js"></script>
   <script type="text/javascript">
   /* <![CDATA[ */
-  if (false) {
-	  $(document).ready(function() {
-		  $(".menu a").wrapInner($("<span></span>"));
-		  $('.post').before('<div class="post_top"></div>').after('<div class="post_end"></div>');
-		  $('.widget').before('<li class="widget_top"></li>').after('<li class="widget_end"></li>');
-		  $('#search').prepend('<h2 style="text-align: left;">Search</h2>');
-	  });
-  }
-  
   var Servula = {
     system_url : "<?php print servula_info('full_url'); ?>",
     testimonials : {}
   }
   /* ]]> */
+
+  // ClickTale Top part
+  var WRInitTime=(new Date()).getTime();
   </script>
 
-<?php
-  if(is_singular()) {
-    wp_enqueue_script('comment-reply');
-  }
-  wp_head();
-?>
-
-<title><?php wp_title(' '); ?><?php if(wp_title(' ', false)) { echo ' -'; } ?> <?php bloginfo('name'); ?></title>
-<link href="<?php bloginfo('url'); ?>/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-<script type="text/javascript">
-
+  <title><?php wp_title(' '); ?> </title>
+  <link href="<?php bloginfo('url'); ?>/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <script type="text/javascript">
+  
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-24864094-1']);
   _gaq.push(['_setDomainName', 'servula.com']);
@@ -56,8 +43,15 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
-</script>
+  
+  </script>
+  
+<?php
+  if(is_singular()) {
+    wp_enqueue_script('comment-reply');
+  }
+  wp_head();
+?>
 </head>
 
 <body>
@@ -128,7 +122,7 @@
           <form action="<?php print servula_info('full_url'); ?>/sessions" method="POST" accept-charset="UTF-8">
             <input type="hidden" value="✓" name="utf8">
             
-            <div class="form-item">
+            <div class="form-item" style="margin-top: 0;">
               <label for="session_email">Email:</label>
               <input type="text" value="" tabindex="1" size="35" name="session[email]" id="session_email">
             </div>

@@ -30,7 +30,7 @@
         <ul>
           <li><a href="<?php print servula_info('full_url'); ?>">Our Services</li>
           <li><a href="<?php print servula_info('full_url'); ?>/register">Register Now!</a></li>
-          <li><a href="<?php print servula_info('full_url'); ?>/terms-of-service'); ?>">Terms of Service</a></li>
+          <li><a href="<?php print servula_info('full_url'); ?>/terms-of-service">Terms of Service</a></li>
         </ul>
       </li>
       <li>
@@ -90,11 +90,30 @@
   })();
 </script>
 
+<!-- ClickTale Bottom part -->
+<div id="ClickTaleDiv" style="display: none;"></div>
+<script type="text/javascript">
+if(document.location.protocol!='https:')
+  document.write(unescape("%3Cscript%20src='http://s.clicktale.net/WRc9.js'%20type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+if(typeof ClickTale=='function') ClickTale(23332,1,"www02");
+</script>
+
 <?php wp_footer(); ?>
 
 <div class="hidden">
   <?php include 'contact-dialog.php'; ?>
 </div>
+
+<script type="text/javascript">
+  var uvOptions = {};
+  (function() {
+    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/3u9Rp1iKBzm2f66qCFHeg.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+  })();
+</script>
 
 </body>
 </html>
