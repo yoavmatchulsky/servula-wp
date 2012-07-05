@@ -1,12 +1,8 @@
-<?php ?>
-
-<div id="leftcolumn">
-
 <ul id="sidebar">
 
 <?php 	/* Widgetized sidebar, if you have the plugin installed. */
-	if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
-	
+  if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
+
   <li>
   <?php print wp_nav_menu( array( 
           'theme_location' => 'sidebar',
@@ -16,6 +12,5 @@
   </li>
   
 <?php endif; ?>
-</ul><!-- end #sidebar -->
+</ul>
 
-</div><!-- end #rightcolumn -->

@@ -29,6 +29,38 @@ function servula_register_menu() {
     ));
 }
 
+add_filter('the_content', 'servula_service_page');
+function servula_service_page($content) {
+  global $post;
+  $intro_image = get_post_custom_values('service-intro-image');
+  
+  if (preg_match_all('!\[\[service\-intro\]\]!', $content, $matches)) {
+    $intro = '<div class="service-intro">';
+    if (count($intro_image) > 0) {
+      $intro .= '<img src="' . reset($intro_image) . '" class="service-intro-image" />';
+    }
+
+    $content = preg_replace('!\[\[service\-intro+\]\]!', $intro, $content, 1);
+    $content = preg_replace('!\[\[service-intro-end\]\]!', '</div>', $content);
+  }
+
+  if (preg_match_all('!\[\[service\-order-now\]\]!', $content, $matches)) {
+    $order_service_link = get_post_custom_values('service-order-link');
+
+    $order_now_start = '<div class="service-order-now">';
+    $order_now_end = '</div>';
+        
+    if (count($order_service_link) > 0) {
+      $order_now_end = '<a href="' . reset($order_service_link) . '" class="order-now">Order Now</a>' . $order_now_end;
+    }
+
+    $content = preg_replace('!\[\[service-order-now\]\]!', $order_now_start, $content, 1);
+    $content = preg_replace('!\[\[service-order-now-end\]\]!', $order_now_end, $content);
+  }
+  
+  return $content;
+}
+
 add_filter('the_content', 'servula_service_column');
 function servula_service_column($content) {
   if (preg_match_all('!\[\[service\-column\s+(\{[^\]]+\})\s*\]\]!', $content, $matches)) {
@@ -37,12 +69,7 @@ function servula_service_column($content) {
       if ($service_column_info) {
         $service_column = <<< END_OF_COLUMN_SERVICE
         <div class="service-column" id="{$service_column_info->id}">
-          <div class="service-header"><img src="{$service_column_info->image}" />
-          <p class="service-header-text">
-            <span class="service-header-text-big">{$service_column_info->title_big}</span>
-            {$service_column_info->title}
-          </p>
-        </div>
+          <div class="service-header">{$service_column_info->title}</div>
 END_OF_COLUMN_SERVICE;
       }
       
@@ -78,7 +105,7 @@ function servula_check_login() {
       $servula['logged_in'] = $login_data->logged_in;
       if ($servula['logged_in']) {
         $servula['user_id'] = $login_data->user->id;
-        $servula['user_name'] = $login_data->user->name;
+        $servula['user_name'] = esc_html($login_data->user->name);
         $servula['user_email'] = $login_data->user->email;
         $servula['user_credits'] = floatval($login_data->user->credits);
         $servula['user_services'] = intval($login_data->user->services);
