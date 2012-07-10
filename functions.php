@@ -58,6 +58,8 @@ function servula_service_page($content) {
     $content = preg_replace('!\[\[service-order-now-end\]\]!', $order_now_end, $content);
   }
   
+  $content = preg_replace('!\[\[images_url\]\]!', get_bloginfo('template_url') . '/images', $content);
+  
   return $content;
 }
 
@@ -217,3 +219,13 @@ function servula_template_tags($content) {
   return str_replace($search, $replace, $content);
 }
 add_filter('the_content', 'servula_template_tags');
+
+add_action('wp_enqueue_scripts', 'servula_enqueue_scripts');
+function servula_enqueue_scripts() {
+  if (is_front_page()) {
+    wp_enqueue_script('homepage', get_template_directory_uri() . '/homepage.js');
+    wp_enqueue_script('homepage', get_template_directory_uri() . '/testimonials.js');
+  }
+  
+  wp_register_script('services', get_template_directory_uri() . '/services.js');  
+}

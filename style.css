@@ -1612,6 +1612,40 @@ height: 0;
   display: none;
 }
 
+.service-column .service-examples-wrapper {
+  background: #e6f4ff;
+  padding: 7px 10px;
+}
+
+.service-column select#service-example-group-select {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 2px 0 2px 4px;
+  width: 200px;
+  background: white;
+}
+
+.service-column select#service-example-group-select option {
+  padding-left: 4px;
+}
+
+.service-column ul.service-example-group {
+  height: 211px;
+  padding-right: 0;
+}
+
+.service-column ul.service-example-group li {
+  float: left;
+  margin: 10px 4px 0;
+  font-weight: bold;
+  text-align: center;
+  width: 59px;
+}
+
+.service-column ul.service-example-group li:before {
+  display: none;
+}
+
 .page-services .service-order-now {
   clear: both;
   border: 1px solid #eee7c3;

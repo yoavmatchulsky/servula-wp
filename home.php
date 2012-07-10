@@ -46,12 +46,12 @@
       <div id="service-content-writing" class="services-column">
         <ul>
           <li class="service-item">
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/content-article" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/pen_alt2_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/pen_alt2_32x32-over.png" alt="Content Article" />Content Writing</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/content-article">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/pen_alt2_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/pen_alt2_32x32-over.png" alt="Article Writing" />Article Writing</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing">Order Now</a>
           </li>
           <li class="service-item">
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/content-article?style=3" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/star_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/star_32x32-over.png" alt="Web Copywriting">Web Copywriting</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/content-article?style=3">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing?style=3" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/star_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/star_32x32-over.png" alt="Web Copywriting">Web Copywriting</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing?style=3">Order Now</a>
           </li>
           <li class="service-item">
             <a href="<?php print servula_info('full_url'); ?>/orders/new/professional-translation" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/sun_fill_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/sun_fill_32x32-over.png" alt="Translation">Translation</a>

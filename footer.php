@@ -106,6 +106,7 @@ if(typeof ClickTale=='function') ClickTale(23332,1,"www02");
   <?php include 'contact-dialog.php'; ?>
 </div>
 
+<?php if (servula_info('env') == 'production') : ?>
 <script type="text/javascript">
   var uvOptions = {};
   (function() {
@@ -114,6 +115,7 @@ if(typeof ClickTale=='function') ClickTale(23332,1,"www02");
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
   })();
 </script>
+<?php endif; ?>
 
 </body>
 </html>

@@ -38,18 +38,6 @@ Template Name: Service
           if (count($order_service_link) > 0) : ?>
         <a href="<?php print reset($order_service_link); ?>" class="order-now">Order Now</a>
       <?php endif; ?>
-      <!--
-      <div class="post-header-order">
-        <?php
-          $order_link = get_post_custom_values('header-order-link');
-          $link = servula_info('full_url') . '/orders/new';
-          if ($order_link) {
-            $link .= '/' . reset($order_link);
-          }
-        ?>
-        <a href="<?php print $link; ?>">Order</a>
-      </div>
-      -->
     </div>
     <?php endif; ?>
     
@@ -57,12 +45,23 @@ Template Name: Service
 	    <?php the_content(); ?>
     </div>
 
+    <?php $related_services = get_post_custom_values('related-service'); ?>
+    <?php if ($related_services) : ?>
     <div class="related-services">
-      RELATED
+      <h3>Related Services:</h3>
+      
+      <ul>
+      <?php foreach ($related_services as $related_service) : ?>
+      <?php endforeach; ?>
+      </ul>
     </div>
+    <?php endif; ?>
     <div class="postdata"><?php edit_post_link('Edit'); ?></div>
   </div><!-- end .post -->
 
 </div>
+
+
+<?php wp_enqueue_script('services'); ?>
 
 <?php get_footer(); ?>

@@ -15,8 +15,6 @@
   <script src="<?php bloginfo('template_url'); ?>/jquery.fancybox.js" type="text/javascript"></script>
 
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script.js"></script>
-  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/homepage.js"></script>
-  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/testimonials.js"></script>
   <script type="text/javascript">
   /* <![CDATA[ */
   var Servula = {
