@@ -229,3 +229,9 @@ function servula_enqueue_scripts() {
   
   wp_register_script('services', get_template_directory_uri() . '/services.js');  
 }
+
+function get_page_by_slug($page_slug, $output = OBJECT, $post_type = 'page' ) {
+  global $wpdb;
+  $page = $wpdb->get_var($wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE post_name = %s AND post_type= %s", $page_slug, $post_type));
+  return $page ? get_page($page, $output) : null;
+}

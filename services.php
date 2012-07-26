@@ -4,17 +4,13 @@ Template Name: Service
 */
 ?><?php get_header(); ?>
 
-<div id="leftcolumn">
-  <?php get_sidebar(); ?>
-</div>
-
-<div id="rightcolumn" class="page-services" id="page-services-<?php print $post->ID; ?>">
+<div id="leftcolumn" class="page-services" id="page-services-<?php print $post->ID; ?>">
   <div class="service-header-tabs">
     <span class="service-header-tab service-header-tab-current">Description</span>
     <span class="service-header-tab"><a href="<?php print servula_info('full_url'); ?>/orders/new/content-article">Order Now</a></span>
-    
-    <span class="more-link-in-header back-button"><a href="<?php print servula_info('full_url'); ?>">Back to All Services</a></span>
   </div>
+    
+  <span class="more-link-in-header back-button"><a href="<?php print servula_info('full_url'); ?>">Back to All Services</a></span>
   
   <?php the_post(); ?>
   <div class="post" id="post-<?php the_ID(); ?>">
@@ -51,8 +47,18 @@ Template Name: Service
       <h3>Related Services:</h3>
       
       <ul>
-      <?php foreach ($related_services as $related_service) : ?>
+      <?php foreach ($related_services as $related_service) :
+        $page = get_page_by_slug($related_service);
+        $post_id = $page->ID;
+        if ($post_id == NULL) {
+          continue;
+        }
+        
+        $service_icon = get_post_custom_values('service-icon', $post_id);
+      ?>
+        <li><a href="<?php print get_permalink($post_id); ?>"><img src="<?php print reset($service_icon); ?>" /><?php print $page->post_title; ?></a></li>
       <?php endforeach; ?>
+        <li class="more-services"><a href="<?php print home_url(); ?>">More Services &raquo;</a></li>
       </ul>
     </div>
     <?php endif; ?>
@@ -61,6 +67,10 @@ Template Name: Service
 
 </div>
 
+
+<div id="rightcolumn" class="page-services">
+  <?php get_sidebar(); ?>
+</div>
 
 <?php wp_enqueue_script('services'); ?>
 

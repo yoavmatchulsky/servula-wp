@@ -28,7 +28,7 @@
       <li>
         <h3>General</h3>
         <ul>
-          <li><a href="<?php print servula_info('full_url'); ?>">Our Services</li>
+          <li><a href="<?php print servula_info('full_url'); ?>">Our Services</a></li>
           <li><a href="<?php print servula_info('full_url'); ?>/register">Register Now!</a></li>
           <li><a href="<?php print servula_info('full_url'); ?>/terms-of-service">Terms of Service</a></li>
         </ul>
