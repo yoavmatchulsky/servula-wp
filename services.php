@@ -15,8 +15,14 @@ Template Name: Service
   <?php the_post(); ?>
   <div class="post" id="post-<?php the_ID(); ?>">
     <h1 class="title">
-      <img title="Content Article" src="http://s3.amazonaws.com/servula/services/1/icon-medium-pen_alt2.png" class="service-icon" alt="Content Article">
-      <?php the_title(); ?>
+      <?php 
+        $service_icon = get_post_custom_values('service-icon');
+        $title = get_the_title();
+        if (!empty($service_icon)) : ?>
+        
+        <img title="<?php print $title; ?>" src="<?php print reset($service_icon); ?>" class="service-icon" alt="<?php print $title; ?>">
+      <?php endif; ?>
+      <?php print $title; ?>
     </h1>
     
     <?php $header_values = get_post_custom_values('header'); ?>
