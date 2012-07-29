@@ -34,13 +34,14 @@ function servula_service_page($content) {
   global $post;
   $intro_image = get_post_custom_values('service-intro-image');
   
-  if (preg_match_all('!\[\[service\-intro\]\]!', $content, $matches)) {
+  if (preg_match_all('!\[\[service-intro\]\]!', $content, $matches)) {
     $intro = '<div class="service-intro">';
     if (count($intro_image) > 0) {
-      $intro .= '<img src="' . reset($intro_image) . '" class="service-intro-image" />';
+      $title = $post->post_title;
+      $intro .= '<img src="' . reset($intro_image) . '" class="service-intro-image" alt="' . $title . '" title="' . $title . '" />';
     }
 
-    $content = preg_replace('!\[\[service\-intro+\]\]!', $intro, $content, 1);
+    $content = preg_replace('!\[\[service-intro\]\]!', $intro, $content, 1);
     $content = preg_replace('!\[\[service-intro-end\]\]!', '</div>', $content);
   }
 
@@ -65,7 +66,7 @@ function servula_service_page($content) {
 
 add_filter('the_content', 'servula_service_column');
 function servula_service_column($content) {
-  if (preg_match_all('!\[\[service\-column\s+(\{[^\]]+\})\s*\]\]!', $content, $matches)) {
+  if (preg_match_all('!\[\[service-column\s+(\{[^\]]+\})\s*\]\]!', $content, $matches)) {
     foreach ($matches[1] as $encoded_service_column) {    
       $service_column_info = json_decode($encoded_service_column);
       if ($service_column_info) {
@@ -75,7 +76,7 @@ function servula_service_column($content) {
 END_OF_COLUMN_SERVICE;
       }
       
-      $content = preg_replace('!\[\[service\-column\s+[^\]]+\]\]!', $service_column, $content, 1);
+      $content = preg_replace('!\[\[service-column\s+[^\]]+\]\]!', $service_column, $content, 1);
     }
   }
   
