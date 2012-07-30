@@ -28,7 +28,7 @@ $testimonials = array(
   array(
     'name'      => 'Michael Weiss',
     'company'   => 'GoJerusalem',
-    'position'  => 'Founter & CEO',
+    'position'  => 'Founder & CEO',
     'img'       => 'michael-weiss',
     'text'      => "We used Servula's services for obtaining link juice to our hotel category page by seeding relevant content directing to our page in several dozens blogs and forums. Their delivery was super fast, and we got in less then a week an organized list of all the new links they have achieved for us. We'll defiantly use their services in the future",
   ),
