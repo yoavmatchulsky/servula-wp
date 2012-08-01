@@ -1,0 +1,169 @@
+.post {
+  padding: 0 1.8em .5em;
+  text-align: left;
+  color: gray;
+  font-size: 13px;
+
+  h1.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #456;
+  }
+
+  h2 {
+    clear: both;
+    color: orange;
+    font-family: SegueUILight;
+    font-weight: normal;
+  }
+
+  ul.list-with-columns {
+    margin: 0;
+    padding: 0;
+
+    & > li {
+      float: left;
+      min-width: 150px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-right: 10px;
+
+      ul {
+        padding-left: 18px;
+      }
+    }
+  }
+}
+
+.postdata, .postdata a {
+  color: #690;
+  &:hover {
+    color: #333;
+  }
+}
+
+.entry {
+  font-size: 1.1em;
+}
+
+#related h3, h3#comments, #respond h3 {
+  background: url(images/title.png) no-repeat 0 8px;
+  padding: 5px 15px 0 38px;
+}
+
+.pagers {
+  margin: 0 auto;
+}
+
+.pagers a {
+  color: #666;
+  &:hover {
+    color: #333;
+  }
+}
+
+/* = Comment Area */
+.commentlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+  
+  .body {
+    padding: 0 1em;
+    overflow: hidden;
+  }
+
+  li {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
+.commentlist_error {
+  color: #c00;
+}
+
+.comment-author {
+  color: #666;
+  background: #EBEBDC;
+  padding: 5px 10px 0;
+  @include round-corners(5px 5px 0 0);
+
+  cite {
+    color: #333;
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+
+.comment-meta {
+  color: #666;
+  background: #EBEBDC;
+  margin-bottom: 1.5em;
+  padding: 0 10px 5px;
+  font-size: .8em;
+  @include round-corners(0 0 5px 5px);
+  
+  a {
+    color: #999;
+    text-decoration: none;
+  }
+}
+
+.comment-reply-link {
+  color: #690;
+}
+
+/* = Comment Form */
+#respond {
+  padding-top: .5em;
+  border-top: 2px solid #EBEBDC;
+
+  label {
+    margin-left: .5em;
+    vertical-align: middle;
+  }
+
+  .text {
+    border: 1px solid #CFCFAF;
+    background: #F7F7F1;
+    padding: .3em;
+  }
+
+  input.text {
+    width: 45%;
+    &:focus {
+      border: 1px solid #C0C092;
+      background: #fcfcfc;
+    }
+  }
+  
+  textarea {
+    width: 90%;
+    overflow: auto;
+    
+    &.text:focus {
+      border: 1px solid #C0C092;
+      background: #fcfcfc;
+    }    
+  }
+}
+
+.cancel-comment-reply {
+  float: right;
+}
+
+.children {
+  list-style: none;
+  margin-top: 1.5em;
+}
+
+img.avatar {
+  float: right;
+  margin-top: 1px;
+  padding: 1px;
+  border: 1px solid #E0E0CB;
+  background: #FFF;
+}

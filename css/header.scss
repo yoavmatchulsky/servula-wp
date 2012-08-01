@@ -1,0 +1,273 @@
+header {
+  line-height: 1.6;
+  background: url(images/header-bg.png) top left repeat-x;
+  height: 83px;
+  width: 100%;
+  margin-bottom: 40px;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  text-align: center;
+
+  .wrapper {
+    position: relative;
+  }
+
+  #logo-wrapper {
+    float: left;
+  }
+
+  ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 82px;
+    float: left;
+
+    li {
+      float: left;
+      font-size: 1.2em;
+      margin: 0;
+      display: inline;
+      padding: 36px 20px 18px;
+      border-right: 1px solid white;
+      border-left: 1px solid #d7d7d7;
+
+      &:last-child {
+        border-right: 0;
+      }
+
+      &.current_page_item {
+        color: orange;
+        font-weight: bold;
+        border-bottom: 3px solid #fbbc7b;
+        padding-bottom: 16px;
+        position: relative;
+
+        a {
+          color: #fbbc7b;
+        }
+
+        &:after {
+          border-color: transparent transparent #fbbc7b;
+          border-style: solid;
+          border-width: 0 8px 8px;
+          bottom: 0;
+          content: "";
+          display: block;
+          position: absolute;
+          left: 40%;
+          width: 0;
+        }
+      }
+      
+      a {
+        color: #8596A7;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        float: left;
+        font-family: helvetica,arial,sans-serif;
+        padding: 2px;
+      }
+
+      &.menu-item a:hover {
+        color: #fbbc7b;
+      }
+    }
+  }
+
+  .info-wrapper {
+    border-right: 2px solid #e5e5e5;
+    border-left: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    background: url(images/header/info-bg.gif) repeat white;
+    position: absolute;
+    top: 0;
+    right: 225px;
+    height: 85px;
+    width: 170px;
+    padding: 5px 5px 10px;
+    font-size: 12px;
+    text-align: left;
+    @include round-corners(0 0 20px 20px);
+
+    .info-item-wrapper {
+      margin-bottom: 6px;
+    }
+    
+    strong {
+      color: #faac3b;
+      font-weight: bold;
+    }
+
+    img {
+      float: left;
+      margin: 0 5px 10px 0;
+    }
+
+    a {
+      font-weight: bold;
+      font-size: 13px;
+      .arrow-sign {
+        font-size: 12px;
+        vertical-align: top;
+      }
+    }
+
+    .info-item-text {
+      color: $gray;
+    }
+  }
+
+  .login-register-wrapper {
+    float: right;
+    padding: 36px 10px 24px;
+    font-size: 14px;
+    color: #73b1eb;
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+    width: 200px;
+
+    img {
+      margin-right: 3px;
+      vertical-align: baseline;
+    }
+
+    .login-form-wrapper {
+      cursor: default;
+      position: absolute;
+      top: 82px;
+      left: -1px;
+      width: 200px;
+      height: 220px;
+      background: #e9edf1;
+      border: 1px solid #aaa;
+      border-top-width: 0;
+      padding: 10px;
+      font-size: 13px;
+      color: $gray;
+      @include round-corners(0 0 4px 4px);
+          
+      .form-item {
+        margin: 15px 0 17px;
+        
+        label {
+          font-weight: normal;
+        }
+
+        input[type="text"], input[type="password"] {
+          width: 190px;
+          padding: 0 5px;
+          background: white;
+          height: 30px;
+          border: 1px solid #ccc;
+          @include round-corners(4px);
+        }
+      }
+
+      input[type="submit"] {
+        color: white;
+        padding: 4px 8px;
+        border: 1px solid #4476CC;
+        margin-right: 8px;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 18px;
+        text-align: center;
+
+        @include round-corners(4px);
+        @include gradient-background(#33BCEF, #019AD2);
+        @include shadow(0 1px 0 rgba(255, 255, 255, 0.1) inset);
+        @include textshadow(0 -1px 0 rgba(0, 0, 0, 0.25));
+        
+        &:hover {
+          @include gradient-background(#019AD2, #33BCEF);
+        }
+        
+      }
+
+      .forgot-password {
+        float: right;
+      }
+    
+      ul {
+        padding: 0;
+        margin: 0;
+        font-size: 17px;
+        
+        li {
+          list-style: none;
+          padding: 8px 10px;
+          margin: 0;
+          
+          a {
+            text-decoration: none;
+            color: #73B1EB;
+            cursor: pointer;
+          }
+        }
+      }
+
+      hr {
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        clear: both;
+        height: 0;
+        margin: 0;
+        margin-bottom: 11px;
+        padding-top: 15px;
+        background: none;
+      }
+    }
+
+    &.my-dashboard-wrapper {
+      .login-form-wrapper {
+        height: 204px;
+      }
+      
+      &.with-cart-link {
+        .login-form-wrapper {
+          height: 250px;
+        }
+      }
+      
+      &.with-moderator {
+        .login-form-wrapper {
+          height: 315px;
+        }
+        
+        form#search_orders_form {
+          input[type="text"] {
+            width: 67px;
+          }
+          
+          input[type="submit"] {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.more-link-in-header {
+  a {
+    color: $gray;
+    font-size: 13px;
+    font-weight: bold;
+    padding-right: 10px;
+    text-decoration: none;
+  }
+  
+  &:hover a {
+    color: #588cd5;
+  }
+  
+  &:after {
+    content: " ▶";
+    font-size: 12px;
+    vertical-align: bottom;
+  }
+}

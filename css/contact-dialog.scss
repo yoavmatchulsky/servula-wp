@@ -1,0 +1,74 @@
+#contact-dialog {
+  h2 {
+    margin-bottom: 5px;
+    
+    &.dialog-title {
+      background: #f5f9ff;
+      color: #17365d;
+      font-size: 24px;
+      padding: 10px 20px;
+      border-bottom: 1px solid #e6eeff;
+    }
+    
+    img {
+      margin-right: 5px;
+    }
+
+    .leftcolumn {
+      width: 358px;
+      padding-right: 20px;
+      padding-left: 20px;
+      border-right: 1px solid #e6eeff;
+      float: left;
+      min-height: 400px;
+    }
+
+    .rightcolumn {
+      margin-left: 400px;
+    }
+
+    .questions {
+      font-size: 11px;
+
+      h3 {
+        cursor: pointer;
+        font-size: 11px;
+        color: #588CD8;
+      }
+    }
+
+    .contact-form-sidebar {
+      margin-left: 50px;
+
+      input[type="text"], textarea {
+        width: 190px;
+        margin: 4px 0;
+        background: #e5e5e5;
+        border: 1px solid #bebebe;
+        @include round-corners(4px);
+      }
+
+      textarea {
+        height: 100px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      input[type="submit"] {
+        background: #4476CC;
+        border: 0;
+        color: white;
+        float: right;
+        font-weight: bold;
+        padding: 6px 8px 4px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-right: 49px;
+        font-size: 12px;
+        @include round-corners(2px);
+      }
+    }
+  }
+}

@@ -1,0 +1,347 @@
+@import 'css/testimonials';
+
+#homepage-wrapper {
+  text-align: left;
+  font-family: SegueUILight;
+
+  h1 {
+    color: #60604C;
+    text-shadow: 2px 2px 1px #EEE, 2px 2px 1px #FE7A15;
+    font-size: 37px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+    font-size: 21px;
+    color: #974806;
+  }
+
+  h2, h3, h4, h5 {
+    font-family: SegueUILight;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  h3 img {
+    vertical-align: text-bottom;
+  }
+
+  #leftcolumn {
+    text-align: left;
+    width: 420px;
+    float: left;
+
+    p {
+      font-size: 24px;
+      img {
+        border: 0;
+      }
+    }
+  }
+
+  #rightcolumn {
+    min-height: 400px;
+    margin-left: 0;
+    width: 420px;
+    float: right;
+    margin-right: 120px;
+  }
+
+  #bee-wrapper {
+    position: relative;
+    width: 540px;
+    
+    .floor {
+      position: absolute;
+      width: 540px;
+      left: 0;
+    }
+    
+    .our-process {
+      position: absolute;
+      top: 0;
+      right: 53px;
+      z-index: 100;
+    }
+    
+    .bee-text-wrapper {
+      position: absolute;
+      top: 0;
+      right: -35px;
+      background: url(images/homepage/bee-text-bg.png) no-repeat top left;
+      width: 155px;
+      height: 127px;
+      padding: 5px 5px 5px 30px;
+      text-align: center;
+      display: none;
+      
+      p {
+        display: none;
+        font-size: 15px;
+        font-weight: bold;
+        color: #588CD8;
+        
+        &#floor-text-top {
+          padding-left: 5px;
+        }
+        
+        &#floor-text-middle {
+          margin-top: 3px;
+        }
+        
+        &#floor-text-bottom {
+          line-height: 1.7;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+
+  #all-services {
+    clear: both;
+  }
+
+  .start-shopping-button {
+    width: 150px;
+    color: #974806;
+    border: 1px solid orange;
+    margin-top: 13px;
+    padding: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    @include round-corners(4px);
+    @include gradient-background(#fcf33a, #e0a100);
+    
+    &:hover {
+      background: #e0a100;
+    }
+
+    a {
+      text-decoration: none;
+      color: #974806;
+    }
+    
+    .get-credits-free {
+      color: white;
+      font-size: 13px;
+      font-weight: normal;
+    }
+
+    hr {
+      margin-bottom: 0;
+      margin-top: 4px;
+      height: 1px;
+    }
+  }
+
+  .or-separator {
+    float: left;
+    margin: 0 10px;
+  }
+
+  .learn-more {
+    float: left;
+    font-size: 19px;
+    margin-top: 13px;
+    font-weight: bold;  
+
+    a {
+      text-decoration: underline;
+      &:hover {
+        color: #974806;
+      }
+    }
+  }
+  
+  #services-wrapper {
+    background: #f5f5f5;
+    padding: 20px 0;
+    height: 313px;
+    border: 1px solid #e8e8e8;
+    @include round-corners(4px);
+    
+    &:hover {
+      @include shadow(0 3px 3px #7e7e7e);
+      border-color: #d4d4d4;
+      background: #f8f8f8;
+    }
+
+    .services-column {
+      float: left;
+      min-height: 325px;
+      width: 221px;
+      outline: none;
+      border-right: 1px solid white;
+      border-left: 1px solid #d7d7d7;
+      padding: 0 7px;
+
+      &:first-child {
+        border-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+        border-right: 0;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+
+
+        li.service-item {
+          margin: 0 0 15px;
+          height: 50px;
+          list-style-type: none;
+          line-height: 1.3;
+          
+          img {
+            margin: 5px 7px 0;
+            float: left;
+          }
+
+          a {
+            text-decoration: none;
+            color: #7e7e7e;
+            font-size: 13px;
+            &.service-name {
+              font-size: 17px;
+              padding: 5px 0 0;
+              display: block;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      &:hover li.service-item a {
+        color: #3a7bcd;
+        &:hover {
+          text-decoration: underline;
+        }
+        
+        &.service-name {
+          color: #17365d;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    
+    #what-our-clients-say {
+      padding-top: 20px;
+      clear: both;
+      font-family: Arial;
+    }
+  }
+  
+  #recent-posts {
+    clear: both;
+    padding-top: 20px;
+    font-family: Arial;
+    
+    #posts-wrapper {
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 30px;
+      height: 268px;
+      
+      .to-all-posts {
+        float: right;
+        font-size: 14px;
+      }
+    }
+    
+    .articles-column {
+      float: left;
+      width: 480px;
+    }
+    
+    article {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      clear: left;
+      height: 68px;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      .post {
+        height: 68px;
+        padding: 0 20px 0;
+        margin: 0;
+        position: relative;
+      }
+
+      .attachment-post-thumbnail {
+        border: 1px solid #ccc;
+        float: left;
+        margin-right: 10px;
+      }
+
+      h2 {
+        background: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        line-height: 1;
+        font-size: 15px;
+        clear: none;
+        font-family: Arial;
+        font-weight: bold;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      .post-date {
+        position: absolute;
+        left: 108px;
+        bottom: 0;
+        color: black;
+      }
+    }
+  }
+
+  #interested {
+    clear: both;
+    border: 1px solid #eee7c3;
+    border-radius: 4px;
+    background: #fffbe7;
+    color: #784a32;
+    font-size: 16px;
+    line-height: 1;
+    padding: 15px 20px 18px;
+    
+    .to-get-started {
+      float: right;
+      font-weight: bold;
+      background: url(images/homepage/get-started-now-arrow.png) top right no-repeat;
+      padding-right: 24px;
+      height: 20px;
+      color: #784a32;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:hover {
+      border-color: #999;
+      &.to-get-started {
+        color: #588cd8;
+      }
+    }
+  }
+}

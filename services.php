@@ -6,7 +6,7 @@ Template Name: Service
 
 <div id="leftcolumn" class="page-services" id="page-services-<?php print $post->ID; ?>">
   <div class="service-header-tabs">
-    <span class="service-header-tab service-header-tab-current">Description</span>
+    <span class="service-header-tab current">Description</span>
     <span class="service-header-tab"><a href="<?php print servula_info('full_url'); ?>/orders/new/content-article">Order Now</a></span>
   </div>
     

@@ -1,0 +1,144 @@
+#homepage-wrapper .testimonials-wrapper {
+  width: $regular-width;
+  position: relative;
+}
+
+.testimonials-wrapper {
+
+  .testimonials-buttons-wrapper {
+    background: #d6d6d6;
+    width: 47px;
+    height: 205px;
+    border: 1px solid #cecece;
+    display: block;
+    float: left;
+    margin-right: 7px;
+    cursor: pointer;
+    @include round-corners(4px);
+    
+    &:hover {
+      background: black;
+    }
+    
+    img {
+      margin-top: 87px;
+    }  
+  }
+
+  .testimonials-next-wrapper {
+    margin-right: 0;
+    margin-left: 7px;
+  }
+
+  .testimonials-strip {
+    height: 207px;
+    width: 848px;
+    float: left;
+    overflow: hidden;
+  }
+
+  ul {
+    min-width: 2000px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    left: 0;
+  }
+
+  .testimonial-wrapper {
+    float: left;
+    width: 109px;
+    margin-right: 7px;
+    
+    img {
+      margin-bottom: 3px;
+      height: 144px;
+    }
+
+    .testimonial-title {
+      background: #021d23;
+      color: white;
+      height: 50px;
+      padding: 3px 0 5px 5px;
+      
+      .testimonial-name {
+        font-weight: bold;
+        display: block;
+        font-size: 11px;
+        font-family: Arial;
+      }
+      
+      .testimonial-company {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .testimonials-text-wrapper {
+    position: absolute;
+    top: 147px;
+    left: 0;
+    background: white;
+    min-height: 200px;
+    width: 400px;
+    z-index: 100;
+    padding: 0;
+    border: 1px solid #7e7e7e;
+    @include shadow(0 5px 5px #7e7e7e);
+    
+    &:before, &:after {
+      border-color: transparent transparent #7e7e7e;
+      border-style: solid;
+      border-width: 0 10px 26px;
+      content: "";
+      display: block;
+      height: 0;
+      left: 43px;
+      position: absolute;
+      top: -26px;
+      width: 0;
+    }
+
+    &:after {
+      top: -25px;
+      border-color: transparent transparent #a3a3a3;
+    }
+    
+    &.tilted-left {
+      &:before, &:after {
+        left: auto;
+        right: 43px;
+      }
+    }
+    
+    .testimonial-title {
+      background: #a3a3a3;
+      color: white;
+      padding: 5px 10px;
+      margin-bottom: 5px;
+
+      .testimonial-name {
+        font-size: 19px;
+        display: inline;
+        &:after {
+          content: ', ';
+        }
+      }
+      
+      .testimonial-position {
+        font-size: 18px;
+        font-weight: bold;
+      }    
+    }
+
+    .testimonial-text {
+      padding: 0 10px;
+    }
+
+    .testimonial-company-logo {
+      text-align: center;
+      margin: 15px 0 5px;
+    }
+  }
+}

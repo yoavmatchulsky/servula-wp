@@ -1,0 +1,75 @@
+.container {
+  width: $regular-width;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: $regular-width;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body > .wrapper {
+  margin-top: 123px;
+}
+
+#content-wrapper {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  @include round-corners(8px);
+}
+
+#leftcolumn {
+  float: left;
+  width: 215px;
+  overflow: hidden;
+}
+
+#rightcolumn {
+  width: 695px;
+  margin-left: 215px;
+  .post {
+    float: left;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+p.description {
+  display: none;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+img.alignleft {
+  margin: 5px 15px 5px 0;
+}
+
+img.alignright {
+  margin: 5px 0 5px 15px;
+
+}
+
+.aligncenter, div.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  background: #E6E6D2;
+  color: #E6E6D2;
+  width: 100%; 
+  height: .1em;
+  margin: 0 0 1.4em;
+  border: none; 
+}
