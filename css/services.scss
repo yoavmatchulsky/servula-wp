@@ -379,4 +379,23 @@
       clear: both;
     }
   }
+  
+  &.page-services-link-building {
+    h1.title {
+      color: $service-link-building;
+    }
+  }
+  
+  &.page-services-social-media {
+    h1.title {
+      color: $service-social-media;
+    }
+  }
+  
+  &.page-services-special-premium {
+    h1.title {
+      color: $service-special-premium;
+    }
+  }
+  
 }

@@ -2,9 +2,21 @@
 /*
 Template Name: Service
 */
-?><?php get_header(); ?>
 
-<div id="leftcolumn" class="page-services" id="page-services-<?php print $post->ID; ?>">
+get_header();
+
+$classes = array('page-services', "page-services-{$post->ID}");
+
+$service_group = get_post_custom_values('service-group');
+if (!empty($service_group)) {
+  $service_group = reset($service_group);
+  if (in_array($service_group, array('content-writing', 'link-building', 'social-media', 'special-premium'))) {
+    array_push($classes, "page-services-$service_group");
+  }
+}
+
+?>
+<div id="leftcolumn" class="<?php print implode(' ', $classes); ?>">
   <div class="service-header-tabs">
     <span class="service-header-tab current">Description</span>
     <span class="service-header-tab"><a href="<?php print servula_info('full_url'); ?>/orders/new/content-article">Order Now</a></span>
