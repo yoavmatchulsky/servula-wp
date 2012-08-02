@@ -1,18 +1,5 @@
 (function() {
   jQuery(function() {
-    $('.login-register-wrapper').on({
-      'mouseenter': function(e) {
-        var p;
-        p = $(this).find('.login-form-wrapper');
-        return p.stop(true, true).hide().removeClass('hidden').slideDown('fast');
-      },
-      'mouseleave': function(e) {
-        var p;
-        p = $(this).find('.login-form-wrapper');
-        return p.stop(true, true).addClass('hidden');
-      }
-    });
-    
     $('#homepage-wrapper .floor').on('mouseover', function(e) {
       t = $(this);
       src = t.data('image-over');

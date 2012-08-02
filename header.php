@@ -19,7 +19,8 @@
   /* <![CDATA[ */
   var Servula = {
     system_url : "<?php print servula_info('full_url'); ?>",
-    testimonials : {}
+    testimonials : {},
+    func : {}
   }
   /* ]]> */
 

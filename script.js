@@ -22,7 +22,7 @@ $(function () {
     }
   }).attr('href', '#contact-dialog');
 
-  // Check for placeholder support  
+  // Check for placeholder support
   placeholder_test = document.createElement('input');
   if (!('placeholder' in placeholder_test)) {
     $('footer .newsletter-wrapper form').on({
@@ -42,4 +42,48 @@ $(function () {
       }
     }, 'input[type="text"]').find('input[type="text"]').trigger('focusout');
   }
+  
+  $.extend(Servula.func, {
+    login: {
+      timer: null,
+      active_element: null,
+      open: function(login_register_wrapper) {
+        var wrapper = login_register_wrapper.find('.login-form-wrapper');
+        clearTimeout(Servula.func.login.timer);
+        if (!wrapper.hasClass('hidden')) {
+          return;
+        }
+        wrapper.stop(true, true).hide().removeClass('hidden').slideDown(200, 'swing', function() {
+          Servula.func.login.active_element = $(document.activeElement);
+          $(this).find('input[type="text"]:first').trigger('focus');
+        });
+      },
+      close: function(login_register_wrapper) {
+        var wrapper = login_register_wrapper.find('.login-form-wrapper');
+        wrapper.stop(true, true).slideUp(200, 'swing', function() {
+          $(this).addClass('hidden');
+          if (Servula.func.login.active_element) {
+            Servula.func.login.active_element.trigger('focus');
+            Servula.func.login.active_element = null;
+          }
+        });
+      }
+    }
+  });
+
+  $('.login-register-wrapper').on({
+    mouseenter: function(e) {
+      Servula.func.login.open($(this));
+    },
+    
+    mouseleave: function(e) {
+      var t = $(this);
+      if (!e.relatedTarget) {
+        return;
+      }
+      Servula.func.login.timer = setTimeout(function() {
+        Servula.func.login.close(t);
+      }, 150);
+    }
+  });
 });

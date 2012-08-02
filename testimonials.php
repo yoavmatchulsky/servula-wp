@@ -28,6 +28,7 @@ $testimonials = array(
   array(
     'name'      => 'Michael Weiss',
     'company'   => 'GoJerusalem',
+    'company-logo' => 'gojerusalem',
     'position'  => 'Founder & CEO',
     'img'       => 'michael-weiss',
     'text'      => "We used Servula's services for obtaining link juice to our hotel category page by seeding relevant content directing to our page in several dozens blogs and forums. Their delivery was super fast, and we got in less then a week an organized list of all the new links they have achieved for us. We'll defiantly use their services in the future",
@@ -35,6 +36,7 @@ $testimonials = array(
   array(
     'name'      => 'Yuli Desiatnikov',
     'company'   => 'McCann Erickson',
+    'company-logo' => 'mccann',
     'position'  => 'Senior SEO Manager',
     'img'       => 'yuli-desiatnikov',
     'text'      => "We have been working with Servula closely for the past several months. As a company that work primarily on large projects, we need to be able to focus on delivering the best strategic value for our clients. Servula's services help us put aside most of the \\\"rough work\\\" of the business and make time for higher-level tasks. It also saves the leg work of contacting and paying for multiple services - with Servula we get it all in one place.",
@@ -106,6 +108,7 @@ $testimonials = array(
   array(
     'name'      => 'Zohar Amihud',
     'company'   => 'ThinkSEO',
+    'company-logo' => 'thinkseo',
     'position'  => 'SEO Expert',
     'img'       => 'zohar-amihud',
     'text'      => 'One of the most important factors in SEO today is content. Servula helps me in making and publishing content, which saves me the time and money needed to manage many freelancers around the globe. Servula is the one place I can count on to provide me with quality content: articles, posts and comments that answer my specific requirements.',
