@@ -58,8 +58,15 @@ function servula_service_page($content) {
     $content = preg_replace('!\[\[service-order-now\]\]!', $order_now_start, $content, 1);
     $content = preg_replace('!\[\[service-order-now-end\]\]!', $order_now_end, $content);
   }
+
+  $urls_search = array(
+    '!\[\[images-url\]\]!', '!\[\[assets-url\]\]!'
+  );
+  $urls_replace = array(
+    get_bloginfo('template_url') . '/images', 'https://s3.amazonaws.com/servula/assets/wp'
+  );
   
-  $content = preg_replace('!\[\[images_url\]\]!', get_bloginfo('template_url') . '/images', $content);
+  $content = preg_replace($urls_search, $urls_replace, $content);
   
   return $content;
 }
