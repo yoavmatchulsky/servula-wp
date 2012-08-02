@@ -79,7 +79,7 @@ function servula_service_column($content) {
       if ($service_column_info) {
         $service_column = <<< END_OF_COLUMN_SERVICE
         <div class="service-column" id="{$service_column_info->id}">
-          <div class="service-header">{$service_column_info->title}</div>
+          <h2>{$service_column_info->title}</h2>
 END_OF_COLUMN_SERVICE;
       }
       

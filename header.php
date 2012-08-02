@@ -53,7 +53,7 @@
 ?>
 </head>
 
-<body>
+<body<?php if (isset($servula['body_class'])) { print ' class="' . $servula['body_class'] . '"'; } ?>>
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];

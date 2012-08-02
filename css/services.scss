@@ -1,8 +1,13 @@
+.body-services-page {
+  background: url("https://my.servula.com/assets/background-gray.png") #F0F0F0;
+}
+
 #leftcolumn.page-services .post {
   padding: 15px 0 0;
   float: none;
   clear: both;
   border: 1px solid #D3D1BC;
+  background: white;
   @include round-corners(0 8px 0 0);
 }
 
@@ -72,19 +77,56 @@
       }
     }
   }
-
+  
   .more-link-in-header {
-    background: none repeat scroll 0 0 $light-gray;
+    background: none repeat scroll 0 0 #f9f9f9;
     border: 1px solid #DCDCDC;
-    @include round-corners(2px);
-    color: #898A8E;
-    padding: 3px 8px;
+    color: $gray;
+    padding: 1px 0;
     float: right;
     font-size: 14px;
-    position: relative;
+    @include round-corners(2px);
 
+    a {
+      color: $gray;
+      font-size: 13px;
+      font-weight: bold;
+      padding: 6px 12px;
+      
+      &:before {
+        content: "\25C2 ";
+        vertical-align: baseline;
+        font-size: 16px;
+        margin-right: 7px;
+      }
+      
+    }
+    
     &:hover {
-      background: #f9f9f9;
+      &:before, a {
+        color: $light-blue;
+      }
+    }
+    
+    &:after {
+      content: none;
+    }
+  }
+
+  .post {  
+    .social-links {
+      float: right;
+      width: 300px;
+      margin: 20px 0 0;
+      padding: 0;
+      
+      li {
+        display: inline;
+        float: left;
+        list-style: none outside none;
+        width: 95px;
+        margin-left: 5px;
+      }
     }
   }
 
@@ -95,6 +137,7 @@
     color: #999;
     height: 48px;
     font-size: 18px;
+    font-family: Arial;
 
     .post-header-info {
       width: 150px;
@@ -156,13 +199,14 @@
     padding: 0 10px 0 0;
     margin-bottom: 20px;
 
-    .service-header {
+    h2 {
       background: #f1f1f1;
       background-position: top left;
       background-repeat: no-repeat;
       
       color: #445566;
       font-size: 19px;
+      font-family: Tahoma, Arial;
       padding: 15px 10px 8px 46px;
       height: 23px;
       line-height: 1;
@@ -180,16 +224,26 @@
       }
     }
 
-    &#service-features .service-header {
+    &#service-features h2 {
       background-image: url(images/services/service-column-features-bg.png);
     }
 
-    &#service-process .service-header {
+    &#service-process h2 {
       background-image: url(images/services/service-column-process-bg.png);
     }
 
-    &#service-examples .service-header {
-      background-image: url(images/services/service-column-examples-bg.png);
+    &#service-examples {
+      h2 {
+        background-image: url(images/services/service-column-examples-bg.png);
+      }
+      
+      ul li a img {
+        border: 1px solid transparent;
+        
+        &:hover {
+          border-color: #999;
+        }
+      }
     }
 
     li {
@@ -219,6 +273,7 @@
       counter-reset: item;
       list-style-type: none;
       list-style-position: outside;
+      padding-left: 37px;
       
       li {
         display: block;
@@ -237,7 +292,7 @@
           content: counter(item) " ";
           counter-increment: item;
           position: absolute;
-          left: -35px;
+          left: -38px;
           width: 32px;
           height: 27px;
           text-align: center;
@@ -270,6 +325,7 @@
       padding: 2px 0 2px 4px;
       width: 200px;
       background: white;
+      color: $light-blue;
       @include round-corners(2px);
 
       option {
@@ -339,7 +395,7 @@
     margin-bottom: 100px;
 
     h3 {
-      color: #588CD8;
+      color: #445566;
     }
 
     ul {
@@ -350,13 +406,13 @@
         list-style: none;
         background: #f5f5f5;
         float: left;
-        margin-right: 20px;
+        margin-right: 10px;
 
         a {
           display: block;
           color: #444;
           font-weight: bold;
-          padding: 10px 30px 10px 10px;
+          padding: 5px;
         }
 
         img {
@@ -364,6 +420,10 @@
           vertical-align: middle;
         }
 
+        &:hover {
+          background: #f1f1f1;
+        }
+        
         &.more-services {
           background: none;
           padding-top: 4px;
