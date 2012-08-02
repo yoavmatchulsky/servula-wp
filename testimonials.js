@@ -62,7 +62,7 @@ $(function () {
   });
 
   $.extend(Servula.testimonials, {
-    step : 300,
+    step : 350,
     li_width : 116,
     strip_width : 848,
     duration : 700
