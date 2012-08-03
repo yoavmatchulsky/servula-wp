@@ -137,19 +137,21 @@
     color: #999;
     height: 48px;
     font-size: 18px;
-    font-family: Arial;
+    padding-left: 15px;
 
     .post-header-info {
-      width: 150px;
+      font-family: Arial;
+      width: 130px;
       float: left;
       padding-top: 5px;
       margin: 0 8px;
       
       .value {
         float: left;
-        width: 150px;
+        width: 130px;
         line-height: 0.8;
         font-weight: normal;
+        color: $gray;
       }
       
       .key {
@@ -184,7 +186,7 @@
 
   .service-intro {
     color: #444;
-    font-size: 19px;
+    font-size: 18px;
     min-height: 150px;
   }
 
@@ -261,6 +263,7 @@
         height: 16px;
         background: url(images/check-sign-blue.png) no-repeat top left;
         margin-right: 5px;
+        margin-bottom: 20px;
       }
     }
 
@@ -356,7 +359,7 @@
     border: 1px solid #eee7c3;
     background: #fffbe7;
     color: #784a32;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1;
     padding: 15px 20px 18px;
     font-weight: normal;
@@ -412,7 +415,10 @@
           display: block;
           color: #444;
           font-weight: bold;
-          padding: 5px;
+          padding: 10px;
+          &:hover {
+            color: #588CD8;
+          }
         }
 
         img {
