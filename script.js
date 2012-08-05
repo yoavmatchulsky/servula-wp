@@ -86,4 +86,36 @@ $(function () {
       }, 150);
     }
   });
+
+  $.extend(Servula.func, {
+    notifications : {
+      launch : {
+        dismiss : function(obj) {
+          expires = new Date();
+          expires.setDate(expires.getDate() + 365);
+          
+          domain = location.hostname.split('.');
+          domain.shift();
+          domain = '.' + domain.join('.');
+          
+          document.cookie = 'servula-launch-notification=1;domain=' + domain + ';path=/;expires=' + expires.toUTCString();
+          
+          $(obj).parents('.header-notifications').slideUp('slow');
+        },
+        open : function() {
+          notifications = $('header .header-notifications.hidden');
+          if (notifications.length == 1) {
+            setTimeout(function () {
+              notifications.slideDown('slow', function () {
+                notifications.removeClass('hidden')
+              });
+            }, 1000);
+          }
+        }
+      }
+    }
+  });
+
+  Servula.func.notifications.launch.open();
 });
+

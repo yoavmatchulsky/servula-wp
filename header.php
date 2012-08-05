@@ -78,7 +78,7 @@
 
       <div class="info-wrapper">
         <div class='info-item-wrapper'>
-          <img alt="Currency dollar" height="24" src="<?php bloginfo('template_url'); ?>/images/header/currency-dollar-24x24.png" width="24" />
+          <img alt="Credits" height="24" src="<?php bloginfo('template_url'); ?>/images/header/gold-coin-24x24.png" width="24" />
           <div class='info-item-text'>
             <div class='uppercase'>
               <?php print servula_info('header_credits_text'); ?>
@@ -146,5 +146,17 @@
       <?php endif; ?>
       
     </div>
+    
+    <?php if (!isset($_COOKIE['servula-launch-notification'])) : ?>
+    <div class="header-notifications hidden">
+      <div class="wrapper">
+        <p>
+          We've just launched! <a href="<?php print site_url('blog/servula-is-now-open-to-the-public/'); ?>" onclick="Servula.func.notifications.launch.dismiss(this);" target="_blank">Read more about our journey</a> (and get FREE coupon!) |
+          <a href="#" onclick="Servula.func.notifications.launch.dismiss(this); return false;">Dismiss</a>
+        </p>
+      </div>
+    </div>
+    <?php endif; ?>
+    
   </header>
   <div class="wrapper clearfix">

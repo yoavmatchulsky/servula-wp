@@ -97,7 +97,7 @@ header {
     }
     
     strong {
-      color: #faac3b;
+      color: $gold;
       font-weight: bold;
     }
 
@@ -247,6 +247,25 @@ header {
             margin: 0;
           }
         }
+      }
+    }
+  }
+  
+  .header-notifications {
+    clear: both;
+    background: #ffffe0;
+    height: 30px;
+    border-bottom: 1px solid #e6db55;
+    color: black;
+    
+    .wrapper {
+      text-align: left;
+      
+      p {
+        margin: 0;
+        padding-top: 3px;
+        font-size: 14px;
+        padding-left: 10px;
       }
     }
   }

@@ -44,10 +44,11 @@ p {
 }
 
 blockquote {
-  background: url(images/quote.png) no-repeat;
+  background: #ffffe0;
   color: #666;
-  margin: 1.5em;
-  padding: 5px 0 0 30px;
+  padding: 6px;
+  border: 1px solid #e6db55;
+  @include round-corners(5px);
 }
 
 em {
