@@ -2,27 +2,25 @@
 
 #homepage-wrapper {
   text-align: left;
-  font-family: SegueUILight;
 
   h1 {
     color: #60604C;
     text-shadow: 2px 2px 1px #EEE, 2px 2px 1px #FE7A15;
-    font-size: 37px;
+    font-family: 'Museo-700';
+    font-size: 36px;
     font-weight: bold;
     margin-bottom: 10px;
   }
 
   h2 {
     margin-bottom: 40px;
+    font-family: 'Museo-300';
     font-size: 21px;
     color: #974806;
   }
 
-  h2, h3, h4, h5 {
-    font-family: SegueUILight;
-  }
-
   h3 {
+    font-family: 'Museo-500';
     font-size: 24px;
     margin-bottom: 5px;
   }
@@ -82,6 +80,7 @@
       
       p {
         display: none;
+        font-family: Arial;
         font-size: 15px;
         font-weight: bold;
         color: #588CD8;
@@ -155,6 +154,7 @@
     float: left;
     font-size: 19px;
     margin-top: 13px;
+    font-family: Arial;
     font-weight: bold;  
 
     a {
@@ -215,12 +215,23 @@
           a {
             text-decoration: none;
             color: #7e7e7e;
+            font-family: Arial;
             font-size: 13px;
+            
             &.service-name {
-              font-size: 17px;
+              font-family: 'Museo-300';
+              font-size: 15px;
               padding: 5px 0 0;
               display: block;
               font-weight: bold;
+            }
+            
+            &.order-now {
+              margin-right: 4px;
+            }
+            
+            &.more-info {
+              margin-left: 4px;
             }
           }
         }
@@ -323,12 +334,15 @@
     border-radius: 4px;
     background: #fffbe7;
     color: #784a32;
+    font-family: 'Museo-300';
     font-size: 16px;
     line-height: 1;
     padding: 15px 20px 18px;
     
     .to-get-started {
       float: right;
+      font-family: Arial;
+      font-size: 14px;
       font-weight: bold;
       background: url(images/homepage/get-started-now-arrow.png) top right no-repeat;
       padding-right: 24px;

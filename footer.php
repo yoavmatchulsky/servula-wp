@@ -37,9 +37,8 @@
         <h3>Spread the word!</h3>
         <ul class="social-links">
           <?php $url = home_url('/'); ?>
-          <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="servulashop" data-url="<?php print $url; ?>">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
-          <li><iframe src="http://www.facebook.com/plugins/like.php?href=<?php print $url; ?>&locale=en_US&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
+          <li><a href="https://twitter.com/servulashop" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false" data-lang="en" data-width="90px">Follow @servulashop</a></li>
+          <li><iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FServula%2F181501315237979&locale=en_US&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
           <li><g:plusone size="medium" href="<?php print $url; ?>"></g:plusone></li>
         </ul>
         
@@ -100,6 +99,8 @@ if(document.location.protocol!='https:')
 <script type="text/javascript">
 if(typeof ClickTale=='function') ClickTale(23332,1,"www02");
 </script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 <?php wp_footer(); ?>
 

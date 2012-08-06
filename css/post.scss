@@ -5,15 +5,17 @@
   font-size: 13px;
 
   h1.title {
+    font-family: 'Museo-700';
     font-weight: bold;
+    font-size: 26px;
     margin-bottom: 10px;
-    color: #456;
+    color: #6f3c22;
   }
 
-  h2 {
+  h2, h3 {
     clear: both;
     color: orange;
-    font-family: SegueUILight;
+    font-family: 'Museo-500';
     font-weight: normal;
   }
 

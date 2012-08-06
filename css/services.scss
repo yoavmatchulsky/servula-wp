@@ -175,7 +175,8 @@
   h1.title {
     color: $service-content-writing;
     border-bottom: 0 none;
-    font-size: 30px;
+    font-family: 'Museo-700';
+    font-size: 26px;
     padding-bottom: 4px;  
 
     img {
@@ -361,7 +362,7 @@
     color: #784a32;
     font-size: 14px;
     line-height: 1;
-    padding: 15px 20px 18px;
+    padding: 20px 10px 15px;
     font-weight: normal;
     @include round-corners(4px);
         
@@ -381,7 +382,7 @@
     line-height: 18px;
     padding: 4px 8px;
     text-align: center;
-    margin-top: -6px;
+    margin-top: -10px;
     @include round-corners(4px);
     @include shadow(0 1px 0 rgba(255, 255, 255, 0.1) inset);
     @include textshadow(0 -1px 0 rgba(0, 0, 0, 0.25));

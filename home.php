@@ -47,19 +47,19 @@
         <ul>
           <li class="service-item">
             <a href="<?php print site_url('services/article-writing/'); ?>" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/pen_alt2_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/pen_alt2_32x32-over.png" alt="Article Writing" />Article Writing</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing" class="order-now">Order Now</a>
             |
-            <a href="<?php print site_url('services/article-writing/'); ?>">More Info</a>
+            <a href="<?php print site_url('services/article-writing/'); ?>" class="more-info">More Info</a>
           </li>
           <li class="service-item">
             <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing?style=3" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/star_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/star_32x32-over.png" alt="Web Copywriting">Web Copywriting</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing?style=3">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing?style=3" class="order-now">Order Now</a>
           </li>
           <li class="service-item">
             <a href="<?php print site_url('services/professional-translation/'); ?>" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/sun_fill_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/sun_fill_32x32-over.png" alt="Translation">Translation</a>
             <a href="<?php print servula_info('full_url'); ?>/orders/new/professional-translation">Order Now</a>
             |
-            <a href="<?php print site_url('services/professional-translation/'); ?>">More Info</a>
+            <a href="<?php print site_url('services/professional-translation/'); ?>" class="more-info">More Info</a>
           </li>
         </ul>
       </div>
@@ -67,31 +67,31 @@
         <ul>
           <li class="service-item">
             <a href="<?php print site_url('services/answers-posting/'); ?>" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/comment_alt2_stroke_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/comment_alt2_stroke_32x32-over.png" alt="Answers Posting">Answers Posting</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/answers-posting">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/answers-posting" class="order-now">Order Now</a>
             |
-            <a href="<?php print site_url('services/answers-posting/'); ?>">More Info</a>
+            <a href="<?php print site_url('services/answers-posting/'); ?>" class="more-info">More Info</a>
           </li>
           <li class="service-item">
             <a href="<?php print site_url('services/forum-commenting/'); ?>" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/pin_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/pin_32x32-over.png" alt="Forum Commenting">Forum Commenting</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/forum-commenting">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/forum-commenting" class="order-now">Order Now</a>
             |
-            <a href="<?php print site_url('services/forum-commenting/'); ?>">More Info</a>
+            <a href="<?php print site_url('services/forum-commenting/'); ?>" class="more-info">More Info</a>
           </li>
           <li class="service-item">
             <a href="<?php print servula_info('full_url'); ?>/orders/new/blog-commenting" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/book_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/book_32x32-over.png" alt="Blog Commenting">Blog Commenting</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/blog-commenting">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/blog-commenting" class="order-now">Order Now</a>
           </li>
           <li class="service-item">
             <a href="<?php print site_url('services/article-submission/'); ?>" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/book_alt2_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/book_alt2_32x32-over.png" alt="Article Submission">Article Submission</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/article-submission">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/article-submission" class="order-now">Order Now</a>
             |
-            <a href="<?php print site_url('services/article-submission/'); ?>">More Info</a>
+            <a href="<?php print site_url('services/article-submission/'); ?>" class="more-info">More Info</a>
           </li>
           <li class="service-item">
             <a href="<?php print site_url('services/directory-submission/'); ?>" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/folder_stroke_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/folder_stroke_32x32-over.png" alt="Directory Submission">Directory Submission</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/directory-submission">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/directory-submission" class="order-now">Order Now</a>
             |
-            <a href="<?php print site_url('services/directory-submission/'); ?>">More Info</a>
+            <a href="<?php print site_url('services/directory-submission/'); ?>" class="more-info">More Info</a>
           </li>
         </ul>
       </div>
@@ -99,13 +99,13 @@
         <ul>
           <li class="service-item">
             <a href="<?php print site_url('services/social-bookmarking/'); ?>" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/chat_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/chat_32x32-over.png" alt="Social Bookmarking">Social Bookmarking</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/social-bookmarking">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/social-bookmarking" class="order-now">Order Now</a>
             |
-            <a href="<?php print site_url('services/social-bookmarking/'); ?>">More Info</a>
+            <a href="<?php print site_url('services/social-bookmarking/'); ?>" class="more-info">More Info</a>
           </li>
           <li class="service-item">
             <a href="<?php print servula_info('full_url'); ?>/orders/new/blog-building" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/wrench_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/wrench_32x32-over.png" alt="Blog Building">Blog Building</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/blog-building">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/blog-building" class="order-now">Order Now</a>
           </li>
         </ul>
       </div>
@@ -113,11 +113,11 @@
         <ul>
           <li class="service-item">
             <a href="<?php print servula_info('full_url'); ?>/orders/new/conversion-report" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/chart_alt_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/chart_alt_32x32-over.png" alt="Conversion Report">Conversion Report</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/conversion-report">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/conversion-report" class="order-now">Order Now</a>
           </li>
           <li class="service-item">
             <a href="<?php print servula_info('full_url'); ?>/orders/new/dedicated-freelancer" class="service-name"><img width="32" height="32" src="<?php bloginfo('template_url'); ?>/images/services/user_32x32.png" data-image-over="<?php bloginfo('template_url'); ?>/images/services/user_32x32-over.png" alt="Dedicated Freelancer">Dedicated Freelancer</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/dedicated-freelancer">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/dedicated-freelancer" class="order-now">Order Now</a>
           </li>
         </ul>
       </div>
