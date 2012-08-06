@@ -49,6 +49,10 @@ blockquote {
   padding: 6px;
   border: 1px solid #e6db55;
   @include round-corners(5px);
+  
+  ol {
+    margin-bottom: 0;
+  }
 }
 
 em {

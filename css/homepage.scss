@@ -97,7 +97,7 @@
         &#floor-text-bottom {
           line-height: 1.7;
           margin-top: 1px;
-          padding-left: 5px;
+          padding-left: 10px;
         }
       }
     }
@@ -355,13 +355,11 @@
 
     &:hover {
       border-color: #999;
-      &.to-get-started {
+      
+      .to-get-started {
         color: #588cd8;
       }
     }
   }
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @import 'homepage-chrome';
-}
