@@ -1,0 +1,42 @@
+/*! A font by Jos Buivenga (exljbris) -> www.exljbris.com */
+ @font-face {
+  font-family: 'Museo-300';
+  src: url('fonts/23B198_1_0.eot');
+  src: url('fonts/23B198_1_0.eot?#iefix') format('embedded-opentype'),url('fonts/23B198_1_0.woff') format('woff'),url('fonts/23B198_1_0.ttf') format('truetype');
+}
+
+/*! A font by Jos Buivenga (exljbris) -> www.exljbris.com */
+@font-face {
+  font-family: 'Museo-500';
+  src: url('fonts/23B198_2_0.eot');
+  src: url('fonts/23B198_2_0.eot?#iefix') format('embedded-opentype'),url('fonts/23B198_2_0.woff') format('woff'),url('fonts/23B198_2_0.ttf') format('truetype');
+}
+
+/*! A font by Jos Buivenga (exljbris) -> www.exljbris.com */
+@font-face {
+  font-family: 'Museo-700';
+  src: url('fonts/23B198_0_0.eot');
+  src: url('fonts/23B198_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/23B198_0_0.woff') format('woff'),url('fonts/23B198_0_0.ttf') format('truetype');
+}
+
+.museo-300 {
+  font-family: 'Museo-300' !important;
+}
+
+.museo-500 {
+  font-family: 'Museo-500' !important;
+}
+
+.museo-700 {
+  font-family: 'Museo-700' !important;
+}
+
+@font-face {
+  font-family: 'SegueUILight';
+	src: url('fonts/segoeuil.eot');
+	src: url('fonts/segoeuil.woff') format('woff'), url('fonts/segoeuil.ttf') format('truetype'), url('fonts/segoeuil.svg') format('svg');
+}
+
+.segue-ui-light {
+  font-family: 'SegueUILight' !important;
+}
