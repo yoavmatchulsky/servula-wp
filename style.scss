@@ -56,8 +56,10 @@ $order-pending: $orange;
 $order-finished: $green;
 $order-canceled: $dark-red;
 
+$assets-url: 'https://s3.amazonaws.com/servula/assets';
+
 @mixin round-corners($radius) {
-  -webkit-border-radius: $radius;  
+  -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   -o-border-radius: $radius;
   border-radius: $radius;
@@ -121,8 +123,8 @@ $order-canceled: $dark-red;
   }
 }
 
-@mixin sprite-icon($position: '0 0') {
-  background-image: url(/assets/icons.png);
+@mixin sprite-icon($position: '0 0', $url: 'icons.png') {
+  background-image: url($url);
   background-repeat: no-repeat;
   background-position: $position;
   background-color: transparent;

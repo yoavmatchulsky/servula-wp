@@ -162,6 +162,7 @@ function servula_info($key = '') {
       
       case 'dashboard_url'  : return servula_info('full_url') . '/users/' . $servula['user_id'];
       case 'credits_url'    : return servula_info('full_url') . '/credits/plans';
+      case 'assets_url'     : return 'https://s3.amazonaws.com/servula/';
       
       case 'header_credits_text' : 
         if (!$servula['logged_in'] or $servula['user_credits'] <= 0) {
