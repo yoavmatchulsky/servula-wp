@@ -171,7 +171,7 @@ $testimonials = array(
   ),  
 );
 
-$asset_path = 'https://s3.amazonaws.com/servula/assets/testimonials/';
+$asset_path = 'https://s3.amazonaws.com/servula/assets/wp/testimonials/';
 
 ?>
 <div class="testimonials-wrapper">
