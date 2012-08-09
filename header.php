@@ -8,7 +8,6 @@
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/print.css" type="text/css" media="print" />
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/jquery.fancybox-1.3.4.css" media="screen" type="text/css" />
   <!--[if IE]><link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
     
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
