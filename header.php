@@ -90,7 +90,7 @@
           <a href="<?php print servula_info('full_url'); ?>/orders/checkout"><img alt="Go to Cart" height="24" src="<?php bloginfo('template_url'); ?>/images/header/cart-24x24.png" width="24" /></a>
           <div class='info-item-text'>
             <div class='uppercase'><?php print servula_info('header_services_in_cart'); ?></div>
-            <a href="<?php print servula_info('full_url'); ?>/orders/all_services">Order Services <span class="arrow-sign">&#9654;</span></a>
+            <a href="<?php print servula_info('full_url'); ?>/">Order Services <span class="arrow-sign">&#9654;</span></a>
           </div>
         </div>
       </div>

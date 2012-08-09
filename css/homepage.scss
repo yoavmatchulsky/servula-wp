@@ -3,14 +3,12 @@
 }
 
 @mixin service-item-image($name, $pos) {
-  &.service-item-#{$name} {
-    a:before {
-      background-position: -32px $pos*-32px !important;
-    }
-    
-    &:hover a:before {
-      background-position: 0 $pos*-32px !important;
-    }
+  li.service-item-#{$name} a:before {
+    background-position: -32px $pos*-32px !important;
+  }
+  
+  &:hover li.service-item-#{$name} a:before {
+    background-position: 0 $pos*-32px !important;
   }
 }
 
@@ -247,10 +245,6 @@
                 margin: 5px 7px 0;
                 @include service-sprite-icon(-32px 0);
               }
-              
-              &:hover:before {
-                background-position: 0 0;
-              }
             }
             
             &.order-now {
@@ -261,34 +255,33 @@
               margin-left: 4px;
             }
           }
-          
-          @include service-item-image('web-copywriting',      1);
-          @include service-item-image('translation',          2);
-          @include service-item-image('answers-posting',      3);
-          @include service-item-image('forum-commenting',     4);
-          @include service-item-image('blog-commenting',      5);
-          @include service-item-image('article-submission',   6);
-          @include service-item-image('directory-submission', 7);
-          @include service-item-image('social-bookmarking',   8);
-          @include service-item-image('blog-building',        9);
-          @include service-item-image('conversion-report',    10);
-          @include service-item-image('dedicated-freelancer', 11);
         }
       }
-
+          
       &:hover li.service-item a {
         color: #3a7bcd;
-        &:hover {
-          text-decoration: underline;
-        }
         
         &.service-name {
           color: #17365d;
-          &:hover {
-            text-decoration: none;
-          }
+        }
+        
+        &:hover {
+          text-decoration: underline;
         }
       }
+      
+      @include service-item-image('article-writing',      0);
+      @include service-item-image('web-copywriting',      1);
+      @include service-item-image('translation',          2);
+      @include service-item-image('answers-posting',      3);
+      @include service-item-image('forum-commenting',     4);
+      @include service-item-image('blog-commenting',      5);
+      @include service-item-image('article-submission',   6);
+      @include service-item-image('directory-submission', 7);
+      @include service-item-image('social-bookmarking',   8);
+      @include service-item-image('blog-building',        9);
+      @include service-item-image('conversion-report',    10);
+      @include service-item-image('dedicated-freelancer', 11);
     }
   }
     
