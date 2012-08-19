@@ -108,16 +108,5 @@ if(typeof ClickTale=='function') ClickTale(23332,1,"www02");
   <?php include 'contact-dialog.php'; ?>
 </div>
 
-<?php if (servula_info('env') == 'production') : ?>
-<script type="text/javascript">
-  var uvOptions = {};
-  (function() {
-    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
-    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/3u9Rp1iKBzm2f66qCFHeg.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
-  })();
-</script>
-<?php endif; ?>
-
 </body>
 </html>

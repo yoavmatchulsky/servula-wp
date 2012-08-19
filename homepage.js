@@ -65,15 +65,8 @@ $(function () {
   testimonials_wrapper = $('.testimonials-wrapper')
   if (testimonials_wrapper.length < 1) return;
   
-  testimonials_wrapper.find('.testimonial-wrapper img[rel="portrait"]').each(function (i, obj) {
-    image = $(obj);
-    image.data('image-original', image.attr('src'));
-    
-    i = new Image();
-    i.width = 109;
-    i.height = 144;
-    i.src = image.data('image-over');
-  });
+  testimonials_image = new Image();
+  testimonials_image.src = 'https://s3.amazonaws.com/servula/assets/wp/testimonials.png';
   
   timer = null;
   
@@ -81,36 +74,26 @@ $(function () {
     mouseover : function(e) {
       clearTimeout(timer);
       t = $(this);
-      img = t.find('img[rel="portrait"]');
-      img.attr('src', img.data('image-over'));
-
-      key = t.data('testimonial-text');
-      company_logo = t.find('.testimonial-company-logo').clone().removeClass('hidden');
-      title = t.find('.testimonial-title').clone();
-      title.find('.testimonial-company').remove();
-      title.find('.testimonial-position').removeClass('hidden');
-      text = Servula.testimonials.texts[key];
-      text_div = $('<div />').addClass('testimonial-text').text('"' + text + '"');
+      key = t.data('testimonial-key');
       
-      text_wrapper = testimonials_wrapper.find('.testimonials-text-wrapper');
-      text_wrapper.removeClass('tilted-left');
-      text_wrapper.empty().append(title, text_div, company_logo);
+      texts_wrapper = testimonials_wrapper.find('.testimonials-text-wrapper').removeClass('hidden tilted-left')
+
+      // add .hidden to all the text_wrappers
+      text_wrapper = texts_wrapper.find('.testimonial-text-wrapper').addClass('hidden').filter('[data-key="' + key + '"]')
 
       ul = testimonials_wrapper.find('ul');
       left_position_of_ul = parseInt(ul.css('left'));
       new_left = t.position().left + left_position_of_ul + 49;
       if (new_left + 400 > 960) {
         new_left -= 300;
-        text_wrapper.addClass('tilted-left');
+        texts_wrapper.addClass('tilted-left');
       }
 
-      text_wrapper.css('left', new_left).removeClass('hidden');
+      texts_wrapper.css('left', new_left)
+      text_wrapper.removeClass('hidden');
     },
+    
     mouseout : function(e) {
-      t = $(this);
-      img = t.find('img[rel="portrait"]');
-      img.attr('src', img.data('image-original'));
-      
       timer = setTimeout(function () {
         testimonials_wrapper.find('.testimonials-text-wrapper').addClass('hidden');
       }, 500);
