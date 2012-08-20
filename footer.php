@@ -21,7 +21,6 @@
         <ul>
           <h3>&nbsp;</h3>
           <li><a href="<?php print site_url('contact/'); ?>">Contact Us</a></li>
-<!--          <li><a href="#" onclick="return false;" data-support-dialog="1">Support</a></li> -->
           <li><a href="<?php print site_url('blog/'); ?>">Blog</a></li>
         </ul>
       </li>
@@ -104,11 +103,9 @@ if(typeof ClickTale=='function') ClickTale(23332,1,"www02");
 
 <?php wp_footer(); ?>
 
-<?php /*
-<div class="hidden">
-  <?php // include 'contact-dialog.php'; ?>
-</div>
-*/ ?>
+<?php if (servula_info('env') == 'production') : ?>
+<script type="text/javascript" src="<?php print servula_info('full_url'); ?>/sessions/info.json?jsonp=update_session_info"></script>
+<?php endif; ?>
 
 </body>
 </html>

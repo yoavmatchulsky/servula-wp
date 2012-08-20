@@ -96,7 +96,7 @@ function servula_check_login() {
   global $servula;
   $servula['logged_in'] = false;
 
-  if (function_exists('curl_init')) {
+  if (false && function_exists('curl_init')) {
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, servula_info('system_url') . '/sessions/info');
     curl_setopt($ch, CURLOPT_PORT, servula_info('system_port'));

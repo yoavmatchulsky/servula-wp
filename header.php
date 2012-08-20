@@ -18,8 +18,8 @@
   /* <![CDATA[ */
   var Servula = {
     system_url : "<?php print servula_info('full_url'); ?>",
-    testimonials : {},
-    func : {}
+    func : {},
+    session_info : {}
   }
   /* ]]> */
 
@@ -88,35 +88,34 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
               'fallback_cb' => '', ) ); ?>
 
       <div class="info-wrapper">
-        <div class='info-item-wrapper'>
+        <div class="info-item-wrapper">
           <img alt="Credits" height="24" src="<?php bloginfo('template_url'); ?>/images/header/gold-coin-24x24.png" width="24" />
-          <div class='info-item-text'>
-            <div class='uppercase'>
+          <div class="info-item-text">
+            <div class="uppercase header-credits-text">
               <?php print servula_info('header_credits_text'); ?>
             </div>
             <a href="<?php print servula_info('full_url'); ?>/credits/plans">Buy Credits <span class="arrow-sign">&#9654;</span></a>
           </div>
         </div>
-        <div class='info-item-wrapper'>
+        <div class="info-item-wrapper">
           <a href="<?php print servula_info('full_url'); ?>/orders/checkout"><img alt="Go to Cart" height="24" src="<?php bloginfo('template_url'); ?>/images/header/cart-24x24.png" width="24" /></a>
-          <div class='info-item-text'>
-            <div class='uppercase'><?php print servula_info('header_services_in_cart'); ?></div>
+          <div class="info-item-text">
+            <div class="uppercase header-services-in-cart"><?php print servula_info('header_services_in_cart'); ?></div>
             <a href="<?php print servula_info('full_url'); ?>/">Order Services <span class="arrow-sign">&#9654;</span></a>
           </div>
         </div>
       </div>
       
-      <?php if (servula_info('logged_in')) : ?>
-      <div class="login-register-wrapper my-dashboard-wrapper">
+      <div class="login-register-wrapper my-dashboard-wrapper hidden">
         <img src="<?php bloginfo('template_url'); ?>/images/header/down-arrow-16x16.png" width="16" height="16" />
-        <?php print $servula['user_name']; ?>
+        <span class="header-user-name"></span>
         <div class="login-form-wrapper hidden">
           <ul>
-            <li><a href="<?php print servula_info('dashboard_url'); ?>">Dashboard</a></li>
-            <li><a href="<?php print servula_info('dashboard_url'); ?>/edit">Account Settings</a></li>
+            <li><a class="header-dashboard-link" href="#">Dashboard</a></li>
+            <li><a class="header-edit-link" href="#">Account Settings</a></li>
             <li>
-              <a href="<?php print servula_info('credits_url'); ?>">Buy Credits</a>
-              <span>(<?php print intval(servula_info('user_credits')); ?> left)</span>
+              <a href="<?php print servula_info('credits_url'); ?>" style="display: inline-block;">Buy Credits</a>
+              (<span class="header-user-credits">0</span> left)
             </li>
             <hr />
             <li><a href="<?php print servula_info('full_url'); ?>/logout">Logout</a></li>
@@ -124,7 +123,6 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
         </div>
       </div>
       
-      <?php else : ?>
       <div class="login-register-wrapper">
         <img src="<?php bloginfo('template_url'); ?>/images/header/down-arrow-16x16.png" width="16" height="16" />
         <span class="login-register-button">Login/Register</span>
@@ -154,7 +152,6 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
           </form>
         </div>
       </div>
-      <?php endif; ?>
       
     </div>
     

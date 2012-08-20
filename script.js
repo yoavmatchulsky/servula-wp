@@ -119,3 +119,42 @@ $(function () {
   Servula.func.notifications.launch.open();
 });
 
+update_session_info = function (data) {
+  if (typeof data == 'undefined') {
+    logged_in = false;
+  }
+  else {
+    logged_in = data.logged_in;
+  }
+  
+  Servula.session_info.logged_in = logged_in;
+  if (logged_in) {
+    Servula.session_info.user = data.user;
+    header = $('header')
+    
+    credits = parseInt($('<strong />').text(Servula.session_info.user.credits).text()) + ' Credits left';
+    $('.header-credits-text', header).html(credits);
+    
+    services = ''
+    if (Servula.session_info.user.services > 1) {
+      services = $('<strong />').text(Servula.session_info.user.services).text() + ' Services in Cart';
+    }
+    else if (Servula.session_info.user.services == 1) {
+      services = $('<strong />').text('1').text() + ' Service in Cart';
+    }
+    else {
+      services = 'Cart is Empty';
+    }
+    $('.header-services-in-cart', header).html(services);
+    
+    my_dashboard_wrapper = $('.my-dashboard-wrapper', header);
+    
+    $('.header-user-name', my_dashboard_wrapper).text(Servula.session_info.user.name);
+    $('.header-user-credits', my_dashboard_wrapper).text(Servula.session_info.user.credits);
+    
+    $('.header-dashboard-link', my_dashboard_wrapper).attr('href', Servula.system_url + '/users/' + Servula.session_info.user.id + '/');
+    $('.header-edit-link',      my_dashboard_wrapper).attr('href', Servula.system_url + '/users/' + Servula.session_info.user.id + '/edit');
+    
+    $('.login-register-wrapper', header).addClass('hidden').filter('.my-dashboard-wrapper').removeClass('hidden');
+  }
+}
