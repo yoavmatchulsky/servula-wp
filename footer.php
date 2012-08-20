@@ -21,7 +21,7 @@
         <ul>
           <h3>&nbsp;</h3>
           <li><a href="<?php print site_url('contact/'); ?>">Contact Us</a></li>
-          <li><a href="#" onclick="return false;" data-support-dialog="1">Support</a></li>
+<!--          <li><a href="#" onclick="return false;" data-support-dialog="1">Support</a></li> -->
           <li><a href="<?php print site_url('blog/'); ?>">Blog</a></li>
         </ul>
       </li>
@@ -104,9 +104,11 @@ if(typeof ClickTale=='function') ClickTale(23332,1,"www02");
 
 <?php wp_footer(); ?>
 
+<?php /*
 <div class="hidden">
-  <?php include 'contact-dialog.php'; ?>
+  <?php // include 'contact-dialog.php'; ?>
 </div>
+*/ ?>
 
 </body>
 </html>

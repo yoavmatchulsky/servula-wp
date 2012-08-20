@@ -6,8 +6,6 @@
  
 get_header(); ?>
 
-<div class="container main clearfix">
-
 <div id="leftcolumn">
   <?php get_sidebar(); ?>
 </div>
