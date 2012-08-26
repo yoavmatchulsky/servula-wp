@@ -65,6 +65,15 @@ $(function () {
   testimonials_wrapper = $('.testimonials-wrapper')
   if (testimonials_wrapper.length < 1) return;
   
+  $.extend(Servula, {
+    testimonials : {
+      step : 350,
+      li_width : 116,
+      strip_width : 848,
+      duration : 700
+    }
+  });
+  
   testimonials_image = new Image();
   testimonials_image.src = 'https://s3.amazonaws.com/servula/assets/wp/testimonials.png';
   
@@ -107,13 +116,6 @@ $(function () {
     }, 300);
   });
 
-  $.extend(Servula.testimonials, {
-    step : 350,
-    li_width : 116,
-    strip_width : 848,
-    duration : 700
-  });
-  
   testimonials_wrapper.find('.testimonials-buttons-wrapper').on('mousedown', function (e) {
     ul = testimonials_wrapper.find('ul');
     left = parseInt(ul.css('left'));
