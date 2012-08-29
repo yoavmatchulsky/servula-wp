@@ -155,7 +155,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
       
     </div>
     
-    <?php if (!isset($_COOKIE['servula-launch-notification'])) : ?>
+    <?php if (false && !isset($_COOKIE['servula-launch-notification'])) : ?>
     <div class="header-notifications hidden">
       <div class="wrapper">
         <p>
