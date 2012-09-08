@@ -71,16 +71,6 @@
             |
             <a href="<?php print site_url('services/answers-posting/'); ?>" class="more-info">More Info</a>
           </li>
-          <li class="service-item service-item-forum-commenting">
-            <a href="<?php print site_url('services/forum-commenting/'); ?>" class="service-name">Forum Commenting</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/forum-commenting" class="order-now">Order Now</a>
-            |
-            <a href="<?php print site_url('services/forum-commenting/'); ?>" class="more-info">More Info</a>
-          </li>
-          <li class="service-item service-item-blog-commenting">
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/blog-commenting" class="service-name">Blog Commenting</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/blog-commenting" class="order-now">Order Now</a>
-          </li>
           <li class="service-item service-item-article-submission">
             <a href="<?php print site_url('services/article-submission/'); ?>" class="service-name">Article Submission</a>
             <a href="<?php print servula_info('full_url'); ?>/orders/new/article-submission" class="order-now">Order Now</a>
@@ -111,10 +101,6 @@
       </div>
       <div id="service-special-premium" class="services-column">
         <ul>
-          <li class="service-item service-item-conversion-report">
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/conversion-report" class="service-name">Conversion Report</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/conversion-report" class="order-now">Order Now</a>
-          </li>
           <li class="service-item service-item-dedicated-freelancer">
             <a href="<?php print servula_info('full_url'); ?>/orders/new/dedicated-freelancer" class="service-name">Dedicated Freelancer</a>
             <a href="<?php print servula_info('full_url'); ?>/orders/new/dedicated-freelancer" class="order-now">Order Now</a>
