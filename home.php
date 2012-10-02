@@ -47,17 +47,17 @@
         <ul>
           <li class="service-item service-item-article-writing">
             <a href="<?php print site_url('services/article-writing/'); ?>" class="service-name">Article Writing</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing" class="order-now">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing" class="order-now">Start Now</a>
             |
             <a href="<?php print site_url('services/article-writing/'); ?>" class="more-info">More Info</a>
           </li>
           <li class="service-item service-item-web-copywriting">
             <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing?style=3" class="service-name">Web Copywriting</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing?style=3" class="order-now">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing?style=3" class="order-now">Start Now</a>
           </li>
           <li class="service-item service-item-translation">
             <a href="<?php print site_url('services/translation/'); ?>" class="service-name">Translation</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/professional-translation">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/professional-translation">Start Now</a>
             |
             <a href="<?php print site_url('services/translation/'); ?>" class="more-info">More Info</a>
           </li>
@@ -67,19 +67,19 @@
         <ul>
           <li class="service-item service-item-answers-posting">
             <a href="<?php print site_url('services/answers-posting/'); ?>" class="service-name">Answers Posting</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/answers-posting" class="order-now">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/answers-posting" class="order-now">Start Now</a>
             |
             <a href="<?php print site_url('services/answers-posting/'); ?>" class="more-info">More Info</a>
           </li>
           <li class="service-item service-item-article-submission">
             <a href="<?php print site_url('services/article-submission/'); ?>" class="service-name">Article Submission</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/article-submission" class="order-now">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/article-submission" class="order-now">Start Now</a>
             |
             <a href="<?php print site_url('services/article-submission/'); ?>" class="more-info">More Info</a>
           </li>
           <li class="service-item service-item-directory-submission">
             <a href="<?php print site_url('services/directory-submission/'); ?>" class="service-name">Directory Submission</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/directory-submission" class="order-now">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/directory-submission" class="order-now">Start Now</a>
             |
             <a href="<?php print site_url('services/directory-submission/'); ?>" class="more-info">More Info</a>
           </li>
@@ -89,13 +89,13 @@
         <ul>
           <li class="service-item service-item-social-bookmarking">
             <a href="<?php print site_url('services/social-bookmarking/'); ?>" class="service-name">Social Bookmarking</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/social-bookmarking" class="order-now">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/social-bookmarking" class="order-now">Start Now</a>
             |
             <a href="<?php print site_url('services/social-bookmarking/'); ?>" class="more-info">More Info</a>
           </li>
           <li class="service-item service-item-blog-building">
             <a href="<?php print servula_info('full_url'); ?>/orders/new/blog-building" class="service-name">Blog Building</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/blog-building" class="order-now">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/blog-building" class="order-now">Start Now</a>
           </li>
         </ul>
       </div>
@@ -103,7 +103,7 @@
         <ul>
           <li class="service-item service-item-dedicated-freelancer">
             <a href="<?php print servula_info('full_url'); ?>/orders/new/dedicated-freelancer" class="service-name">Dedicated Freelancer</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/dedicated-freelancer" class="order-now">Order Now</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/dedicated-freelancer" class="order-now">Start Now</a>
           </li>
         </ul>
       </div>

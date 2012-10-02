@@ -33,7 +33,7 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
   <div class="service-header-tabs">
     <span class="service-header-tab current">Description</span>
     <?php if ($order_now) : ?>
-    <span class="service-header-tab"><a href="<?php print $order_now; ?>">Order Now</a></span>
+    <span class="service-header-tab"><a href="<?php print $order_now; ?>">Start Now</a></span>
     <?php endif; ?>
   </div>
     
@@ -69,7 +69,7 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
       <?php endforeach; ?>
       
       <?php if ($order_now) : ?>
-        <a href="<?php print $order_now; ?>" class="order-now">Order Now</a>
+        <a href="<?php print $order_now; ?>" class="order-now">Start Now</a>
       <?php endif; ?>
     </div>
     <?php endif; ?>
