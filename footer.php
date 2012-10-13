@@ -13,6 +13,7 @@
         <h3>Learn About Us</h3>
         <ul>
           <li><a href="<?php print site_url('about/'); ?>">What we do?</a></li>
+          <li><a href="<?php print site_url('values/'); ?>">Our Values</a></li>
           <li><a href="<?php print site_url('faq/'); ?>">FAQ</a></li>
           <li><a href="<?php print site_url('jobs/'); ?>">Jobs</a></li>
         </ul>
