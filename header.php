@@ -87,6 +87,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
               'container' => 'nav',
               'fallback_cb' => '', ) ); ?>
 
+      <?php if (!isset($servula['show-user-info']) or $servula['show-user-info']) : ?>
       <div class="info-wrapper">
         <div class="info-item-wrapper">
           <img alt="Credits" height="24" src="<?php bloginfo('template_url'); ?>/images/header/gold-coin-24x24.png" width="24" />
@@ -154,6 +155,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
       </div>
       
     </div>
+    <?php endif; ?>
     
     <?php if (false && !isset($_COOKIE['servula-launch-notification'])) : ?>
     <div class="header-notifications hidden">

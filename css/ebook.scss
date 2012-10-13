@@ -1,0 +1,117 @@
+.body-ebook-page {
+  header ul.menu li a {
+    font-weight: normal;
+  }
+}
+
+#leftcolumn.page-ebook .post {
+  padding: 15px 0 0;
+  float: none;
+  clear: both;
+  background: white;
+}
+
+.page-ebook {
+  &#leftcolumn {
+    width: 575px;
+    padding-right: 65px;
+  }
+
+  &#rightcolumn {
+    width: 315px;
+    float: left;
+    margin-left: 0;
+  }
+  
+  h2 {
+    margin-bottom: 12px;
+  }
+  
+  h4 {
+    font-size: 24px;
+    color: #483f42;
+  }
+  
+  .post {
+    ul {
+      padding-left: 0;
+      
+      li {
+        clear: left;
+        list-style-type: none;
+        margin-bottom: 15px;
+        
+        &:before {
+          float: left;
+          width: 24px;
+          height: 24px;
+          margin-right: 15px;
+          margin-top: 2px;
+          content: '';
+          background: url(images/check-sign-green.png) no-repeat top left;
+        }
+      }
+    }
+  }
+}
+
+.widget-download-ebook {
+  background: #fefeef;
+  border: 1px dashed #ffcc02;
+  padding: 10px;
+  
+  h5 {
+    font-size: 22px;
+    color: #483f42;
+    margin-bottom: 10px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  input[type="text"] {
+    border: 1px solid #ccc;
+    background: white;
+    padding: 7px;
+    @include round-corners(4px);
+    clear: both;
+    width: 275px;
+    margin: 0 0 20px;
+  }
+  
+  input[type="submit"] {
+    @include cool-button(#ffe64c, #ffa927, #6c4633, #ffa927, #ffe64c, #ffac25);
+  }
+  
+  .pdf-size {
+    float: right;
+    color: #999;
+    text-align: left;
+    width: 190px;
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+  
+.social-links {
+  margin-top: 30px;
+  text-align: center;
+  padding: 0;
+  height: 66px;
+  
+  li {
+    list-style: none;
+    display: inline;
+    
+    div {
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+}
+
+.featured-image-wrapper {
+  margin-top: 50px;
+}

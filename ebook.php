@@ -1,0 +1,123 @@
+<?php
+/*
+Template Name: eBook
+*/
+
+$servula['body_class']      = 'body-ebook-page';
+$servula['show-user-info']  = false;
+get_header();
+
+$post_custom = get_post_custom();
+
+$classes = array('page-ebook', "page-ebook-{$post->ID}");
+
+$order_now = false;
+if ($post_custom['service-order-link'] and !empty($post_custom['service-order-link'])) {
+  $order_now = reset($post_custom['service-order-link']);
+}
+
+$service_icon = false;
+if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
+  $service_icon = reset($post_custom['service-icon']);
+}
+
+?>
+<div id="leftcolumn" class="<?php print implode(' ', $classes); ?>">
+  <?php the_post(); ?>
+  <div class="post" id="post-<?php the_ID(); ?>">
+
+    <h1 class="title">
+      <?php
+        $title = get_the_title();
+        
+        if ($service_icon) : ?>
+        <img title="<?php print $title; ?>" src="<?php print $service_icon; ?>" class="service-icon" alt="<?php print $title; ?>">
+      <?php endif; ?>
+      <?php print $title; ?>
+    </h1>
+    
+    <?php $header = $post_custom['header']; ?>
+    <?php if ($header) : ?>
+    <div class="post-header">
+      <?php foreach ($header as $header_value) : ?>
+      <div class="post-header-info">
+        <?php print $header_value; ?>
+      </div>
+      <?php endforeach; ?>
+      
+      <?php if ($order_now) : ?>
+        <a href="<?php print $order_now; ?>" class="order-now">Order Now</a>
+      <?php endif; ?>
+    </div>
+    <?php endif; ?>
+    
+    <div class="entry">
+	    <?php the_content(); ?>
+    </div>
+
+    <div class="postdata"><?php edit_post_link('Edit'); ?></div>
+  </div><!-- end .post -->
+
+</div>
+
+
+<div id="rightcolumn" class="page-ebook">
+  <div class="widget-download-ebook">
+    <h5>Download your eBook now!</h5>
+
+    <form method="post" action="https://app.icontact.com/icp/signup.php" name="icpsignup" id="icpsignup5770" accept-charset="UTF-8">
+      <input type="hidden" name="redirect" value="http://www.icontact.com/www/signup/thanks.html">
+      <input type="hidden" name="errorredirect" value="http://www.icontact.com/www/signup/error.html">
+      <input type="hidden" name="listid" value="92224">
+      <input type="hidden" name="specialid:92224" value="F5MG">
+
+      <input type="hidden" name="clientid" value="1063486">
+      <input type="hidden" name="formid" value="5770">
+      <input type="hidden" name="reallistid" value="1">
+      <input type="hidden" name="doubleopt" value="0">
+      <div id="signup">
+        <input type="text" name="fields_fname" placeholder="Full name" />
+        <input type="text" name="fields_email" placeholder="Email" />
+        <span class="pdf-size">PDF file (1,382k size)</span>
+        <input type="submit" name="Submit" value="Download" />
+      </div>
+    </form>    
+  </div>
+  
+  <ul class="social-links">
+    <?php $url = get_permalink(); ?>
+    <li>
+      <div class="g-plus" data-action="share" data-annotation="vertical-bubble" data-height="60"></div>
+    </li>
+    
+    <li>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="servulashop" data-url="<?php print $url; ?>" data-count="vertical">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>        
+    <li>
+      <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+      <script type="IN/Share" data-counter="top"></script>
+    </li>
+    <li>
+      <div class="fb-like" data-send="false" data-layout="box_count" data-width="120" data-show-faces="false"></div>
+      <!--
+      <iframe src="http://www.facebook.com/plugins/like.php?href=<?php print $url; ?>&locale=en_US&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+      -->
+    </li>
+    <li>
+      <!-- AddThis Button BEGIN -->
+      <a class="addthis_button_email at300b" href="http://www.addthis.com/bookmark.php" title="Email">
+        <img width="55" height="62" border="0" alt="Email" src="http://www.hubspot.com/Portals/53/images/email-share-icon.png">
+      </a>
+      <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-507849121da03807"></script>
+      <!-- AddThis Button END -->
+    </li>
+  </ul>
+  
+  <div class="featured-image-wrapper">
+    <?php the_post_thumbnail(); ?>
+  </div>
+</div>
+
+<?php wp_enqueue_script('ebook'); ?>
+
+<?php get_footer(); ?>
