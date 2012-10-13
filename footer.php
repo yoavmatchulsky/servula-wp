@@ -15,12 +15,12 @@
           <li><a href="<?php print site_url('about/'); ?>">What we do?</a></li>
           <li><a href="<?php print site_url('values/'); ?>">Our Values</a></li>
           <li><a href="<?php print site_url('faq/'); ?>">FAQ</a></li>
-          <li><a href="<?php print site_url('jobs/'); ?>">Jobs</a></li>
         </ul>
       </li>
       <li>
         <ul>
           <h3>&nbsp;</h3>
+          <li><a href="<?php print site_url('jobs/'); ?>">Jobs</a></li>
           <li><a href="<?php print site_url('contact/'); ?>">Contact Us</a></li>
           <li><a href="<?php print site_url('blog/'); ?>">Blog</a></li>
         </ul>
