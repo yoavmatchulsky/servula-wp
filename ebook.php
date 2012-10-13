@@ -84,7 +84,7 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
     </form>    
   </div>
   
-  <ul class="social-links">
+  <ul class="social-links vertical">
     <?php $url = get_permalink(); ?>
     <li>
       <div class="g-plus" data-action="share" data-annotation="vertical-bubble" data-height="60"></div>

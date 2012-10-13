@@ -5,7 +5,7 @@
 }
 
 #leftcolumn.page-ebook .post {
-  padding: 15px 0 0;
+  padding: 0;
   float: none;
   clear: both;
   background: white;
@@ -61,7 +61,8 @@
   padding: 10px;
   
   h5 {
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: normal;
     color: #483f42;
     margin-bottom: 10px;
   }
@@ -83,6 +84,7 @@
   
   input[type="submit"] {
     @include cool-button(#ffe64c, #ffa927, #6c4633, #ffa927, #ffe64c, #ffac25);
+    text-shadow: 1px 1px 1px white;
   }
   
   .pdf-size {
@@ -99,7 +101,6 @@
   margin-top: 30px;
   text-align: center;
   padding: 0;
-  height: 66px;
   
   li {
     list-style: none;
@@ -109,6 +110,10 @@
       vertical-align: top;
       display: inline-block;
     }
+  }
+  
+  &.vertical {
+    height: 66px;
   }
 }
 
