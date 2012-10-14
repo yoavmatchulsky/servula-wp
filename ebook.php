@@ -87,29 +87,26 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
   <ul class="social-links vertical">
     <?php $url = get_permalink(); ?>
     <li>
-      <div class="g-plus" data-action="share" data-annotation="vertical-bubble" data-height="60"></div>
+      <div class="fb-like" data-send="false" data-layout="box_count" data-width="120" data-show-faces="false"></div>
     </li>
-    
-    <li>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-via="servulashop" data-url="<?php print $url; ?>" data-count="vertical">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>        
+
     <li>
       <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
       <script type="IN/Share" data-counter="top"></script>
     </li>
+
     <li>
-      <div class="fb-like" data-send="false" data-layout="box_count" data-width="120" data-show-faces="false"></div>
-      <!--
-      <iframe src="http://www.facebook.com/plugins/like.php?href=<?php print $url; ?>&locale=en_US&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
-      -->
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="servulashop" data-url="<?php print $url; ?>" data-count="vertical">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </li>
+
     <li>
-      <!-- AddThis Button BEGIN -->
-      <a class="addthis_button_email at300b" href="http://www.addthis.com/bookmark.php" title="Email">
-        <img width="55" height="62" border="0" alt="Email" src="http://www.hubspot.com/Portals/53/images/email-share-icon.png">
-      </a>
+      <div class="g-plus" data-action="share" data-annotation="vertical-bubble" data-height="60"></div>
+    </li>
+
+    <li>
+      <a class="addthis_button_email at300b" href="http://www.addthis.com/bookmark.php" title="Email"><img width="55" height="62" border="0" alt="Email" src="http://www.hubspot.com/Portals/53/images/email-share-icon.png"></a>
       <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-507849121da03807"></script>
-      <!-- AddThis Button END -->
     </li>
   </ul>
   
