@@ -66,8 +66,8 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
     <h5>Download your eBook now!</h5>
 
     <form method="post" action="https://app.icontact.com/icp/signup.php" name="icpsignup" id="icpsignup5770" accept-charset="UTF-8">
-      <input type="hidden" name="redirect" value="http://www.icontact.com/www/signup/thanks.html">
-      <input type="hidden" name="errorredirect" value="http://www.icontact.com/www/signup/error.html">
+      <input type="hidden" name="redirect" value="http://www.servula.com/ebook-download-thank-you/" />
+      <input type="hidden" name="errorredirect" value="http://www.servula.com/ebook-download-error/" />
       <input type="hidden" name="listid" value="92224">
       <input type="hidden" name="specialid:92224" value="F5MG">
 
