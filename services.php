@@ -23,6 +23,11 @@ if ($post_custom['service-order-link'] and !empty($post_custom['service-order-li
   $order_now = reset($post_custom['service-order-link']);
 }
 
+$sources_tab = false;
+if ($post_custom['sources-tab-link'] and !empty($post_custom['sources-tab-link'])) {
+  $sources_tab = reset($post_custom['sources-tab-link']);
+}
+
 $service_icon = false;
 if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
   $service_icon = reset($post_custom['service-icon']);
@@ -34,6 +39,9 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
     <span class="service-header-tab current">Description</span>
     <?php if ($order_now) : ?>
     <span class="service-header-tab"><a href="<?php print $order_now; ?>">Start Now</a></span>
+    <?php endif; ?>
+    <?php if ($sources_tab) : ?>
+    <span class="service-header-tab"><a href="<?php print $sources_tab; ?>">Sources</a></span>
     <?php endif; ?>
   </div>
     
