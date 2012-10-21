@@ -78,3 +78,10 @@ hr {
   background: black;
   color: white;
 }
+
+body.body-no-sidebar-page {
+  #rightcolumn {
+    width: 960px;
+    margin-left: 0;
+  }
+}
