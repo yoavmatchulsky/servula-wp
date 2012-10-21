@@ -15,6 +15,7 @@
           <li><a href="<?php print site_url('about/'); ?>">What we do?</a></li>
           <li><a href="<?php print site_url('values/'); ?>">Our Values</a></li>
           <li><a href="<?php print site_url('faq/'); ?>">FAQ</a></li>
+          <li><a href="<?php print site_url('inbound-marketing/'); ?>">What is Inbound Marketing?</a></li>
         </ul>
       </li>
       <li>
