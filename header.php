@@ -28,6 +28,10 @@
   </script>
 
   <title><?php wp_title(' '); ?> </title>
+
+  <meta property="og:image" content="http://www.servula.com/blog/wp-content/themes/hello-d/images/logo.png" />
+  <meta property="og:title" content="<?php wp_title(' '); ?>" />
+
   <link href="<?php bloginfo('url'); ?>/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
   <script type="text/javascript">
   
