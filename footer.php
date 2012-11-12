@@ -9,12 +9,13 @@
 <footer>
   <div class="wrapper">
     <ul>
-      <li>
+      <li style="width: 230px;">
         <h3>Learn About Us</h3>
         <ul>
           <li><a href="<?php print site_url('about/'); ?>">What we do?</a></li>
           <li><a href="<?php print site_url('values/'); ?>">Our Values</a></li>
           <li><a href="<?php print site_url('faq/'); ?>">FAQ</a></li>
+          <li><a href="<?php print site_url('inbound-marketing/'); ?>">What is Inbound Marketing?</a></li>
         </ul>
       </li>
       <li>
