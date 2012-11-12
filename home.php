@@ -83,6 +83,12 @@
             |
             <a href="<?php print site_url('services/directory-submission/'); ?>" class="more-info">More Info</a>
           </li>
+          <li class="service-item service-item-local-listing service-item-new">
+            <a href="<?php print site_url('services/local-listing/'); ?>" class="service-name">Local Listing</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/local-listing" class="order-now">Start Now</a>
+            |
+            <a href="<?php print site_url('services/local-listing/'); ?>" class="more-info">More Info</a>
+          </li>
         </ul>
       </div>
       <div id="service-social-media" class="services-column">
