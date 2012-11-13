@@ -65,6 +65,12 @@
       </div>
       <div id="service-link-building" class="services-column">
         <ul>
+          <li class="service-item service-item-local-listing service-item-new">
+            <a href="<?php print site_url('services/local-listing/'); ?>" class="service-name">Local Listing</a>
+            <a href="<?php print servula_info('full_url'); ?>/orders/new/local-listing" class="order-now">Start Now</a>
+            |
+            <a href="<?php print site_url('services/local-listing/'); ?>" class="more-info">More Info</a>
+          </li>
           <li class="service-item service-item-answers-posting">
             <a href="<?php print site_url('services/answers-posting/'); ?>" class="service-name">Answers Posting</a>
             <a href="<?php print servula_info('full_url'); ?>/orders/new/answers-posting" class="order-now">Start Now</a>
@@ -82,12 +88,6 @@
             <a href="<?php print servula_info('full_url'); ?>/orders/new/directory-submission" class="order-now">Start Now</a>
             |
             <a href="<?php print site_url('services/directory-submission/'); ?>" class="more-info">More Info</a>
-          </li>
-          <li class="service-item service-item-local-listing service-item-new">
-            <a href="<?php print site_url('services/local-listing/'); ?>" class="service-name">Local Listing</a>
-            <a href="<?php print servula_info('full_url'); ?>/orders/new/local-listing" class="order-now">Start Now</a>
-            |
-            <a href="<?php print site_url('services/local-listing/'); ?>" class="more-info">More Info</a>
           </li>
         </ul>
       </div>
