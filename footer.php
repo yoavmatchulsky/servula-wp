@@ -44,7 +44,7 @@
         </ul>
         
         <ul class="social-links social-links-images">
-          <li><a id="social-links-image-linked-in" href="#"></a></li>
+          <li><a id="social-links-image-linked-in" href="https://www.linkedin.com/company/servula"></a></li>
           <li><a id="social-links-image-twitter" href="https://twitter.com/#!/ServulaShop"></a></li>
           <li><a id="social-links-image-facebook" href="http://www.facebook.com/pages/Servula/181501315237979"></a></li>
         </ul>
