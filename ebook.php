@@ -63,7 +63,13 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
 
 <div id="rightcolumn" class="page-ebook">
   <div class="widget-download-ebook">
-    <h5>Download your eBook now!</h5>
+    <?php
+      $download_title = $post_custom['ebook_meta_box_title'][0];
+      if (empty($download_title)) {
+        $download_title = 'Download your eBook now!';
+      }
+    ?>
+    <h5><?php print $download_title; ?></h5>
 
     <form method="post" action="https://app.icontact.com/icp/signup.php" name="icpsignup" id="icpsignup5770" accept-charset="UTF-8">
       <input type="hidden" name="redirect" value="http://www.servula.com/ebook-download-thank-you/" />
