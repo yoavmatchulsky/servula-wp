@@ -64,9 +64,14 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
 <div id="rightcolumn" class="page-ebook">
   <div class="widget-download-ebook">
     <?php
-      $download_title = $post_custom['ebook_meta_box_title'][0];
+      $download_title = $post_custom['ebook_title'][0];
       if (empty($download_title)) {
         $download_title = 'Download your eBook now!';
+      }
+      
+      $pdf_size = $post_custom['ebook_pdf_size'][0];
+      if (empty($pdf_size)) {
+        $pdf_size = '1,382k';
       }
     ?>
     <h5><?php print $download_title; ?></h5>
@@ -84,7 +89,7 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
       <div id="signup">
         <input type="text" name="fields_fname" placeholder="Full name" />
         <input type="text" name="fields_email" placeholder="Email" />
-        <span class="pdf-size">PDF file (1,382k size)</span>
+        <span class="pdf-size">PDF file (<?php print $pdf_size; ?> size)</span>
         <input type="submit" name="Submit" value="Download" />
       </div>
     </form>    

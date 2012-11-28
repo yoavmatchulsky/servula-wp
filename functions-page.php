@@ -8,20 +8,24 @@ function ebook_meta_box_init() {
 
 	// check for a template type
 	if (empty($post_id) || $template_file == 'ebook.php') {
-		add_meta_box('ebook-meta-box', 'eBook options', 'ebook_meta_box_callback', 'page', 'side', 'high');
+		add_meta_box('ebook-meta-box', 'eBook options', 'ebook_meta_box_callback', 'page', 'side', 'core');
 	}
-  
 }
 
 function ebook_meta_box_callback( $post ) {
   wp_nonce_field( 'ebook_meta_box_nonce', 'meta_box_nonce' );
-  $values = get_post_custom( $post->ID );
+  $values = get_post_custom($post->ID);
   
   ?>
-  <p>
-    <label style="display: block;" for="ebook_meta_box_title">Download eBook title:</label>
-    <input type="text" id="ebook_meta_box_title" name="ebook_meta_box_title" value="<?php print $values['ebook_meta_box_title'][0]; ?>" />
-  </p>
+  <div class="form-item">
+    <label style="display: block;" for="ebook_title">Download eBook title</label>
+    <input type="text" id="ebook_title" name="ebook_title" value="<?php print $values['ebook_title'][0]; ?>" />
+  </div>
+
+  <div class="form-item" style="margin-top: 10px;">
+    <label style="display: block;" for="ebook_pdf_size">PDF size</label>
+    <input type="text" id="ebook_pdf_size" name="ebook_pdf_size" value="<?php print $values['ebook_pdf_size'][0]; ?>" />
+  </div>
   <?php
 }
 
@@ -42,7 +46,21 @@ function ebook_meta_box_save( $post_id ) {
     return;
   }
 
-  if (isset( $_POST['ebook_meta_box_title'])) {
-    update_post_meta($post_id, 'ebook_meta_box_title', $_POST['ebook_meta_box_title']);
+  if (isset( $_POST['ebook_title'])) {
+    if (empty($_POST['ebook_title'])) {
+      delete_post_meta($post_id, 'ebook_title');
+    }
+    else {
+      update_post_meta($post_id, 'ebook_title', $_POST['ebook_title']);
+    }
+  }
+  
+  if (isset( $_POST['ebook_pdf_size'])) {  
+    if (empty($_POST['ebook_pdf_size'])) {
+      delete_post_meta($post_id, 'ebook_pdf_size');
+    }
+    else {
+      update_post_meta($post_id, 'ebook_pdf_size', $_POST['ebook_pdf_size']);
+    }
   }
 }
