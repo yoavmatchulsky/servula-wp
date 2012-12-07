@@ -31,14 +31,33 @@
   font-family: 'Museo-700' !important;
 }
 
-/*
+// League Gothic regular webfont
 @font-face {
-  font-family: 'SegueUILight';
-	src: url('fonts/segoeuil.eot');
-	src: url('fonts/segoeuil.woff') format('woff'), url('fonts/segoeuil.ttf') format('truetype'), url('fonts/segoeuil.svg') format('svg');
+  font-family: 'League Gothic';
+  src: url('fonts/leaguegothic-regular.eot');
+  src: url('fonts/leaguegothic-regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/leaguegothic-regular.woff') format('woff'),
+      url('fonts/leaguegothic-regular.ttf') format('truetype'),
+      url('fonts/leaguegothic-regular.svg#league_gothicregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.font-league-gothic {
+  font-family: 'League Gothic' !important;
 }
 
-.segue-ui-light {
-  font-family: 'SegueUILight' !important;
+// League Gothic condensed webfont
+@font-face {
+  font-family: 'League Gothic Condensed';
+  src: url('fonts/leaguegothic-condensed.eot');
+  src: url('fonts/leaguegothic-condensed.eot?#iefix') format('embedded-opentype'),
+      url('fonts/leaguegothic-condensed.woff') format('woff'),
+      url('fonts/leaguegothic-condensed.ttf') format('truetype'),
+      url('fonts/leaguegothic-condensed.svg#league_gothic_condensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
-*/
+
+.font-league-gothic-bold {
+  font-family: 'League Gothic Condensed' !important;
+}
