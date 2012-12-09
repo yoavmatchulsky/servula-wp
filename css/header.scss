@@ -38,18 +38,18 @@ header {
       }
 
       &.current_page_item {
-        color: orange;
+        color: $brown;
         font-weight: bold;
-        border-bottom: 3px solid #fbbc7b;
+        border-bottom: 3px solid $brown;
         padding-bottom: 16px;
         position: relative;
 
         a {
-          color: #fbbc7b;
+          color: $brown;
         }
 
         &:after {
-          border-color: transparent transparent #fbbc7b;
+          border-color: transparent transparent $brown;
           border-style: solid;
           border-width: 0 8px 8px;
           bottom: 0;
