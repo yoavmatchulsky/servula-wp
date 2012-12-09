@@ -1,22 +1,37 @@
 /*! A font by Jos Buivenga (exljbris) -> www.exljbris.com */
- @font-face {
+@font-face {
   font-family: 'Museo-300';
-  src: url('fonts/23B198_1_0.eot');
-  src: url('fonts/23B198_1_0.eot?#iefix') format('embedded-opentype'),url('fonts/23B198_1_0.woff') format('woff'),url('fonts/23B198_1_0.ttf') format('truetype');
+  src: url('fonts/museo-300.eot');
+  src: url('fonts/museo-300.eot?#iefix') format('embedded-opentype'),
+      url('fonts/museo-300.woff') format('woff'),
+      url('fonts/museo-300.ttf') format('truetype'),
+      url('fonts/museo-300.svg#museo_300') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*! A font by Jos Buivenga (exljbris) -> www.exljbris.com */
 @font-face {
   font-family: 'Museo-500';
-  src: url('fonts/23B198_2_0.eot');
-  src: url('fonts/23B198_2_0.eot?#iefix') format('embedded-opentype'),url('fonts/23B198_2_0.woff') format('woff'),url('fonts/23B198_2_0.ttf') format('truetype');
+  src: url('fonts/museo-500.eot');
+  src: url('fonts/museo-500.eot?#iefix') format('embedded-opentype'),
+      url('fonts/museo-500.woff') format('woff'),
+      url('fonts/museo-500.ttf') format('truetype'),
+      url('fonts/museo-500.svg#museo_500') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*! A font by Jos Buivenga (exljbris) -> www.exljbris.com */
 @font-face {
   font-family: 'Museo-700';
-  src: url('fonts/23B198_0_0.eot');
-  src: url('fonts/23B198_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/23B198_0_0.woff') format('woff'),url('fonts/23B198_0_0.ttf') format('truetype');
+  src: url('fonts/museo-700.eot');
+  src: url('fonts/museo-700.eot?#iefix') format('embedded-opentype'),
+      url('fonts/museo-700.woff') format('woff'),
+      url('fonts/museo-700.ttf') format('truetype'),
+      url('fonts/museo-700.svg#museo_700') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .museo-300 {
