@@ -233,6 +233,8 @@ add_action('wp_enqueue_scripts', 'servula_enqueue_scripts');
 function servula_enqueue_scripts() {
   if (is_front_page()) {
     wp_enqueue_script('homepage', get_template_directory_uri() . '/homepage.js');
+    wp_enqueue_script('jquery-ui-core');
+    wp_enqueue_script('jquery-ui-tabs');
   }
   
   wp_register_script('services',  get_template_directory_uri() . '/services.js');
