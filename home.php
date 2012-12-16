@@ -26,30 +26,22 @@
             <h4>Content</h4>
             <ul>
               <li class="service-item service-item-article-writing">
-                <div class="title">
-                  Article Writing
-                </div>
+                <div class="title"><span>Article Writing</span></div>
                 <div class="actions">
                   <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing" class="order-now">Start Now</a>
-                  OR
                   <a href="<?php print site_url('services/article-writing/'); ?>" class="more-info">More Info</a>
                 </div>
               </li>
               <li class="service-item service-item-web-copywriting">
-                <div class="title">
-                  Copywriting
-                </div>
+                <div class="title"><span>Copywriting</span></div>
                 <div class="actions">
                   <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing?style=3" class="order-now">Start Now</a>
                 </div>
               </li>
               <li class="service-item service-item-translation">
-                <div class="title">
-                  Translation
-                </div>
+                <div class="title"><span>Translation</span></div>
                 <div class="actions">
                   <a href="<?php print servula_info('full_url'); ?>/orders/new/professional-translation" class="order-now">Start Now</a>
-                  OR
                   <a href="<?php print site_url('services/translation/'); ?>" class="more-info">More Info</a>
                 </div>
               </li>
@@ -59,42 +51,30 @@
             <h4>SEO</h4>
             <ul>
               <li class="service-item service-item-local-listing service-item-new">
-                <div class="title">
-                  Local Listing
-                </div>
+                <div class="title"><span>Local Listing</span></div>
                 <div class="actions">
                   <a href="<?php print servula_info('full_url'); ?>/orders/new/local-listing" class="order-now">Start Now</a>
-                  OR
                   <a href="<?php print site_url('services/local-listing/'); ?>" class="more-info">More Info</a>
                 </div>
               </li>
               <li class="service-item service-item-answers-posting">
-                <div class="title">
-                  Answers Posting
-                </div>
+                <div class="title"><span>Answers Posting</span></div>
                 <div class="actions">
                   <a href="<?php print servula_info('full_url'); ?>/orders/new/answers-posting" class="order-now">Start Now</a>
-                  OR
                   <a href="<?php print site_url('services/answers-posting/'); ?>" class="more-info">More Info</a>
                 </div>
               </li>
               <li class="service-item service-item-article-submission">
-                <div class="title">
-                  Article Submission
-                </div>
+                <div class="title"><span>Article Submission</span></div>
                 <div class="actions">
                   <a href="<?php print servula_info('full_url'); ?>/orders/new/article-submission" class="order-now">Start Now</a>
-                  OR
                   <a href="<?php print site_url('services/article-submission/'); ?>" class="more-info">More Info</a>
                 </div>
               </li>
               <li class="service-item service-item-directory-submission">
-                <div class="title">
-                  Directory Submission
-                </div>
+                <div class="title"><span>Directory Submission</span></div>
                 <div class="actions">
                   <a href="<?php print servula_info('full_url'); ?>/orders/new/directory-submission" class="order-now">Start Now</a>
-                  OR
                   <a href="<?php print site_url('services/directory-submission/'); ?>" class="more-info">More Info</a>
                 </div>
               </li>
@@ -104,19 +84,14 @@
             <h4>Social</h4>
             <ul>
               <li class="service-item service-item-social-bookmarking">
-                <div class="title">
-                  Social Bookmarking
-                </div>
+                <div class="title"><span>Social Bookmarking</span></div>
                 <div class="actions">
                   <a href="<?php print servula_info('full_url'); ?>/orders/new/social-bookmarking" class="order-now">Start Now</a>
-                  OR
                   <a href="<?php print site_url('services/social-bookmarking/'); ?>" class="more-info">More Info</a>
                 </div>
               </li>
               <li class="service-item service-item-blog-building">
-                <div class="title">
-                  Blog Building
-                </div>
+                <div class="title"><span>Blog Building</span></div>
                 <div class="actions">
                   <a href="<?php print servula_info('full_url'); ?>/orders/new/blog-building" class="order-now">Start Now</a>
                 </div>
@@ -127,9 +102,7 @@
             <h4>Other</h4>
             <ul>
               <li class="service-item service-item-dedicated-freelancer">
-                <div class="title">
-                  Dedicated Freelancer
-                </div>
+                <div class="title"><span>Dedicated Freelancer</span></div>
                 <div class="actions">
                   <a href="<?php print servula_info('full_url'); ?>/orders/new/dedicated-freelancer" class="order-now">Start Now</a>
                 </div>

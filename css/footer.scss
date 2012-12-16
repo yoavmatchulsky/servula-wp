@@ -31,6 +31,7 @@ footer {
       
       &.social-links {
         width: 300px;
+        height: 21px;
         padding-left: 0;
         margin-top: 10px;
         clear: both;
@@ -52,18 +53,24 @@ footer {
           float: left;
           width: 36px;
           height: 36px;
-          background: url(images/footer/linked-in.png) 0 0 no-repeat;
+          background: url(images/footer/social-links.png) 0 0 no-repeat;
           
+          &#social-links-image-twitter {
+            background-position: 0 -36px;
+            &:hover {
+              background-position: -36px -36px;
+            }            
+          }
+          
+          &#social-links-image-facebook {
+            background-position: 0 -72px;
+            &:hover {
+              background-position: -36px -72px;
+            }            
+          }
+
           &:hover {
             background-position: -36px 0;
-          }
-
-          &#social-links-image-facebook {
-            background-image: url(images/footer/facebook.png);
-          }
-
-          &#social-links-image-twitter {
-            background-image: url(images/footer/twitter.png);
           }
         }
       }
