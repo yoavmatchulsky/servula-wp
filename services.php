@@ -36,10 +36,10 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
 ?>
 <div id="leftcolumn" class="<?php print implode(' ', $classes); ?>">
   <div class="service-header-tabs">
-    <span class="service-header-tab current">Description</span>
     <?php if ($order_now) : ?>
     <span class="service-header-tab"><a href="<?php print $order_now; ?>">Start Now</a></span>
     <?php endif; ?>
+    <span class="service-header-tab current">Description &amp; Examples</span>
     <?php if ($sources_tab) : ?>
     <span class="service-header-tab"><a href="<?php print $sources_tab; ?>">Sources</a></span>
     <?php endif; ?>
