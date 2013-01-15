@@ -1,0 +1,41 @@
+.page-ebook {
+  &#leftcolumn {
+    padding-right: inherit;
+    padding-left: 65px;
+  }
+
+  &#rightcolumn {
+    float: right;
+    margin-left: inherit;
+    margin-right: 0;
+  }
+
+  .post {
+    ul {
+      padding-left: inherit;
+      padding-right: 0;
+      
+      li {
+        clear: right;
+        
+        &:before {
+          float: right;
+          margin-right: inherit;
+          margin-left: 15px;
+          background: url(images/check-sign-green.png) no-repeat top right;
+        }
+      }
+    }
+  }
+}
+
+.widget-download-ebook {
+  form {
+    text-align: right;
+  }
+  
+  .pdf-size {
+    float: left;
+    text-align: right;
+  }
+}

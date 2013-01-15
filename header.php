@@ -19,7 +19,12 @@
   var Servula = {
     system_url : "<?php print servula_info('full_url'); ?>",
     func : {},
-    session_info : {}
+    session_info : {},
+    locale : {
+      language : '<?php bloginfo('language'); ?>',
+      is_rtl : <?php print (get_bloginfo('text_direction') == 'rtl' ? 'true' : 'false'); ?>
+      
+    }
   }
   /* ]]> */
 
@@ -94,6 +99,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
               'fallback_cb' => '', ) ); ?>
 
       <?php if (!isset($servula['show-user-info']) or $servula['show-user-info']) : ?>
+      <?php $arrow_sign = '<span class="arrow-sign">' . __('&#9654;', 'servula') . '</span>'; ?>
       <div class="info-wrapper">
         <div class="info-item-wrapper">
           <img alt="Credits" height="24" src="<?php bloginfo('template_url'); ?>/images/header/gold-coin-24x24.png" width="24" />
@@ -101,14 +107,14 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
             <div class="uppercase header-credits-text">
               <?php print servula_info('header_credits_text'); ?>
             </div>
-            <a href="<?php print servula_info('full_url'); ?>/credits/plans">Buy Credits <span class="arrow-sign">&#9654;</span></a>
+            <a href="<?php print servula_info('full_url'); ?>/credits/plans"><?php printf( __('Buy Credits %s', 'servula'), $arrow_sign ); ?></a>
           </div>
         </div>
         <div class="info-item-wrapper">
           <a href="<?php print servula_info('full_url'); ?>/orders/checkout"><img alt="Go to Cart" height="24" src="<?php bloginfo('template_url'); ?>/images/header/cart-24x24.png" width="24" /></a>
           <div class="info-item-text">
             <div class="uppercase header-services-in-cart"><?php print servula_info('header_services_in_cart'); ?></div>
-            <a href="<?php print servula_info('full_url'); ?>/">Order Services <span class="arrow-sign">&#9654;</span></a>
+            <a href="<?php print servula_info('full_url'); ?>/"><?php printf( __('Order Services %s', 'servula'), $arrow_sign ); ?></a>
           </div>
         </div>
       </div>
@@ -118,44 +124,44 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
         <span class="header-user-name"></span>
         <div class="login-form-wrapper hidden">
           <ul>
-            <li><a class="header-dashboard-link" href="#">Dashboard</a></li>
-            <li><a class="header-edit-link" href="#">Account Settings</a></li>
+            <li><a class="header-dashboard-link" href="#"><?php _e('Dashboard', 'servula'); ?></a></li>
+            <li><a class="header-edit-link" href="#"><?php _e('Account Settings', 'servula'); ?></a></li>
             <li>
-              <a href="<?php print servula_info('credits_url'); ?>" style="display: inline-block;">Buy Credits</a>
-              (<span class="header-user-credits">0</span> left)
+              <a href="<?php print servula_info('credits_url'); ?>" style="display: inline-block;"><?php _e('Buy Credits', 'servula'); ?></a>
+              <?php sprintf( _e('(%s left)', 'servula'), '<span class="header-user-credits">0</span>' ); ?>
             </li>
             <hr />
-            <li><a href="<?php print servula_info('full_url'); ?>/logout">Logout</a></li>
+            <li><a href="<?php print servula_info('full_url'); ?>/logout"><?php _e('Logout', 'servula'); ?></a></li>
           </ul>
         </div>
       </div>
       
       <div class="login-register-wrapper">
         <img src="<?php bloginfo('template_url'); ?>/images/header/down-arrow-16x16.png" width="16" height="16" />
-        <span class="login-register-button">Login/Register</span>
+        <span class="login-register-button"><?php _e('Login/Register', 'servula'); ?></span>
         <div class="login-form-wrapper hidden">
           <form action="<?php print servula_info('full_url'); ?>/sessions" method="POST" accept-charset="UTF-8">
             <input type="hidden" value="✓" name="utf8">
             
             <div class="form-item" style="margin-top: 0;">
-              <label for="session_email">Email:</label>
+              <label for="session_email"><?php _e('Email:', 'servula'); ?></label>
               <input type="text" value="" tabindex="1" size="35" name="session[email]" id="session_email">
             </div>
             
             <div class="form-item">
-              <span class="forgot-password"><a href="<?php print servula_info('full_url'); ?>/password_resets/new">Forgot Password?</a></span>
-              <label for="session_password">Password:</label>
+              <span class="forgot-password"><a href="<?php print servula_info('full_url'); ?>/password_resets/new"><?php _e('Forgot Password?', 'servula'); ?></a></span>
+              <label for="session_password"><?php _e('Password:', 'servula'); ?></label>
               <input type="password" tabindex="2" size="35" name="session[password]" id="session_password">
             </div>
             
             <div class="form-item">            
               <input type="hidden" value="0" name="session[remember_me]"><input type="checkbox" value="1" name="session[remember_me]" id="session_remember_me">
-              <label for="session_remember_me">Remember Me</label>
+              <label for="session_remember_me"><?php _e('Remember Me', 'servula'); ?></label>
             </div>
             
-            <input type="submit" value="Login" tabindex="3" name="commit">
-            Or
-            <a href="<?php print servula_info('full_url'); ?>/register">Register now</a>
+            <input type="submit" value="<?php _e('Login', 'servula'); ?>" tabindex="3" name="commit">
+            <?php _e('Or', 'servula'); ?>
+            <a href="<?php print servula_info('full_url'); ?>/register"><?php _e('Register now', 'servula'); ?></a>
           </form>
         </div>
       </div>

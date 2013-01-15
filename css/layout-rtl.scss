@@ -1,0 +1,30 @@
+#leftcolumn {
+  float: right;
+  width: 215px;
+  overflow: hidden;
+}
+
+#rightcolumn {
+  width: 695px;
+  margin-left: auto;
+  margin-right: 215px;
+  .post {
+    float: right;
+  }
+}
+
+.alignleft {
+  float: right;
+}
+
+.alignright {
+  float: left;
+}
+
+body.body-no-sidebar-page {
+  #rightcolumn {
+    width: 960px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}

@@ -46,7 +46,7 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
       <?php endforeach; ?>
       
       <?php if ($order_now) : ?>
-        <a href="<?php print $order_now; ?>" class="order-now">Order Now</a>
+        <a href="<?php print $order_now; ?>" class="order-now"><?php _e('Order Now', 'servula'); ?></a>
       <?php endif; ?>
     </div>
     <?php endif; ?>
@@ -66,7 +66,7 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
     <?php
       $download_title = $post_custom['ebook_title'][0];
       if (empty($download_title)) {
-        $download_title = 'Download your eBook now!';
+        $download_title = __('Download your eBook now!', 'servula');
       }
       
       $pdf_size = $post_custom['ebook_pdf_size'][0];
@@ -87,10 +87,10 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
       <input type="hidden" name="reallistid" value="1">
       <input type="hidden" name="doubleopt" value="0">
       <div id="signup">
-        <input type="text" name="fields_fname" placeholder="Full name" />
-        <input type="text" name="fields_email" placeholder="Email" />
-        <span class="pdf-size">PDF file (<?php print $pdf_size; ?> size)</span>
-        <input type="submit" name="Submit" value="Download" />
+        <input type="text" name="fields_fname" placeholder="<?php _e('Full name', 'servula'); ?>" />
+        <input type="text" name="fields_email" placeholder="<?php _e('Email', 'servula'); ?>" />
+        <span class="pdf-size"><?php printf( __('PDF file (%s size)', 'servula'), $pdf_size); ?></span>
+        <input type="submit" name="Submit" value="<?php _e('Download', 'servula'); ?>" />
       </div>
     </form>    
   </div>

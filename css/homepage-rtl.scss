@@ -1,0 +1,121 @@
+#homepage-wrapper {
+  text-align: right;
+
+  .tabs {
+    .tabs-header {
+      .current-credits-wrapper {
+        float: left;
+        margin-right: 0;
+        margin-left: 20px;
+      }
+    
+      ul {
+        li {
+          margin: 0 10px 0 0;
+          float: right;
+          a {
+            padding: 13px 26px 6px 30px;
+          }
+        }
+      }
+    }
+  }
+    
+  #services-wrapper {
+    .services-column {
+      float: right;
+      border-right-color: #d7d7d7;
+      border-left-color: white;
+
+      &:first-child {
+        border-left-width: 1px;
+        border-right: 0;
+      }
+
+      &:last-child {
+        margin-right: inherit;
+        margin-left: 0;
+        border-right: 1px solid #D7D7D7;
+        border-left: 0;
+      }
+
+      h4 {
+        padding-left: 0;
+        padding-right: 15px;
+      }
+      
+      ul {
+        li.service-item {
+          .title {
+            &:before {
+              float: right;
+            }
+          }
+          
+          a {
+            &.order-now {
+              margin-right: 0;
+              margin-left: 4px;
+            }
+            
+            &.more-info {
+              margin-left: 0;
+              margin-right: 4px;
+            }
+          }
+          
+          &.service-item-new {
+            .title:after {
+              right: auto;
+              left: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  #recent-posts {
+    #posts-wrapper {
+      .to-all-posts {
+        float: left;
+      }
+    }
+    
+    .articles-column {
+      float: right;
+    }
+    
+    article {
+      clear: right;
+
+      .attachment-post-thumbnail {
+        float: right;
+        margin-right: 0;
+        margin-left: 10px;
+      }
+
+      h2 {
+        padding-left: inherit;
+        padding-right: 0;
+        text-align: right;
+      }
+
+      .post-date {
+        left: auto;
+        right: 108px;
+      }
+    }
+  }
+
+  #interested {
+    .to-get-started {
+      float: left;
+      background: url(images/homepage/get-started-now-arrow.png) top left no-repeat;
+      padding-right: inherit;
+      padding-left: 24px;
+    }
+  }
+}
+
+@import 'css/testimonials-rtl';

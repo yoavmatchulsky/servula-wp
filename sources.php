@@ -37,15 +37,15 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
 <div id="leftcolumn" class="<?php print implode(' ', $classes); ?>">
   <div class="service-header-tabs">
     <?php if ($services_tab) :?>
-    <span class="service-header-tab"><a href="<?php print $services_tab; ?>">Description</a></span>
+    <span class="service-header-tab"><a href="<?php print $services_tab; ?>"><?php _e('Description', 'servula'); ?></a></span>
     <?php endif; ?>
     <?php if ($order_now) : ?>
-    <span class="service-header-tab"><a href="<?php print $order_now; ?>">Start Now</a></span>
+    <span class="service-header-tab"><a href="<?php print $order_now; ?>"><?php _e('Start Now', 'servula'); ?></a></span>
     <?php endif; ?>
-    <span class="service-header-tab current">Sources</span>
+    <span class="service-header-tab current"><?php _e('Sources', 'servula'); ?></span>
   </div>
     
-  <span class="more-link-in-header"><a href="<?php print servula_info('full_url'); ?>">Back to Services page</a></span>
+  <span class="more-link-in-header"><a href="<?php print servula_info('full_url'); ?>"><?php _e('Back to Services page', 'servula'); ?></a></span>
   
   <?php the_post(); ?>
   <div class="post" id="post-<?php the_ID(); ?>">

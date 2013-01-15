@@ -18,12 +18,12 @@ function ebook_meta_box_callback( $post ) {
   
   ?>
   <div class="form-item">
-    <label style="display: block;" for="ebook_title">Download eBook title</label>
+    <label style="display: block;" for="ebook_title"><?php _e('Download eBook title', 'servula'); ?></label>
     <input type="text" id="ebook_title" name="ebook_title" value="<?php print $values['ebook_title'][0]; ?>" />
   </div>
 
   <div class="form-item" style="margin-top: 10px;">
-    <label style="display: block;" for="ebook_pdf_size">PDF size</label>
+    <label style="display: block;" for="ebook_pdf_size"><?php _e('PDF size', 'servula'); ?></label>
     <input type="text" id="ebook_pdf_size" name="ebook_pdf_size" value="<?php print $values['ebook_pdf_size'][0]; ?>" />
   </div>
   <?php

@@ -27,8 +27,8 @@ Template Name: Inner Page
 
 	  <?php else : ?>
 	  <div class="post">
-		  <div class="title"><h2>Not Found</h2></div>
-		  <p>Sorry, but you are looking for something that isn't here.</p>
+		  <div class="title"><h2><?php _e('Not Found', 'servula'); ?></h2></div>
+		  <p><?php _e("Sorry, but you are looking for something that isn't here.", 'servula'); ?></p>
 	  </div>
 
   <?php endif; ?>

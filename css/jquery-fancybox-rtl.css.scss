@@ -1,0 +1,52 @@
+#fancybox-close {
+  right: inherit;
+  left: -15px;
+}
+
+#fancybox-left {
+  left: auto;
+	right: 0px;
+}
+
+#fancybox-right {
+  right: auto;
+	left: 0px;
+}
+
+#fancybox-left-ico {
+  background-position: -40px -60px;
+}
+
+#fancybox-right-ico {
+  background-position: -40px -30px;
+}
+
+#fancybox-left:hover span {
+	left: auto;
+	right: 20px;
+}
+
+#fancybox-right:hover span {
+	left: 20px;
+	right: auto;
+}
+
+.fancybox-title-over {
+	right: 0;
+	text-align: right;
+}
+
+.fancybox-title-float {
+	right: 0;
+	left: auto;
+}
+
+#fancybox-title-float-left {
+	padding: 0 15px 0 0;
+  background-position: -55px -90px;
+}
+
+#fancybox-title-float-right {
+	padding: 0 15px 0 0;
+  background-position: -40px -90px;
+}

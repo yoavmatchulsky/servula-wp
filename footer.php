@@ -1,41 +1,34 @@
-<?php
-/**
- * @package WordPress
- * @subpackage Hello_D
- */
-?>
-
 </div>
 <footer>
   <div class="wrapper">
     <ul>
       <li style="width: 230px;">
-        <h3>Learn About Us</h3>
+        <h3><?php _e('Learn About Us', 'servula'); ?></h3>
         <ul>
-          <li><a href="<?php print site_url('about/'); ?>">What we do?</a></li>
-          <li><a href="<?php print site_url('values/'); ?>">Our Values</a></li>
-          <li><a href="<?php print site_url('faq/'); ?>">FAQ</a></li>
-          <li><a href="<?php print site_url('inbound-marketing/'); ?>">What is Inbound Marketing?</a></li>
+          <li><a href="<?php print site_url('about/'); ?>"><?php _e('What we do?', 'servula'); ?></a></li>
+          <li><a href="<?php print site_url('values/'); ?>"><?php _e('Our Values', 'servula'); ?></a></li>
+          <li><a href="<?php print site_url('faq/'); ?>"><?php _e('FAQ', 'servula'); ?></a></li>
+          <li><a href="<?php print site_url('inbound-marketing/'); ?>"><?php _e('What is Inbound Marketing?', 'servula'); ?></a></li>
         </ul>
       </li>
       <li>
         <ul>
           <h3>&nbsp;</h3>
-          <li><a href="<?php print site_url('jobs/'); ?>">Jobs</a></li>
-          <li><a href="<?php print site_url('contact/'); ?>">Contact Us</a></li>
-          <li><a href="<?php print site_url('blog/'); ?>">Blog</a></li>
+          <li><a href="<?php print site_url('jobs/'); ?>"><?php _e('Jobs', 'servula'); ?></a></li>
+          <li><a href="<?php print site_url('contact/'); ?>"><?php _e('Contact Us', 'servula'); ?></a></li>
+          <li><a href="<?php print site_url('blog/'); ?>"><?php _e('Blog', 'servula'); ?></a></li>
         </ul>
       </li>
       <li>
-        <h3>General</h3>
+        <h3><?php _e('General', 'servula'); ?></h3>
         <ul>
-          <li><a href="<?php print servula_info('full_url'); ?>">Our Services</a></li>
-          <li><a href="<?php print servula_info('full_url'); ?>/register">Register Now!</a></li>
-          <li><a href="<?php print servula_info('full_url'); ?>/terms-of-service">Terms of Service</a></li>
+          <li><a href="<?php print servula_info('full_url'); ?>"><?php _e('Our Services', 'servula'); ?></a></li>
+          <li><a href="<?php print servula_info('full_url'); ?>/register"><?php _e('Register Now!', 'servula'); ?></a></li>
+          <li><a href="<?php print servula_info('full_url'); ?>/terms-of-service"><?php _e('Terms of Service', 'servula'); ?></a></li>
         </ul>
       </li>
       <li>
-        <h3>Spread the word!</h3>
+        <h3><?php _e('Spread the word!', 'servula'); ?></h3>
         <ul class="social-links">
           <?php $url = home_url('/'); ?>
           <li><a href="https://twitter.com/servulashop" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false" data-lang="en" data-width="90px">Follow @servulashop</a></li>
@@ -52,13 +45,17 @@
     </ul>
     
     <div class="newsletter-wrapper">
+      <?php if (servula_info('rtl')) : ?>
+      <img src="<?php bloginfo('template_url'); ?>/images/footer/servula-logo-rtl.png" />
+      <?php else : ?>
       <img src="<?php bloginfo('template_url'); ?>/images/footer/servula-logo.png" />
+      <?php endif; ?>
       
       <div class="newsletter-bubble">
         <div class="newsletter-text">
-          <strong>Hey! Get over here.</strong>
+        <?php _e("<strong>Hey! Get over here.</strong>
           Sign up for Servula's newsletter and get updates about our latest activities,
-          blog posts, special offers and cool tips!
+          blog posts, special offers and cool tips!", 'servula', 'newsletter-sign-up'); ?>
         </div>
         
         <form action="http://app.icontact.com/icp/signup.php" name="icpsignup" id="icpsignup5242" method="post" accept-charset="UTF-8">
@@ -71,9 +68,9 @@
           <input type="hidden" value="1" name="reallistid">
           <input type="hidden" value="0" name="doubleopt">          
 
-          <input type="submit" value="Sign Up" tabindex="102" />
-          <input type="text" name="fields_fname" value="" placeholder="Name" tabindex="100" />
-          <input type="text" name="fields_email" value="" placeholder="Email" tabindex="101" />
+          <input type="submit" value="<?php _e('Sign Up', 'servula', 'newsletter-sign-up'); ?>" tabindex="102" />
+          <input type="text" name="fields_fname" value="" placeholder="<?php _e('Name', 'servula', 'newsletter-sign-up'); ?>" tabindex="100" />
+          <input type="text" name="fields_email" value="" placeholder="<?php _e('Email', 'servula', 'newsletter-sign-up'); ?>" tabindex="101" />
         </form>
       </div>
     </div>

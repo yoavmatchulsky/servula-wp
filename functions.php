@@ -166,21 +166,21 @@ function servula_info($key = '') {
       
       case 'header_credits_text' : 
         if (!$servula['logged_in'] or $servula['user_credits'] <= 0) {
-          return 'No Credits, Yet';
+          return __('No Credits, Yet', 'servula');
         }
         else {
-          return "<strong>" . intval($servula['user_credits']) . "</strong> Credits Left";
+          return sprintf( __("<strong>%d</strong> Credits Left", 'servula'), intval($servula['user_credits']) );
         }
       case 'header_services_in_cart' :
-        if ($servula['user_services'] > 1) {
-          return '<strong>' . $servula['user_services'] . '</strong> Services in Cart';
-        }
-        elseif ($servula['user_services'] == 1) {
-          return '<strong>1</strong> Service in Cart';
+        if ($servula['user_services'] >= 1) {
+          return sprintf( _n('<strong>%d</strong> Service in Cart', '<strong>%d</strong> Services in Cart', 'servula'), $servula['user_services'] );
         }
         else {
-          return 'Cart is Empty';
-        }                
+          return __('Cart is Empty', 'servula');
+        }
+        
+      case 'rtl' :
+        return (get_bloginfo('text_direction') == 'rtl');
     }
   }
   
@@ -247,4 +247,8 @@ function get_page_by_slug($page_slug, $output = OBJECT, $post_type = 'page' ) {
   return $page ? get_page($page, $output) : null;
 }
 
+add_action('after_setup_theme', 'servula_theme_setup');
+function servula_theme_setup(){
+  load_theme_textdomain('servula', get_template_directory() . '/languages');
+}
 include 'functions-page.php';

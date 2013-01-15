@@ -37,14 +37,30 @@ $(function () {
       text_wrapper = texts_wrapper.find('.testimonial-text-wrapper').addClass('hidden').filter('[data-key="' + key + '"]')
 
       ul = testimonials_wrapper.find('ul');
-      left_position_of_ul = parseInt(ul.css('left'));
-      new_left = t.position().left + left_position_of_ul + 49;
-      if (new_left + 400 > 960) {
-        new_left -= 300;
-        texts_wrapper.addClass('tilted-left');
-      }
+      
+      if (Servula.locale.is_rtl) {
+        li_count              = ul.find('.testimonial-wrapper').length;
+        lis_width             = Servula.testimonials.li_width * li_count;
+        right_position_of_ul  = parseInt(ul.css('right'));
+        new_right             = (lis_width - t.position().left) + right_position_of_ul - 30;
+        if (new_right + 400 > 960) {
+          new_right -= 295;
+          texts_wrapper.addClass('tilted-left');
+        }
 
-      texts_wrapper.css('left', new_left)
+        texts_wrapper.css('right', new_right);
+      }
+      else {
+        left_position_of_ul = parseInt(ul.css('left'));
+        new_left = t.position().left + left_position_of_ul + 49;
+
+        if (new_left + 400 > 960) {
+          new_left -= 300;
+          texts_wrapper.addClass('tilted-left');
+        }
+
+        texts_wrapper.css('left', new_left)
+      }
       text_wrapper.removeClass('hidden');
     },
     
@@ -63,27 +79,29 @@ $(function () {
   });
 
   testimonials_wrapper.find('.testimonials-buttons-wrapper').on('mousedown', function (e) {
+    left_attribute = Servula.locale.is_rtl ? 'right' : 'left'
     ul = testimonials_wrapper.find('ul');
-    left = parseInt(ul.css('left'));
-    
+    left = parseInt(ul.css(left_attribute));
+
+    animation = {}    
     is_next = $(this).hasClass('testimonials-next-wrapper');
     if (is_next) {
       li_count = ul.find('.testimonial-wrapper').length;
       lis_width = Servula.testimonials.li_width * li_count;
       
       if (lis_width - (-left) - Servula.testimonials.step < Servula.testimonials.strip_width) {
-        animation = { left : (Servula.testimonials.strip_width - lis_width) + 'px' }
+        animation[left_attribute] = (Servula.testimonials.strip_width - lis_width) + 'px';
       }
       else {
-        animation = { left : '-=' + Servula.testimonials.step + 'px' };
+        animation[left_attribute] = '-=' + Servula.testimonials.step + 'px';
       }
     }
     else {
       if (left + Servula.testimonials.step > 0) {
-        animation = { left : '0px' };
+        animation[left_attribute] = '0px';
       }
       else {
-        animation = { left : '+=' + Servula.testimonials.step + 'px' };
+        animation[left_attribute] = '+=' + Servula.testimonials.step + 'px';
       }
     }
     ul.stop(true, true).animate(animation, Servula.testimonials.duration);

@@ -37,15 +37,15 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
 <div id="leftcolumn" class="<?php print implode(' ', $classes); ?>">
   <div class="service-header-tabs">
     <?php if ($order_now) : ?>
-    <span class="service-header-tab"><a href="<?php print $order_now; ?>">Start Now</a></span>
+    <span class="service-header-tab"><a href="<?php print $order_now; ?>"><?php _e('Start Now', 'servula'); ?></a></span>
     <?php endif; ?>
-    <span class="service-header-tab current">Description &amp; Examples</span>
+    <span class="service-header-tab current"><?php _e('Description &amp; Examples', 'servula'); ?></span>
     <?php if ($sources_tab) : ?>
-    <span class="service-header-tab"><a href="<?php print $sources_tab; ?>">Sources</a></span>
+    <span class="service-header-tab"><a href="<?php print $sources_tab; ?>"><?php _e('Sources', 'servula'); ?></a></span>
     <?php endif; ?>
   </div>
     
-  <span class="more-link-in-header"><a href="<?php print servula_info('full_url'); ?>">Back to Services page</a></span>
+  <span class="more-link-in-header"><a href="<?php print servula_info('full_url'); ?>"><?php _e('Back to Services page', 'servula'); ?></a></span>
   
   <?php the_post(); ?>
   <div class="post" id="post-<?php the_ID(); ?>">
@@ -77,7 +77,7 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
       <?php endforeach; ?>
       
       <?php if ($order_now) : ?>
-        <a href="<?php print $order_now; ?>" class="order-now">Start Now</a>
+        <a href="<?php print $order_now; ?>" class="order-now"><?php _e('Start Now', 'servula'); ?></a>
       <?php endif; ?>
     </div>
     <?php endif; ?>
@@ -89,7 +89,7 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
     <?php $related_services = $post_custom['related-service']; ?>
     <?php if ($related_services) : ?>
     <div class="related-services">
-      <h3>Related Services:</h3>
+      <h3><?php _e('Related Services:', 'servula'); ?></h3>
       
       <ul>
       <?php foreach ($related_services as $related_service) :
@@ -103,7 +103,7 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
       ?>
         <li><a href="<?php print get_permalink($post_id); ?>"><img src="<?php print $service_icon; ?>" /><?php print $page->post_title; ?></a></li>
       <?php endforeach; ?>
-        <li class="more-services"><a href="<?php print servula_info('full_url'); ?>">More Services &raquo;</a></li>
+        <li class="more-services"><a href="<?php print servula_info('full_url'); ?>"><?php _e('More Services &raquo;', 'servula'); ?></a></li>
       </ul>
     </div>
     <?php endif; ?>

@@ -1,0 +1,40 @@
+.testimonials-wrapper {
+  .testimonials-buttons-wrapper {
+    float: right;
+    margin-right: inherit;
+    margin-left: 7px;
+  }
+
+  .testimonials-next-wrapper {
+    margin-left: 0;
+    margin-right: 7px;
+  }
+
+  .testimonials-strip {
+    float: right;
+  }
+
+  .testimonial-wrapper {
+    float: right;
+    margin-right: inherit;
+    margin-left: 7px;
+    
+    .testimonial-title {
+      padding: 3px 5px 5px 0;
+    }
+  }
+
+  .testimonials-text-wrapper {
+    &:before, &:after {
+      left: auto;
+      right: 43px;
+    }
+
+    &.tilted-left {
+      &:before, &:after {
+        right: auto;
+        left: 43px;
+      }
+    }
+  }
+}

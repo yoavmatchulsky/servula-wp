@@ -177,7 +177,11 @@ $width = 109;
 ?>
 <div class="testimonials-wrapper">
   <div class="testimonials-buttons-wrapper testimonials-prev-wrapper">
+    <?php if (servula_info('rtl')) : ?>
+    <img src="<?php bloginfo('template_url'); ?>/images/arrow-next.png" />
+    <?php else: ?>
     <img src="<?php bloginfo('template_url'); ?>/images/arrow-prev.png" />
+    <?php endif; ?>
   </div>
   <div class="testimonials-strip">
     <ul>
@@ -196,7 +200,11 @@ $width = 109;
     </ul>
   </div>
   <div class="testimonials-buttons-wrapper testimonials-next-wrapper">
+    <?php if (servula_info('rtl')) : ?>
+    <img src="<?php bloginfo('template_url'); ?>/images/arrow-prev.png" />
+    <?php else: ?>
     <img src="<?php bloginfo('template_url'); ?>/images/arrow-next.png" />
+    <?php endif; ?>
   </div>
   
   <div class="testimonials-text-wrapper hidden">

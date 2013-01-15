@@ -1,0 +1,38 @@
+.post {
+  text-align: right;
+
+  ul.list-with-columns {
+
+    & > li {
+      float: right;
+      margin-right: 0;
+      margin-left: 10px;
+
+      ul {
+        padding-left: 0;
+        padding-right: 18px;
+      }
+    }
+  }
+}
+
+#related h3, h3#comments, #respond h3 {
+  background: url(images/title.png) no-repeat 0 8px;
+  padding: 5px 38px 0 15px;
+}
+
+/* = Comment Form */
+#respond {
+  label {
+    margin-left: 0;
+    margin-right: .5em;
+  }
+}
+
+.cancel-comment-reply {
+  float: left;
+}
+
+img.avatar {
+  float: left;
+}

@@ -1,0 +1,20 @@
+li.widget_nav_menu {
+  text-align: right;
+}
+
+li.widget {
+  text-align: right;
+  
+  ul {
+    margin: 5px 0 0 10px;
+    
+    li {
+      padding-left: 0;
+      padding-right: 28px;
+
+      &.current-menu-item {
+        background: url(images/li-inner-page-rtl.png) no-repeat -2px -1px;
+      }
+    }
+  }
+}
