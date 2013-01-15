@@ -389,13 +389,13 @@ body.homepage {
   #interested {
     clear: both;
     border: 1px solid #eee7c3;
-    border-radius: 4px;
     background: #fffbe7;
     color: #784a32;
     font-family: 'Museo-300';
     font-size: 16px;
     line-height: 1;
     padding: 15px 20px 18px;
+    @include round-corners(4px);
     
     .to-get-started {
       float: right;
