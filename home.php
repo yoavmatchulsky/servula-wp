@@ -50,7 +50,7 @@
           <div id="service-link-building" class="services-column">
             <h4><?php _e('SEO', 'servula'); ?></h4>
             <ul>
-              <li class="service-item service-item-local-listing service-item-new">
+              <li class="service-item service-item-local-listing">
                 <div class="title"><span><?php _e('Local Listing', 'servula'); ?></span></div>
                 <div class="actions">
                   <a href="<?php print servula_info('full_url'); ?>/orders/new/local-listing" class="order-now"><?php _e('Start Now', 'servula'); ?></a>
