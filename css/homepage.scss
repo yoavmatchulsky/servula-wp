@@ -402,12 +402,23 @@ body.homepage {
       font-family: Arial;
       font-size: 14px;
       font-weight: bold;
-      background: url(images/homepage/get-started-now-arrow.png) top right no-repeat;
-      padding-right: 24px;
       height: 20px;
       color: #784a32;
+      margin-right: 11px;
+      position: relative;
+      
       &:hover {
         text-decoration: underline;
+      }
+      
+      &:after {
+        content: '';
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        background: url(images/homepage/get-started-now-arrow.png) 0 0 no-repeat;
+        right: -22px;
+        top: -2px
       }
     }
 
