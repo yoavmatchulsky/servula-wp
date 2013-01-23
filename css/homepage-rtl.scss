@@ -64,6 +64,7 @@
           }
           
           a {
+            padding: 7px 15px;
             &.order-now {
               margin-right: 0;
               margin-left: 4px;
@@ -121,12 +122,18 @@
 
   #interested {
     font-family: 'Alef';
+    padding-bottom: 14px;
     
     .to-get-started {
       float: left;
-      background: url(images/homepage/get-started-now-arrow.png) top left no-repeat;
-      padding-right: inherit;
-      padding-left: 24px;
+      margin-right: 0;
+      margin-left: 9px;
+      
+      &:after {
+        background-position: -18px 0;
+        right: auto;
+        left: -22px;
+      }
     }
   }
 }

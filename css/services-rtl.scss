@@ -64,7 +64,7 @@
     float: left;
 
     a:before {
-      content: "\25C2 ";
+      content: "\25B8 ";
       margin-right: inherit;
       margin-left: 7px;
     }
@@ -119,6 +119,7 @@
 
     h2 {
       padding: 15px 46px 8px 10px;
+      background-position: top right;
       
       &:after {
         left: auto;

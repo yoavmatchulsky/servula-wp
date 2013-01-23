@@ -23,6 +23,11 @@
       padding: 3px 5px 5px 0;
     }
   }
+  
+  ul {
+    left: auto;
+    right: 0;
+  }
 
   .testimonials-text-wrapper {
     &:before, &:after {
