@@ -99,6 +99,8 @@
   }
 
   h1.title {
+    font-family: 'Alef';
+    font-weight: bold;
     img {
       margin-left: inherit;
       margin-right: 10px;
@@ -178,6 +180,10 @@
   }
 
   .related-services {
+    h3 {
+      font-family: 'Alef';
+    }
+    
     ul {
       li {
         float: right;

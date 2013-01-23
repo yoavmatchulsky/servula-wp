@@ -1,6 +1,15 @@
 #homepage-wrapper {
   text-align: right;
 
+  h1 {
+    font-family: 'Alef';
+    font-weight: bold;
+  }
+  
+  h2, h3 {
+    font-family: 'Alef';
+  }
+  
   .tabs {
     .tabs-header {
       .current-credits-wrapper {
@@ -42,6 +51,8 @@
       h4 {
         padding-left: 0;
         padding-right: 15px;
+        font-family: 'Alef';
+        font-weight: bold;
       }
       
       ul {
@@ -109,6 +120,8 @@
   }
 
   #interested {
+    font-family: 'Alef';
+    
     .to-get-started {
       float: left;
       background: url(images/homepage/get-started-now-arrow.png) top left no-repeat;
