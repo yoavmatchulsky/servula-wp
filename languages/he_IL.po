@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Servula\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-15 12:59+0200\n"
-"PO-Revision-Date: 2013-01-15 13:47+0200\n"
+"POT-Creation-Date: 2013-01-23 11:28+0200\n"
+"PO-Revision-Date: 2013-01-23 12:09+0200\n"
 "Last-Translator: Yoav Matchulsky <yoavmatchulsky@gmail.com>\n"
 "Language-Team: Servula <admin@servula.com>\n"
 "Language: \n"
@@ -40,7 +40,7 @@ msgstr "אם אתה חושב שזאת טעות, אתה מוזמן להשתמש �
 
 #: ../404.php:20
 msgid "posts archive"
-msgstr "ארכיון כתבות"
+msgstr "ארכיון פוסטים"
 
 #: ../404.php:21
 #, php-format
@@ -55,9 +55,25 @@ msgstr ""
 msgid "Sidebar menu"
 msgstr ""
 
+#: ../functions.php:55
+#: ../home.php:31
+#: ../home.php:38
+#: ../home.php:44
+#: ../home.php:56
+#: ../home.php:63
+#: ../home.php:70
+#: ../home.php:77
+#: ../home.php:89
+#: ../home.php:96
+#: ../home.php:107
+#: ../services.php:40
+#: ../services.php:80
+msgid "Start Now"
+msgstr "התחל כעת"
+
 #: ../functions.php:169
 msgid "No Credits, Yet"
-msgstr "אין קרדיטים"
+msgstr "אין עדיין קרדיטים"
 
 #: ../functions.php:172
 #, php-format
@@ -77,11 +93,11 @@ msgstr "העגלה ריקה"
 
 #: ../home.php:6
 msgid "One-Stop Shop for Inbound Marketing Services"
-msgstr "כל השירותים שמקדם אתרים צריך"
+msgstr "כל השירותים שמקדם אתרים צריך במקום אחד."
 
 #: ../home.php:7
 msgid "All services in one place, done by top professionals, including QA."
-msgstr "כל השירותים במקום אחד, מבוצע ע\"י האנשי מקצוע הטובים ביותר."
+msgstr "העבודה מתבצעת על ידי מקצוענית ועוברת בקרת איכות לפני שנשלחת אליך"
 
 #: ../home.php:12
 msgid "<strong>450+</strong> Professionals are waiting your instructions"
@@ -97,26 +113,11 @@ msgstr "חבילות"
 
 #: ../home.php:26
 msgid "Content"
-msgstr "שירותי תוכן"
+msgstr "תוכן"
 
 #: ../home.php:29
 msgid "Article Writing"
 msgstr "כתיבת תוכן"
-
-#: ../home.php:31
-#: ../home.php:38
-#: ../home.php:44
-#: ../home.php:56
-#: ../home.php:63
-#: ../home.php:70
-#: ../home.php:77
-#: ../home.php:89
-#: ../home.php:96
-#: ../home.php:107
-#: ../services.php:40
-#: ../services.php:80
-msgid "Start Now"
-msgstr "התחל כעת"
 
 #: ../home.php:32
 #: ../home.php:45
@@ -126,7 +127,7 @@ msgstr "התחל כעת"
 #: ../home.php:78
 #: ../home.php:90
 msgid "More Info"
-msgstr "עוד מידע"
+msgstr "הסבר ודוגמאות"
 
 #: ../home.php:36
 msgid "Copywriting"
@@ -182,15 +183,15 @@ msgstr "בקרוב!"
 
 #: ../home.php:124
 msgid "Servula is trusted by..."
-msgstr "דברים שלקוחות אומרים עלינו"
+msgstr "לקוחות אומרים עלינו ש.."
 
 #: ../home.php:132
 msgid "Recent Posts From our Blog"
-msgstr "כתבות אחרונות מהבלוג"
+msgstr "פוסטים אחרונים מהבלוג"
 
 #: ../home.php:158
 msgid "All Posts &raquo;"
-msgstr "כל הכתבות &raquo;"
+msgstr "כל הפוסטים &raquo;"
 
 #: ../home.php:163
 msgid "If you're interested in getting high quality Inbound Marketing Services, you can start using Servula now"
@@ -198,7 +199,7 @@ msgstr "אם אתה מעוניין בקבלת שירותי שיווק, אתה י
 
 #: ../home.php:165
 msgid "Get Started Now"
-msgstr "התחל עכשיו"
+msgstr "התחל כעת"
 
 #: ../functions-page.php:21
 msgid "Download eBook title"
@@ -227,6 +228,10 @@ msgstr "שירותים קשורים:"
 #: ../services.php:106
 msgid "More Services &raquo;"
 msgstr "עוד שירותים &raquo;"
+
+#: ../header.php:92
+msgid "Servula is currently in Beta"
+msgstr "Servula - שירותים למקדמי אתרים"
 
 #: ../header.php:102
 msgid "&#9654;"
@@ -265,11 +270,11 @@ msgstr "התנתק"
 
 #: ../header.php:141
 msgid "Login/Register"
-msgstr "הכנס/הירשם"
+msgstr "התחבר/הירשם"
 
 #: ../header.php:147
 msgid "Email:"
-msgstr "אי-מייל:"
+msgstr "אימייל:"
 
 #: ../header.php:152
 msgid "Forgot Password?"
@@ -310,7 +315,7 @@ msgstr "שם מלא"
 #: ../ebook.php:91
 #: ../footer.php:73
 msgid "Email"
-msgstr "אי-מייל"
+msgstr "אימייל"
 
 #: ../ebook.php:92
 #, php-format
@@ -323,7 +328,7 @@ msgstr "הורד"
 
 #: ../footer.php:6
 msgid "Learn About Us"
-msgstr "למד אודותינו"
+msgstr "אודות"
 
 #: ../footer.php:8
 msgid "What we do?"
@@ -335,7 +340,7 @@ msgstr "הערכים שלנו"
 
 #: ../footer.php:10
 msgid "FAQ"
-msgstr "FAQ"
+msgstr "שאלות נפוצות"
 
 #: ../footer.php:11
 msgid "What is Inbound Marketing?"
@@ -379,17 +384,22 @@ msgid ""
 "          Sign up for Servula's newsletter and get updates about our latest activities,\n"
 "          blog posts, special offers and cool tips!"
 msgstr ""
-"<strong>Hey! Get over here.</strong>\n"
-"          Sign up for Servula's newsletter and get updates about our latest activities,\n"
-"          blog posts, special offers and cool tips!"
+"<strong>אהלן! יש לנו משהו מעניין בשבילך.</strong>\n"
+"          הרשם לניוזלטר של Servula וקבל עדכונים על הפעילות שלנו, מדריכים מקצועיים, הצעות מיוחדות וטיפים לקידום האתר."
 
 #: ../footer.php:71
 msgid "Sign Up"
-msgstr "הירשם"
+msgstr ""
+"הרשם\n"
+"לניוזלטר"
 
 #: ../footer.php:72
 msgid "Name"
 msgstr "שם"
+
+#: ../footer.php:78
+msgid "All right reserved."
+msgstr "כל הזכויות שמורות."
 
 #: ../sources.php:40
 msgid "Description"

@@ -75,7 +75,7 @@
       </div>
     </div>
     <div class="copyright-wrapper">
-  	  &copy; <?php echo date('Y'); ?> <a href="<?php echo site_url(); ?>">Servula</a>, LLC. All right reserved.
+  	  &copy; <?php echo date('Y'); ?> <a href="<?php echo site_url(); ?>">Servula</a>, LLC. <?php _e('All right reserved.', 'servula'); ?>
   	</div>
   </div>
 </footer>

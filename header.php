@@ -89,7 +89,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 	  <div class="wrapper">
 	    <div id="logo-wrapper">
 	      <a href="<?php print get_option('home'); ?>">
-	        <img src="<?php bloginfo('template_url'); ?>/images/logo-beta.png" alt="Servula is currently in Beta" title="Servula is currently in Beta" />
+	        <img src="<?php bloginfo('template_url'); ?>/images/logo-beta.png" alt="<?php _e('Servula is currently in Beta', 'servula'); ?>" title="<?php _e('Servula is currently in Beta', 'servula'); ?>" />
 	      </a>
 	    </div>
 	    

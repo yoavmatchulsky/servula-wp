@@ -52,7 +52,7 @@ function servula_service_page($content) {
     $order_now_end = '</div>';
         
     if (count($order_service_link) > 0) {
-      $order_now_end = '<a href="' . reset($order_service_link) . '" class="order-now">Start Now</a>' . $order_now_end;
+      $order_now_end = '<a href="' . reset($order_service_link) . '" class="order-now">' . __('Start Now', 'servula') . '</a>' . $order_now_end;
     }
 
     $content = preg_replace('!\[\[service-order-now\]\]!', $order_now_start, $content, 1);
