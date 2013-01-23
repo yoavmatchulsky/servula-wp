@@ -179,6 +179,21 @@ function servula_info($key = '') {
           return __('Cart is Empty', 'servula');
         }
         
+      case 'language_slug' :
+        return substr(get_bloginfo('language'), 0, 2);
+        
+      case 'language_underscore' :
+        return str_replace('-', '_', get_bloginfo('language'));
+        
+      case 'google_plus_language' :
+        $slug = servula_info('language_slug');
+        switch ($slug) {
+          case 'en': return 'en-US';
+          case 'he': return 'iw';
+        }
+        
+        return 'en-US';
+        
       case 'rtl' :
         return (get_bloginfo('text_direction') == 'rtl');
     }

@@ -31,8 +31,8 @@
         <h3><?php _e('Spread the word!', 'servula'); ?></h3>
         <ul class="social-links">
           <?php $url = home_url('/'); ?>
-          <li><a href="https://twitter.com/servulashop" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false" data-lang="en" data-width="90px">Follow @servulashop</a></li>
-          <li><iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FServula%2F181501315237979&locale=en_US&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
+          <li><a href="https://twitter.com/servulashop" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false" data-lang="<?php print servula_info('language_slug'); ?>" data-width="90px">Follow @servulashop</a></li>
+          <li><iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FServula%2F181501315237979&locale=en_US&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21&amp;locale=<?php print servula_info('language_underscore'); ?>" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
           <li><g:plusone size="medium" href="<?php print $url; ?>"></g:plusone></li>
         </ul>
         
@@ -81,6 +81,10 @@
 </footer>
 
 <script type="text/javascript">
+  window.___gcfg = {
+    lang: '<?php print servula_info('google_plus_language'); ?>'
+  };
+  
   (function() {
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
     po.src = 'https://apis.google.com/js/plusone.js';
