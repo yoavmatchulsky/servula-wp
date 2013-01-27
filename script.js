@@ -108,21 +108,27 @@ update_session_info = function (data) {
   if (logged_in) {
     Servula.session_info.user = data.user;
     header = $('header')
-    
-    credits = '<strong>' + parseInt(Servula.session_info.user.credits) + '</strong> Credits left';
-    $('.header-credits-text', header).html(credits);
-    
-    services = ''
-    if (Servula.session_info.user.services > 1) {
-      services = '<strong>' + Servula.session_info.user.services + '</strong> Services in Cart';
-    }
-    else if (Servula.session_info.user.services == 1) {
-      services = '<strong>1</strong> Service in Cart';
+    if (data.hasOwnProperty('strings')) {
+      strings = data.strings;
     }
     else {
-      services = 'Cart is Empty';
+      strings = {
+        credits_left : '<strong>' + parseInt(Servula.session_info.user.credits) + '</strong> Credits left',
+      }
+      
+      if (Servula.session_info.user.services > 1) {
+        strings.services_in_cart = '<strong>' + Servula.session_info.user.services + '</strong> Services in Cart';
+      }
+      else if (Servula.session_info.user.services == 1) {
+        strings.services_in_cart = '<strong>1</strong> Service in Cart';
+      }
+      else {
+        strings.services_in_cart = 'Cart is Empty';
+      }
     }
-    $('.header-services-in-cart', header).html(services);
+    
+    $('.header-credits-text', header).html(strings.credits_left);
+    $('.header-services-in-cart', header).html(strings.services_in_cart);
     
     my_dashboard_wrapper = $('.my-dashboard-wrapper', header);
     
@@ -133,5 +139,14 @@ update_session_info = function (data) {
     $('.header-edit-link',      my_dashboard_wrapper).attr('href', Servula.system_url + '/users/' + Servula.session_info.user.id + '/edit');
     
     $('.login-register-wrapper', header).addClass('hidden').filter('.my-dashboard-wrapper').removeClass('hidden');
+    
+    if (typeof $zopim !== 'undefined') {
+      $zopim(function () {
+        $zopim.livechat.set({
+          name      : Servula.session_info.user.name,
+          email     : Servula.session_info.user.email
+        });
+      });
+    }
   }
 }

@@ -138,7 +138,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
             <li><a class="header-edit-link" href="#"><?php _e('Account Settings', 'servula'); ?></a></li>
             <li>
               <a href="<?php print servula_info('credits_url'); ?>" style="display: inline-block;"><?php _e('Buy Credits', 'servula'); ?></a>
-              <?php sprintf( _e('(%s left)', 'servula'), '<span class="header-user-credits">0</span>' ); ?>
+              <?php printf( __('(%s left)', 'servula'), '<span class="header-user-credits">0</span>' ); ?>
             </li>
             <hr />
             <li><a href="<?php print servula_info('full_url'); ?>/logout"><?php _e('Logout', 'servula'); ?></a></li>
