@@ -1,6 +1,16 @@
 .post {
   text-align: right;
 
+  h1.title {
+    font-family: 'Alef';
+    font-weight: bold;
+  }
+  
+  h2, h3 {
+    font-family: 'Alef';
+    font-weight: normal;
+  }
+
   ul.list-with-columns {
 
     & > li {
