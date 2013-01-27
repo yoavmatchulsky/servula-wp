@@ -2,6 +2,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
+blockquote {
+  border-left: 0;
+  border-right: 7px solid orange;
+}
+
 ul, ol {
   padding-left: auto;
   padding-right: 2em;
