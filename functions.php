@@ -154,6 +154,7 @@ function servula_info($key = '') {
         if (!in_array($port, array(80, 443))) {
           $url .= ':' . $port;
         }
+        $url .= servula_info('language_prefix');
         return $url;
         
       case 'system_url'   : return $env == 'production' ? 'https://my.servula.com' : 'http://test.servula.local';
@@ -193,6 +194,15 @@ function servula_info($key = '') {
         }
         
         return 'en-US';
+      
+      case 'language_prefix' :
+        $slug = servula_info('language_slug');
+        if ($slug == 'en') {
+          return '';
+        }
+        else {
+          return '/' . $slug;
+        }
         
       case 'rtl' :
         return (get_bloginfo('text_direction') == 'rtl');

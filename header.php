@@ -65,6 +65,16 @@ $.src='//cdn.zopim.com/?R1VnaN0Gk6rs1xQDY6HSVYndlysPOWIe';z.t=+new Date;$.
 type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 </script>
 <!--End of Zopim Live Chat Script-->
+
+  <?php if (($language_slug = servula_info('language_slug')) != 'en') : ?>
+  <script type="text/javascript">
+  $zopim(function() {
+    $zopim.livechat.set({
+      language : '<?php print $language_slug; ?>'
+    });
+  });
+  </script>
+  <?php endif; ?>
 <?php endif; ?>
 
 <?php
