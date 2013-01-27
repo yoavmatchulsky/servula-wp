@@ -52,7 +52,13 @@ header {
       width: 225px;
       left: auto;
       right: -1px;
-          
+      
+      .form-item {
+        input[type="text"], input[type="password"] {
+          width: 213px;
+        }
+      }
+      
       input[type="submit"] {
         margin-right: 0;
         margin-left: 8px;
@@ -73,6 +79,12 @@ header {
         padding-right: 10px;
       }
     }
+  }
+  
+  .languages-bar-wrapper {
+    right: auto;
+    left: 0;
+    top: 40px;
   }
 }
 

@@ -139,6 +139,25 @@ function special_nav_class($classes, $item) {
   return $classes;
 }
 
+function language_icon($slug = 'en') {
+  $icon = '<img src="';
+  $icon .= servula_info('assets_url') . 'languages/';
+  switch ($slug) {
+    case 'en': 
+      $icon .= '1-english.png'; 
+      $title = 'English';
+      break;
+      
+    case 'he':
+      $icon .= '2-hebrew.png';
+      $title = 'Hebrew';
+      break;    
+  }
+  
+  $icon .= '" alt="' . $title . '" />';
+  return $icon;
+}
+
 function servula_info($key = '') {
   global $servula;
     
@@ -160,6 +179,8 @@ function servula_info($key = '') {
       case 'system_url'   : return $env == 'production' ? 'https://my.servula.com' : 'http://test.servula.local';
       case 'system_port'  : return $env == 'production' ? 443 : 3000;
       case 'env'          : return $env;
+      
+      case 'content_domain' : return $env == 'production' ? 'servula.com' : 'servula.local';
       
       case 'dashboard_url'  : return servula_info('full_url') . '/users/' . $servula['user_id'];
       case 'credits_url'    : return servula_info('full_url') . '/credits/plans';

@@ -176,6 +176,22 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
         </div>
       </div>
       
+      <div class="languages-bar-wrapper">
+        <?php 
+          $language_slug = servula_info('language_slug');
+          foreach (array('en', 'he') as $slug) {
+            if ($slug == $language_slug) {
+              print language_icon($slug) . ' ';
+            }
+            elseif ($slug == 'en') {
+              print '<a href="http://www.' . servula_info('content_domain') . $_SERVER['REQUEST_URI'] . '">' . language_icon($slug) . '</a> ';
+            }
+            else {
+              print '<a href="http://' . $slug . '.' . servula_info('content_domain') . $_SERVER['REQUEST_URI'] . '">' . language_icon($slug) . '</a> ';
+            }
+          }
+        ?>
+      </div>
     </div>
     <?php endif; ?>
     
