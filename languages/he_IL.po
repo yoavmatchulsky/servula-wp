@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Servula\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-01-23 11:28+0200\n"
-"PO-Revision-Date: 2013-01-27 10:11+0200\n"
+"PO-Revision-Date: 2013-01-27 15:44+0200\n"
 "Last-Translator: Yoav Matchulsky <yoavmatchulsky@gmail.com>\n"
 "Language-Team: Servula <admin@servula.com>\n"
 "Language: \n"
@@ -227,7 +227,7 @@ msgstr "שירותים קשורים:"
 
 #: ../services.php:106
 msgid "More Services &raquo;"
-msgstr "עוד שירותים &raquo;"
+msgstr "שירותים נוספים &raquo;"
 
 #: ../header.php:92
 msgid "Servula is currently in Beta"
