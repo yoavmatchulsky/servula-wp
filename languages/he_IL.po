@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Servula\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-01-23 11:28+0200\n"
-"PO-Revision-Date: 2013-01-23 12:09+0200\n"
+"PO-Revision-Date: 2013-01-27 10:11+0200\n"
 "Last-Translator: Yoav Matchulsky <yoavmatchulsky@gmail.com>\n"
 "Language-Team: Servula <admin@servula.com>\n"
 "Language: \n"
@@ -97,7 +97,7 @@ msgstr "כל השירותים שמקדם אתרים צריך במקום אחד."
 
 #: ../home.php:7
 msgid "All services in one place, done by top professionals, including QA."
-msgstr "העבודה מתבצעת על ידי מקצוענית ועוברת בקרת איכות לפני שנשלחת אליך"
+msgstr "העבודה מתבצעת על ידי מקצוענים ועוברת בקרת איכות לפני שנשלחת אליך"
 
 #: ../home.php:12
 msgid "<strong>450+</strong> Professionals are waiting your instructions"
