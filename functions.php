@@ -151,10 +151,10 @@ function language_icon($slug = 'en') {
     case 'he':
       $icon .= '2-hebrew.png';
       $title = 'Hebrew';
-      break;    
+      break;
   }
   
-  $icon .= '" alt="' . $title . '" />';
+  $icon .= '" alt="' . $title . '" class="language-icon" />';
   return $icon;
 }
 
