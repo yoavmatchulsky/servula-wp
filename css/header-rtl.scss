@@ -43,6 +43,8 @@ header {
   .login-register-wrapper {
     float: left;
     text-align: right;
+    margin-right: 0;
+    margin-left: 60px;
 
     img {
       margin-left: 3px;
@@ -84,7 +86,12 @@ header {
   .languages-bar-wrapper {
     right: auto;
     left: 0;
-    top: 40px;
+    top: 38px;
+    
+    .language-icon {
+      margin-right: 0;
+      margin-left: 5px;
+    }
   }
 }
 

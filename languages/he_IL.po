@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Servula\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-01-23 11:28+0200\n"
-"PO-Revision-Date: 2013-01-27 15:44+0200\n"
+"PO-Revision-Date: 2013-01-29 17:00+0200\n"
 "Last-Translator: Yoav Matchulsky <yoavmatchulsky@gmail.com>\n"
 "Language-Team: Servula <admin@servula.com>\n"
 "Language: \n"
@@ -135,7 +135,7 @@ msgstr "קופירייטינג"
 
 #: ../home.php:42
 msgid "Translation"
-msgstr "תירגום"
+msgstr "תרגום"
 
 #: ../home.php:51
 msgid "SEO"
@@ -195,7 +195,7 @@ msgstr "כל הפוסטים &raquo;"
 
 #: ../home.php:163
 msgid "If you're interested in getting high quality Inbound Marketing Services, you can start using Servula now"
-msgstr "אם אתה מעוניין בקבלת שירותי שיווק, אתה יכול להתחיל כבר היום"
+msgstr "זה יותר פשוט ממה שתיארת לעצמך! כדאי לנסות כבר היום את שירותי הקידום שלנו"
 
 #: ../home.php:165
 msgid "Get Started Now"

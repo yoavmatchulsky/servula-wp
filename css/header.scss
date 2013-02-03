@@ -128,7 +128,8 @@ header {
     position: relative;
     cursor: pointer;
     text-align: left;
-    width: 200px;
+    width: 140px;
+    margin-right: 60px;
 
     img {
       margin-right: 3px;
@@ -277,6 +278,10 @@ header {
     position: absolute;
     right: 0;
     top: 36px;
+    
+    .language-icon {
+      margin-right: 5px;
+    }
   }
 }
 
