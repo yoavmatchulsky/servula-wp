@@ -52,7 +52,34 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-  
+
+  (function(doc) {
+    var ref = doc.referrer;
+    if (ref.match(/google\./gi)) {
+      var query     = ref.split('?')[1],
+          keyword   = '(not provided)',
+          pathname  = doc.location.pathname,
+          rank      = null,
+          param;
+          
+      if (query) {
+        params = query.split('&');
+        for (var i in params) {
+          if (params.hasOwnProperty(i)) {
+            param = params[i];
+            if (param.indexOf('cd=') == 0) {
+              rank = parseInt(param.substring(3));
+            }
+            else if (param.indexOf('q=') == 0) {
+              keyword = decodeURI(param.substring(2));
+            }
+          }
+        }
+      }
+      _gaq.push(['_trackEvent', 'RankTracker', keyword, pathname, rank, true]);
+    }
+  })(document);
+    
   </script>
   
 <?php if (servula_info('env') == 'production') : ?>
