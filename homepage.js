@@ -3,7 +3,7 @@
     $('.tabs').tabs({
       selected : 0,
       fx : { height : 'toggle', duration : 'slow'}
-    });
+    }).find('.tabs-content .hidden').removeClass('hidden');
   });
 }).call(this);
 

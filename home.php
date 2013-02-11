@@ -112,7 +112,7 @@
         </div>
       </div>
       
-      <div id="packages">
+      <div id="packages" class="hidden">
         <?php _e('Coming soon!', 'servula'); ?>
       </div>
     </div>
