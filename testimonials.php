@@ -10,6 +10,15 @@ $testimonials = array(
     'text'      => 'Servula has come out with a great new service that helps us outsource and automate many labor and time-intensive tasks. The content & SEO services are delivered quickly, accurately and at a high level of quality, service & attention to detail.',
   ),
   array(
+    'name'      => 'Maytal Aharon-Nov',
+    'company'   => 'eToro',
+    'company-logo' => 'etoro',
+    'position'  => 'SEO Manager',
+    'img-position' => 17,
+    'text'      => "As someone who manages SEO operations in an in-house marketing department, one of the difficulties I often face is outsourcing.
+Finding good freelancers takes a long time and involves checking them prior to starting to work with them, training them, and ultimately checking the quality of the work they provide. Servula has solved this problem for me by providing a variety of services in one place, but more importantly - it gives its warranty for the quality of the services, thus saving me precious time. Servula sends each project to the freelancer who is most qualified for that project and performs a QA on the project after it's done, before sending it back to me. I have received top quality services from Servula and I recommend them highly",
+  ),
+  array(
     'name'      => 'Yaron Kaufman',
     'company'   => 'OneHourTranslation',
     'company-logo' => 'onehourtranslation',
