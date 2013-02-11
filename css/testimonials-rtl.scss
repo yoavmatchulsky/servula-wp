@@ -30,6 +30,9 @@
   }
 
   .testimonials-text-wrapper {
+    direction: ltr;
+    text-align: left;
+    
     &:before, &:after {
       left: auto;
       right: 43px;
