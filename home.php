@@ -36,6 +36,7 @@
                 <div class="title"><span><?php _e('Copywriting', 'servula'); ?></span></div>
                 <div class="actions">
                   <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing?style=3" class="order-now"><?php _e('Start Now', 'servula'); ?></a>
+                  <a href="<?php print site_url('services/article-writing/'); ?>" class="more-info"><?php _e('More Info', 'servula'); ?></a>
                 </div>
               </li>
               <li class="service-item service-item-translation">
@@ -93,7 +94,7 @@
               <li class="service-item service-item-blog-building">
                 <div class="title"><span><?php _e('Blog Building', 'servula'); ?></span></div>
                 <div class="actions">
-                  <a href="<?php print servula_info('full_url'); ?>/orders/new/blog-building" class="order-now"><?php _e('Start Now', 'servula'); ?></a>
+                  <a href="<?php print servula_info('full_url'); ?>/orders/new/blog-building" class="more-info"><?php _e('More Info', 'servula'); ?></a>
                 </div>
               </li>
             </ul>
@@ -104,7 +105,7 @@
               <li class="service-item service-item-dedicated-freelancer">
                 <div class="title"><span><?php _e('Dedicated Freelancer', 'servula'); ?></span></div>
                 <div class="actions">
-                  <a href="<?php print servula_info('full_url'); ?>/orders/new/dedicated-freelancer" class="order-now"><?php _e('Start Now', 'servula'); ?></a>
+                  <a href="<?php print servula_info('full_url'); ?>/orders/new/dedicated-freelancer" class="more-info"><?php _e('More Info', 'servula'); ?></a>
                 </div>
               </li>
             </ul>
