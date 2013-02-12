@@ -99,6 +99,9 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
     $zopim.livechat.set({
       language : '<?php print $language_slug; ?>'
     });
+    
+    $zopim.livechat.bubble.setTitle('נציג אנושי זמין לשירותך');
+    $zopim.livechat.bubble.setText('לחץ כאן - אשמח לשוחח!');
   });
   </script>
   <?php endif; ?>
