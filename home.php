@@ -51,20 +51,6 @@
           <div id="service-link-building" class="services-column">
             <h4><?php _e('SEO', 'servula'); ?></h4>
             <ul>
-              <li class="service-item service-item-local-listing">
-                <div class="title"><span><?php _e('Local Listing', 'servula'); ?></span></div>
-                <div class="actions">
-                  <a href="<?php print servula_info('full_url'); ?>/orders/new/local-listing" class="order-now"><?php _e('Start Now', 'servula'); ?></a>
-                  <a href="<?php print site_url('services/local-listing/'); ?>" class="more-info"><?php _e('More Info', 'servula'); ?></a>
-                </div>
-              </li>
-              <li class="service-item service-item-answers-posting">
-                <div class="title"><span><?php _e('Answers Posting', 'servula'); ?></span></div>
-                <div class="actions">
-                  <a href="<?php print servula_info('full_url'); ?>/orders/new/answers-posting" class="order-now"><?php _e('Start Now', 'servula'); ?></a>
-                  <a href="<?php print site_url('services/answers-posting/'); ?>" class="more-info"><?php _e('More Info', 'servula'); ?></a>
-                </div>
-              </li>
               <li class="service-item service-item-article-submission">
                 <div class="title"><span><?php _e('Article Submission', 'servula'); ?></span></div>
                 <div class="actions">
@@ -77,6 +63,20 @@
                 <div class="actions">
                   <a href="<?php print servula_info('full_url'); ?>/orders/new/directory-submission" class="order-now"><?php _e('Start Now', 'servula'); ?></a>
                   <a href="<?php print site_url('services/directory-submission/'); ?>" class="more-info"><?php _e('More Info', 'servula'); ?></a>
+                </div>
+              </li>
+              <li class="service-item service-item-local-listing">
+                <div class="title"><span><?php _e('Local Listing', 'servula'); ?></span></div>
+                <div class="actions">
+                  <a href="<?php print servula_info('full_url'); ?>/orders/new/local-listing" class="order-now"><?php _e('Start Now', 'servula'); ?></a>
+                  <a href="<?php print site_url('services/local-listing/'); ?>" class="more-info"><?php _e('More Info', 'servula'); ?></a>
+                </div>
+              </li>
+              <li class="service-item service-item-answers-posting">
+                <div class="title"><span><?php _e('Answers Posting', 'servula'); ?></span></div>
+                <div class="actions">
+                  <a href="<?php print servula_info('full_url'); ?>/orders/new/answers-posting" class="order-now"><?php _e('Start Now', 'servula'); ?></a>
+                  <a href="<?php print site_url('services/answers-posting/'); ?>" class="more-info"><?php _e('More Info', 'servula'); ?></a>
                 </div>
               </li>
             </ul>
