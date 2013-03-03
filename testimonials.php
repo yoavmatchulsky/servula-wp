@@ -71,7 +71,6 @@ Finding good freelancers takes a long time and involves checking them prior to s
     'name'      => 'Omer',
     'company'   => 'SEOboots',
     'position'  => 'CEO',
-    'img'       => '',
     'text'      => '',
   ),  
   array(
@@ -87,7 +86,6 @@ Finding good freelancers takes a long time and involves checking them prior to s
     'name'      => 'Avi Levi',
     'company'   => 'Agent',
     'position'  => 'Head of SEO',
-    'img'       => '',
     'text'      => '',
   ),  
   array(
@@ -135,7 +133,6 @@ Finding good freelancers takes a long time and involves checking them prior to s
     'name'      => 'Roie Speiser',
     'company'   => 'Agent Interactive',
     'position'  => 'SEM Team Leader',
-    'img'       => '',
     'text'      => "Servula has really taken the load off our internal team and allowed us to focus on more critical aspects of our work. We receive a courteous, professional service which we fully trust and has proved to be invaluable to us, not only saving time but also lowering total cost per project. We highly recommend Servula's SEO services and can easily vouch for their quality.",
   ),
   array(
@@ -171,13 +168,23 @@ Finding good freelancers takes a long time and involves checking them prior to s
     'text'      => "We have been using Servula's services ever since it began offering them. At the time, we had been looking for a high-quality outsourcing service we could count on to send us the work quickly and efficiently - and we were hoping that the level of the work would be appropriate for our clients. This is usually a lengthy process that involves interviewing freelancers and at the same time test-running pilots, as well as waiting for the final product. The platform offered by Servula presents a clever solution in which the only demand from our company is to fill out an order. From that moment on, everything is left in the capable hands of Servula.",
   ),  
   array(
+    'name'      => 'Maor Kaplanski',
+    'company'   => 'eBrand',
+    'company-logo'   => 'ebrand',
+    'position'  => 'CEO',
+    'img-position' => 18,
+    'text'      => 'Servula has provided me with the perfect solution for two important issues: quality and efficiency. Before I registered to the service I was a little concerned, since I used to work directly with my own freelancers, whom I trusted deeply. However, my worries were soon extinguished.
+I found Servula to be a trustworthy mediating agent that saves me time and a lot of money, without comprising the quality of work.',
+  ),  
+  array(
     'active'    => false,
     'name'      => '',
     'company'   => '',
+    'company-logo'   => '',
     'position'  => '',
-    'img'       => '',
+    'img-position' => 0,
     'text'      => '',
-  ),  
+  ),
 );
 
 $asset_path = 'https://s3.amazonaws.com/servula/assets/wp/';
