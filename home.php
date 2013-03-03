@@ -138,6 +138,7 @@
     <?php
 
     $feed_items_columns = servula_get_feed_items(6);
+    if (!empty($feed_items_columns)) :
     foreach ($feed_items_columns as $feed_items_column) : ?>
       <div class="articles-column">
       <?php foreach ($feed_items_column as $item) : ?>
@@ -154,7 +155,8 @@
         </article>
       <?php endforeach; ?>
       </div>
-    <?php endforeach; ?>
+    <?php endforeach;
+    endif;  ?>
       	  
   	  <a class="to-all-posts" href="<?php print site_url('blog/'); ?>"><?php _e('All Posts &raquo;', 'servula'); ?></a>
     </div>

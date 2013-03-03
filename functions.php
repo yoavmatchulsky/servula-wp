@@ -254,7 +254,7 @@ function servula_get_feed_items($count = 3) {
   	}
 	}
 	
-	if ($count > 3) {
+	if (is_array($feed_items) && $count > 3) {
 	  return array_chunk($feed_items, 3);
   }
 	else {
