@@ -282,7 +282,8 @@
       li {
         display: block;
         position: relative;
-        padding-bottom: 35px;
+        padding-bottom: 52px;
+        margin-bottom: 0;
 
         &:last-child {
           padding: 0;
@@ -313,7 +314,7 @@
           height: 48px;
           width: 32px;
           position: absolute;
-          top: 30px;
+          bottom: 0;
           left: 60px;
         }    
       }
