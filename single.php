@@ -7,7 +7,10 @@
 get_header(); ?>
 
 <div id="leftcolumn">
+  <?php get_sidebar(); ?>
+</div>
 
+<div id="rightcolumn">
 <?php if (have_posts()) : ?>
 
 	<?php while (have_posts()) : the_post(); ?>
@@ -41,10 +44,6 @@ get_header(); ?>
 	</div>
 
 <?php endif; ?>
-</div><!-- end #leftcolumn -->
-
-<div id="rightcolumn">
-  <?php get_sidebar(); ?>
-</div>
+</div><!-- end #rightcolumn -->
 
 <?php get_footer(); ?>
