@@ -42,7 +42,9 @@ get_header(); ?>
 
 <?php endif; ?>
 </div><!-- end #leftcolumn -->
-     
-<?php get_sidebar(); ?>
+
+<div id="rightcolumn">
+  <?php get_sidebar(); ?>
+</div>
 
 <?php get_footer(); ?>

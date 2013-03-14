@@ -1,13 +1,10 @@
 #leftcolumn {
   float: right;
-  width: 215px;
   overflow: hidden;
 }
 
 #rightcolumn {
-  width: 695px;
-  margin-left: auto;
-  margin-right: 215px;
+  margin-right: 0;
   .post {
     float: right;
   }
