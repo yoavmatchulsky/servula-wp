@@ -28,10 +28,9 @@ body > .wrapper {
 
 #rightcolumn {
   width: 695px;
-  margin-left: 215px;
   float: left;
   .post {
-    float: left;
+    float: none;
   }
   
   ul#sidebar {
