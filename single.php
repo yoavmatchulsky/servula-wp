@@ -7,6 +7,7 @@
 get_header(); ?>
 
 <div id="leftcolumn">
+  <?php if (function_exists('dynamic_sidebar')) dynamic_sidebar( 'blog-posts-sidebar' ); ?>
   <?php get_sidebar(); ?>
 </div>
 
@@ -15,8 +16,26 @@ get_header(); ?>
 
 	<?php while (have_posts()) : the_post(); ?>
 	<div class="post" id="post-<?php the_ID(); ?>">
-		<h2 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+    <h1><?php the_title(); ?></h1>
+    <div class="postdata">
+      <?php _e('By:', 'servula'); ?> <?php the_author(); ?> | <?php the_time('F jS, Y'); ?>
+      
+      <ul class="social-links">
+        <li><iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink() ?>&locale=en_US&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+        </li>
 
+        <li><a href="http://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="horizontal" data-via="askpavel">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+        </li>
+
+        <li><g:plusone size="medium"></g:plusone></li>
+
+        <li>
+          <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+          <script type="IN/Share" data-counter="right"></script>
+        </li>
+      </ul>
+    </div>
+    
 		<div class="entry">
 			<?php the_content(); ?>
 		</div><!-- end .entry -->
