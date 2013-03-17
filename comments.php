@@ -18,7 +18,7 @@
 <!-- You can start editing here. -->
 
 <?php if ( have_comments() ) : ?>
-	<h3 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
+	<h3 id="comments"><?php comments_number(__('No Responses', 'servula'), __('One Response', 'servula'), __('% Responses', 'servula') );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
 
 	<div class="pagers clearfix">
 		<p class="alignleft"><?php previous_comments_link() ?></p>
@@ -40,7 +40,7 @@
 
 	 <?php else : // comments are closed ?>
 		<!-- If comments are closed. -->
-		<p class="nocomments">Comments are closed.</p>
+		<p class="nocomments"><?php _e('Comments are closed.', 'servula'); ?></p>
 
 	<?php endif; ?>
 <?php endif; ?>
@@ -54,28 +54,28 @@
 	<small><?php cancel_comment_reply_link(); ?></small>
 </div>
 
-<h3><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h3>
+<h3><?php comment_form_title( __('Leave a Reply', 'servula'), __('Leave a Reply to %s', 'servula') ); ?></h3>
 
 <?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
-<p>You must be <a href="<?php echo wp_login_url( get_permalink() ); ?>">logged in</a> to post a comment.</p>
+<p><?php printf( __('You must be <a href="%s">logged in</a> to post a comment.', 'servula'), wp_login_url( get_permalink() )); ?></p>
 <?php else : ?>
 
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 
 <?php if ( is_user_logged_in() ) : ?>
 
-<p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account">Log out &raquo;</a></p>
+<p><?php printf(__('Logged in as <a href="%s/wp-admin/profile.php">%s</a>.', 'servula'), get_option('siteurl'), $user_identity ); ?> <?php printf( __('<a href="%s" title="Log out of this account">Log out &raquo;</a>', 'servula'), wp_logout_url(get_permalink() )); ?></p>
 
 <?php else : ?>
 
 <p><input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="32" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> class="text" />
-<label for="author">Name <?php if ($req) echo "(required)"; ?></label></p>
+<label for="author"><?php _e('Name', 'servula'); ?> <?php if ($req) _e('(required)', 'servula'); ?></label></p>
 
 <p><input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="32" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> class="text" />
-<label for="email">Email (will not be published) <?php if ($req) echo "(required)"; ?></label></p>
+<label for="email"><?php _e('Email (will not be published)', 'servula'); ?> <?php if ($req) _e("(required)", 'servula'); ?></label></p>
 
 <p><input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="32" tabindex="3" class="text" />
-<label for="url">Website</label></p>
+<label for="url"><?php _e('Website', 'servula'); ?></label></p>
 
 <?php endif; ?>
 
@@ -83,7 +83,7 @@
 
 <p><textarea name="comment" id="comment" cols="25" rows="10" tabindex="4" class="text"></textarea></p>
 
-<p><input name="submit" type="submit" id="submit" style="width: 150px; padding: 3px;" tabindex="5" value="Submit Comment" class="button" />
+<p><input name="submit" type="submit" id="submit" style="width: 150px; padding: 3px;" tabindex="5" value="<?php _e('Submit Comment', 'servula'); ?>" class="button" />
 <?php comment_id_fields(); ?>
 </p>
 <?php do_action('comment_form', $post->ID); ?>

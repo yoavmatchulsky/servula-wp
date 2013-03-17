@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Servula\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-23 11:28+0200\n"
-"PO-Revision-Date: 2013-01-29 17:00+0200\n"
+"POT-Creation-Date: 2013-03-17 19:21+0200\n"
+"PO-Revision-Date: 2013-03-17 19:23+0200\n"
 "Last-Translator: Yoav Matchulsky <yoavmatchulsky@gmail.com>\n"
 "Language-Team: Servula <admin@servula.com>\n"
 "Language: \n"
@@ -17,314 +17,168 @@ msgstr ""
 "X-Poedit-Country: Israel\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../single.php:39
-#: ../404.php:16
-#: ../page.php:30
-#: ../no-sidebar.php:31
-msgid "Not Found"
-msgstr "העמוד לא נמצא"
+#: ../comments.php:21
+msgid "No Responses"
+msgstr "אין תגובות"
 
-#: ../single.php:40
-#: ../page.php:31
-#: ../no-sidebar.php:32
-msgid "Sorry, but you are looking for something that isn't here."
-msgstr "אנו מצטערים, אבל העמוד שחיפשת פשוט לא פה."
+#: ../comments.php:21
+msgid "One Response"
+msgstr "תגובה אחת"
 
-#: ../404.php:18
-msgid "Sorry but the page you are looking for cannot be found."
-msgstr "אנו מצטערים, אבל העמוד שחיפשת לא נמצא."
+#: ../comments.php:21
+msgid "% Responses"
+msgstr "% תגובות"
 
-#: ../404.php:19
-msgid "If you're in denial and think this is a conspiracy that cannot possibly be true, please try using my search box below."
-msgstr "אם אתה חושב שזאת טעות, אתה מוזמן להשתמש בתיבת החיפוש למטה."
+#: ../comments.php:43
+msgid "Comments are closed."
+msgstr "אין אפשרות להשאיר תגובות."
 
-#: ../404.php:20
-msgid "posts archive"
-msgstr "ארכיון פוסטים"
+#: ../comments.php:57
+msgid "Leave a Reply"
+msgstr "השאר תגובה"
 
-#: ../404.php:21
+#: ../comments.php:57
 #, php-format
-msgid "You may also want to try looking through the %s, as you may just find something else to read instead."
-msgstr "אתה גם מוזמן לעיין ב%s, אולי תמצא משהו אחר שיעניין אותך."
+msgid "Leave a Reply to %s"
+msgstr "השאר תגובה ל- %s"
 
-#: ../functions.php:27
-msgid "Primary menu"
-msgstr ""
+#: ../comments.php:60
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "אתה חייב להיות <a href=\"%s\">מחובר</a> כדי להשאיר תגובה."
 
-#: ../functions.php:28
-msgid "Sidebar menu"
-msgstr ""
+#: ../comments.php:67
+#, php-format
+msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
+msgstr "מחובר כ<a href=\"%s/wp-admin/profile.php\">%s</a>."
 
-#: ../functions.php:55
-#: ../home.php:31
-#: ../home.php:38
-#: ../home.php:44
-#: ../home.php:56
-#: ../home.php:63
-#: ../home.php:70
-#: ../home.php:77
-#: ../home.php:89
-#: ../home.php:96
-#: ../home.php:107
+#: ../comments.php:67
+#, php-format
+msgid "<a href=\"%s\" title=\"Log out of this account\">Log out &raquo;</a>"
+msgstr "<a href=\"%s\" title=\"התנתק מחשבון זה\">התנתק &raquo;</a>"
+
+#: ../comments.php:72
+#: ../footer.php:72
+msgid "Name"
+msgstr "שם"
+
+#: ../comments.php:72
+#: ../comments.php:75
+msgid "(required)"
+msgstr "(חובה)"
+
+#: ../comments.php:75
+msgid "Email (will not be published)"
+msgstr "אי-מייל (לא יפורסם)"
+
+#: ../comments.php:78
+msgid "Website"
+msgstr "אתר"
+
+#: ../comments.php:86
+msgid "Submit Comment"
+msgstr "השאר תגובה"
+
+#: ../sources.php:40
 #: ../services.php:40
 #: ../services.php:80
-msgid "Start Now"
-msgstr "התחל כעת"
-
-#: ../functions.php:169
-msgid "No Credits, Yet"
-msgstr "אין עדיין קרדיטים"
-
-#: ../functions.php:172
-#, php-format
-msgid "<strong>%d</strong> Credits Left"
-msgstr "נותרו לך <strong>%d</strong> קרדיטים"
-
-#: ../functions.php:176
-#, php-format
-msgid "<strong>%d</strong> Service in Cart"
-msgid_plural "<strong>%d</strong> Services in Cart"
-msgstr[0] "<strong>%d</strong> שירותים בעגלה"
-msgstr[1] "<strong>%d</strong> שירותים בעגלה"
-
-#: ../functions.php:179
-msgid "Cart is Empty"
-msgstr "העגלה ריקה"
-
-#: ../home.php:6
-msgid "One-Stop Shop for Inbound Marketing Services"
-msgstr "כל השירותים שמקדם אתרים צריך במקום אחד."
-
-#: ../home.php:7
-msgid "All services in one place, done by top professionals, including QA."
-msgstr "העבודה מתבצעת על ידי מקצוענים ועוברת בקרת איכות לפני שנשלחת אליך"
-
-#: ../home.php:12
-msgid "<strong>450+</strong> Professionals are waiting your instructions"
-msgstr "<strong>450+</strong> אנשי מקצוע מחכים להוראות שלך"
-
-#: ../home.php:16
-msgid "All Services"
-msgstr "כל השירותים"
-
-#: ../home.php:17
-msgid "Packages"
-msgstr "חבילות"
-
-#: ../home.php:26
-msgid "Content"
-msgstr "תוכן"
-
-#: ../home.php:29
-msgid "Article Writing"
-msgstr "כתיבת תוכן"
-
-#: ../home.php:32
+#: ../home.php:31
+#: ../home.php:38
 #: ../home.php:45
 #: ../home.php:57
 #: ../home.php:64
 #: ../home.php:71
 #: ../home.php:78
 #: ../home.php:90
-msgid "More Info"
-msgstr "הסבר ודוגמאות"
-
-#: ../home.php:36
-msgid "Copywriting"
-msgstr "קופירייטינג"
-
-#: ../home.php:42
-msgid "Translation"
-msgstr "תרגום"
-
-#: ../home.php:51
-msgid "SEO"
-msgstr "SEO"
-
-#: ../home.php:54
-msgid "Local Listing"
-msgstr "אינדקסים מקומיים"
-
-#: ../home.php:61
-msgid "Answers Posting"
-msgstr "שאלות ותשובות"
-
-#: ../home.php:68
-msgid "Article Submission"
-msgstr "הפצת מאמרים"
-
-#: ../home.php:75
-msgid "Directory Submission"
-msgstr "הוספה לאינדקסים"
-
-#: ../home.php:84
-msgid "Social"
-msgstr "חברתי"
-
-#: ../home.php:87
-msgid "Social Bookmarking"
-msgstr "סימניות חברתיות"
-
-#: ../home.php:94
-msgid "Blog Building"
-msgstr "בניית בלוג"
-
-#: ../home.php:102
-msgid "Other"
-msgstr "שונות"
-
-#: ../home.php:105
-msgid "Dedicated Freelancer"
-msgstr "פרילנסר ייעודי"
-
-#: ../home.php:116
-msgid "Coming soon!"
-msgstr "בקרוב!"
-
-#: ../home.php:124
-msgid "Servula is trusted by..."
-msgstr "לקוחות אומרים עלינו ש.."
-
-#: ../home.php:132
-msgid "Recent Posts From our Blog"
-msgstr "פוסטים אחרונים מהבלוג"
-
-#: ../home.php:158
-msgid "All Posts &raquo;"
-msgstr "כל הפוסטים &raquo;"
-
-#: ../home.php:163
-msgid "If you're interested in getting high quality Inbound Marketing Services, you can start using Servula now"
-msgstr "זה יותר פשוט ממה שתיארת לעצמך! כדאי לנסות כבר היום את שירותי הקידום שלנו"
-
-#: ../home.php:165
-msgid "Get Started Now"
+#: ../functions.php:55
+msgid "Start Now"
 msgstr "התחל כעת"
 
-#: ../functions-page.php:21
-msgid "Download eBook title"
-msgstr "הורד ספר אלקטרוני"
-
-#: ../functions-page.php:26
-msgid "PDF size"
-msgstr "גודל PDF"
-
+#: ../sources.php:43
 #: ../services.php:42
 msgid "Description &amp; Examples"
 msgstr "הסבר ודוגמאות"
 
+#: ../sources.php:45
 #: ../services.php:44
 msgid "Sources"
 msgstr "מקורות"
 
+#: ../sources.php:48
 #: ../services.php:48
 msgid "Back to Services page"
 msgstr "חזרה לעמוד השירותים"
 
-#: ../services.php:92
-msgid "Related Services:"
-msgstr "שירותים קשורים:"
-
-#: ../services.php:106
-msgid "More Services &raquo;"
-msgstr "שירותים נוספים &raquo;"
-
-#: ../header.php:92
+#: ../header.php:132
 msgid "Servula is currently in Beta"
 msgstr "Servula - שירותים למקדמי אתרים"
 
-#: ../header.php:102
+#: ../header.php:142
 msgid "&#9654;"
 msgstr "&#9664;"
 
-#: ../header.php:110
+#: ../header.php:150
 #, php-format
 msgid "Buy Credits %s"
 msgstr "קנה קרדיטים %s"
 
-#: ../header.php:117
+#: ../header.php:157
 #, php-format
 msgid "Order Services %s"
 msgstr "הזמן שירותים %s"
 
-#: ../header.php:127
+#: ../header.php:167
 msgid "Dashboard"
 msgstr "עמוד חשבון"
 
-#: ../header.php:128
+#: ../header.php:168
 msgid "Account Settings"
 msgstr "הגדרות"
 
-#: ../header.php:130
+#: ../header.php:170
 msgid "Buy Credits"
 msgstr "קנה קרדיטים"
 
-#: ../header.php:131
+#: ../header.php:171
 #, php-format
 msgid "(%s left)"
 msgstr "(נותרו %s)"
 
-#: ../header.php:134
+#: ../header.php:174
 msgid "Logout"
 msgstr "התנתק"
 
-#: ../header.php:141
+#: ../header.php:181
 msgid "Login/Register"
 msgstr "התחבר/הירשם"
 
-#: ../header.php:147
+#: ../header.php:187
 msgid "Email:"
 msgstr "אימייל:"
 
-#: ../header.php:152
+#: ../header.php:192
 msgid "Forgot Password?"
 msgstr "שכחת סיסמא?"
 
-#: ../header.php:153
+#: ../header.php:193
 msgid "Password:"
 msgstr "סיסמא:"
 
-#: ../header.php:159
+#: ../header.php:199
 msgid "Remember Me"
 msgstr "זכור אותי"
 
-#: ../header.php:162
+#: ../header.php:202
 msgid "Login"
 msgstr "התחבר"
 
-#: ../header.php:163
+#: ../header.php:203
 msgid "Or"
 msgstr "או"
 
-#: ../header.php:164
+#: ../header.php:204
 msgid "Register now"
 msgstr "הירשם כעת"
-
-#: ../ebook.php:49
-msgid "Order Now"
-msgstr "הזמן כעת"
-
-#: ../ebook.php:69
-msgid "Download your eBook now!"
-msgstr "הורד את הספר האלקטרוני כעת!"
-
-#: ../ebook.php:90
-msgid "Full name"
-msgstr "שם מלא"
-
-#: ../ebook.php:91
-#: ../footer.php:73
-msgid "Email"
-msgstr "אימייל"
-
-#: ../ebook.php:92
-#, php-format
-msgid "PDF file (%s size)"
-msgstr "קובץ PDF (בגודל %s)"
-
-#: ../ebook.php:93
-msgid "Download"
-msgstr "הורד"
 
 #: ../footer.php:6
 msgid "Learn About Us"
@@ -393,15 +247,234 @@ msgstr ""
 "הרשם\n"
 "לניוזלטר"
 
-#: ../footer.php:72
-msgid "Name"
-msgstr "שם"
+#: ../footer.php:73
+#: ../ebook.php:91
+msgid "Email"
+msgstr "אימייל"
 
 #: ../footer.php:78
 msgid "All right reserved."
 msgstr "כל הזכויות שמורות."
 
-#: ../sources.php:40
-msgid "Description"
-msgstr "תיאור"
+#: ../page.php:30
+#: ../404.php:16
+#: ../single.php:64
+#: ../no-sidebar.php:31
+msgid "Not Found"
+msgstr "העמוד לא נמצא"
 
+#: ../page.php:31
+#: ../single.php:65
+#: ../no-sidebar.php:32
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "אנו מצטערים, אבל העמוד שחיפשת פשוט לא פה."
+
+#: ../services.php:92
+msgid "Related Services:"
+msgstr "שירותים קשורים:"
+
+#: ../services.php:106
+msgid "More Services &raquo;"
+msgstr "שירותים נוספים &raquo;"
+
+#: ../404.php:18
+msgid "Sorry but the page you are looking for cannot be found."
+msgstr "אנו מצטערים, אבל העמוד שחיפשת לא נמצא."
+
+#: ../404.php:19
+msgid "If you're in denial and think this is a conspiracy that cannot possibly be true, please try using my search box below."
+msgstr "אם אתה חושב שזאת טעות, אתה מוזמן להשתמש בתיבת החיפוש למטה."
+
+#: ../404.php:20
+msgid "posts archive"
+msgstr "ארכיון פוסטים"
+
+#: ../404.php:21
+#, php-format
+msgid "You may also want to try looking through the %s, as you may just find something else to read instead."
+msgstr "אתה גם מוזמן לעיין ב%s, אולי תמצא משהו אחר שיעניין אותך."
+
+#: ../home.php:6
+msgid "One-Stop Shop for Inbound Marketing Services"
+msgstr "כל השירותים שמקדם אתרים צריך במקום אחד."
+
+#: ../home.php:7
+msgid "All services in one place, done by top professionals, including QA."
+msgstr "העבודה מתבצעת על ידי מקצוענים ועוברת בקרת איכות לפני שנשלחת אליך"
+
+#: ../home.php:12
+msgid "<strong>450+</strong> Professionals are waiting your instructions"
+msgstr "<strong>450+</strong> אנשי מקצוע מחכים להוראות שלך"
+
+#: ../home.php:16
+msgid "All Services"
+msgstr "כל השירותים"
+
+#: ../home.php:17
+msgid "Packages"
+msgstr "חבילות"
+
+#: ../home.php:26
+msgid "Content"
+msgstr "תוכן"
+
+#: ../home.php:29
+msgid "Article Writing"
+msgstr "כתיבת תוכן"
+
+#: ../home.php:32
+#: ../home.php:39
+#: ../home.php:46
+#: ../home.php:58
+#: ../home.php:65
+#: ../home.php:72
+#: ../home.php:79
+#: ../home.php:91
+#: ../home.php:97
+#: ../home.php:108
+msgid "More Info"
+msgstr "הסבר ודוגמאות"
+
+#: ../home.php:36
+msgid "Copywriting"
+msgstr "קופירייטינג"
+
+#: ../home.php:43
+msgid "Translation"
+msgstr "תרגום"
+
+#: ../home.php:52
+msgid "SEO"
+msgstr "SEO"
+
+#: ../home.php:55
+msgid "Article Submission"
+msgstr "הפצת מאמרים"
+
+#: ../home.php:62
+msgid "Directory Submission"
+msgstr "הוספה לאינדקסים"
+
+#: ../home.php:69
+msgid "Local Listing"
+msgstr "אינדקסים מקומיים"
+
+#: ../home.php:76
+msgid "Answers Posting"
+msgstr "שאלות ותשובות"
+
+#: ../home.php:85
+msgid "Social"
+msgstr "חברתי"
+
+#: ../home.php:88
+msgid "Social Bookmarking"
+msgstr "סימניות חברתיות"
+
+#: ../home.php:95
+msgid "Blog Building"
+msgstr "בניית בלוג"
+
+#: ../home.php:103
+msgid "Other"
+msgstr "שונות"
+
+#: ../home.php:106
+msgid "Dedicated Freelancer"
+msgstr "פרילנסר ייעודי"
+
+#: ../home.php:117
+msgid "Coming soon!"
+msgstr "בקרוב!"
+
+#: ../home.php:125
+msgid "Servula is trusted by..."
+msgstr "לקוחות אומרים עלינו ש.."
+
+#: ../home.php:133
+msgid "Recent Posts From our Blog"
+msgstr "פוסטים אחרונים מהבלוג"
+
+#: ../home.php:161
+msgid "All Posts &raquo;"
+msgstr "כל הפוסטים &raquo;"
+
+#: ../home.php:166
+msgid "If you're interested in getting high quality Inbound Marketing Services, you can start using Servula now"
+msgstr "זה יותר פשוט ממה שתיארת לעצמך! כדאי לנסות כבר היום את שירותי הקידום שלנו"
+
+#: ../home.php:168
+msgid "Get Started Now"
+msgstr "התחל כעת"
+
+#: ../single.php:20
+msgid "By:"
+msgstr "מאת:"
+
+#: ../single.php:46
+msgid "Published in:"
+msgstr "פורסם בקטגוריה:"
+
+#: ../single.php:47
+msgid "Tags:"
+msgstr "תגיות:"
+
+#: ../ebook.php:49
+msgid "Order Now"
+msgstr "הזמן כעת"
+
+#: ../ebook.php:69
+msgid "Download your eBook now!"
+msgstr "הורד את הספר האלקטרוני כעת!"
+
+#: ../ebook.php:90
+msgid "Full name"
+msgstr "שם מלא"
+
+#: ../ebook.php:92
+#, php-format
+msgid "PDF file (%s size)"
+msgstr "קובץ PDF (בגודל %s)"
+
+#: ../ebook.php:93
+msgid "Download"
+msgstr "הורד"
+
+#: ../functions-page.php:21
+msgid "Download eBook title"
+msgstr "הורד ספר אלקטרוני"
+
+#: ../functions-page.php:26
+msgid "PDF size"
+msgstr "גודל PDF"
+
+#: ../functions.php:27
+msgid "Primary menu"
+msgstr ""
+
+#: ../functions.php:28
+msgid "Sidebar menu"
+msgstr ""
+
+#: ../functions.php:191
+msgid "No Credits, Yet"
+msgstr "אין עדיין קרדיטים"
+
+#: ../functions.php:194
+#, php-format
+msgid "<strong>%d</strong> Credits Left"
+msgstr "נותרו לך <strong>%d</strong> קרדיטים"
+
+#: ../functions.php:198
+#, php-format
+msgid "<strong>%d</strong> Service in Cart"
+msgid_plural "<strong>%d</strong> Services in Cart"
+msgstr[0] "<strong>%d</strong> שירותים בעגלה"
+msgstr[1] "<strong>%d</strong> שירותים בעגלה"
+
+#: ../functions.php:201
+msgid "Cart is Empty"
+msgstr "העגלה ריקה"
+
+#~ msgid "Description"
+#~ msgstr "תיאור"

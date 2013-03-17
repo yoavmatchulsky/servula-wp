@@ -23,7 +23,10 @@ get_header(); ?>
 
 		<?php wp_link_pages(); ?>
 
-		<div class="postdata">Posted in <?php the_category(', ') ?> by <?php the_author() ?> at <?php the_time('F jS, Y') ?>. <?php edit_post_link('Edit', '/ ', ''); ?><br /><?php the_tags('Tags: ', ', ', ' '); ?></div>
+    <div class="bottom_postdata">
+      <?php _e('Published in:', 'servula'); ?> <?php the_category(', '); ?><br />
+      <?php the_tags( __('Tags:'), ', ', '<br />' ); ?>
+    </div>
 	</div><!-- end .post -->
 
 	<?php
