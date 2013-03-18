@@ -49,7 +49,7 @@ li.widget {
       font-family: 'Alef';
       font-weight: normal;
       color: orange;
-      margin-left: 40px;
+      margin-left: 20px;
       margin-bottom: 0.3em;
       border-bottom: 2px solid #ebebdc;
     }
@@ -60,6 +60,8 @@ li.widget {
         margin-right: 13px;
         padding-right: 0;
         height: auto;
+        background: none;
+        width: auto;
         a {
           font-size: 12px;
         }
