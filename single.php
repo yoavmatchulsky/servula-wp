@@ -8,7 +8,6 @@ get_header(); ?>
 
 <div id="leftcolumn">
   <?php if (function_exists('dynamic_sidebar')) dynamic_sidebar( 'blog-posts-sidebar' ); ?>
-  <?php get_sidebar(); ?>
 </div>
 
 <div id="rightcolumn">
