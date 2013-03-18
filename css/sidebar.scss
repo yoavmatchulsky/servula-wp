@@ -44,7 +44,7 @@ li.widget {
     }
   }
   
-  .widget_recent_entries, .widget_recent_comments {
+  &.widget_recent_entries, &.widget_recent_comments {
     h2 {
       font-family: 'Alef';
       font-weight: normal;
