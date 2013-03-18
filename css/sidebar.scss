@@ -43,5 +43,27 @@ li.widget {
       }
     }
   }
+  
+  .widget_recent_entries, .widget_recent_comments {
+    h2 {
+      font-family: 'Alef';
+      font-weight: normal;
+      color: orange;
+      margin-left: 40px;
+      margin-bottom: 0.3em;
+      border-bottom: 2px solid #ebebdc;
+    }
+    
+    ul {
+      li {
+        list-style: disc outside;
+        margin-right: 13px;
+        padding-right: 0;
+        height: auto;
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }
-

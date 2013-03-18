@@ -38,17 +38,8 @@
   }
 }
 
-.postdata a {
-  color: #999;
-  a {
-    color: #999;
-    &:hover {
-      color: #333;
-    }
-  }
-}
-
 .postdata {
+  color: #999;
   margin-bottom: 10px;
   .social-links {
     float: right;
