@@ -13,10 +13,7 @@ get_header();
   <div class="post" id="post-<?php the_ID(); ?>">
 
     <h1 class="title">
-      <?php
-        $title = get_the_title();
-        
-      <?php print $title; ?>
+      <?php the_title(); ?>
     </h1>
     
     <div class="entry">
