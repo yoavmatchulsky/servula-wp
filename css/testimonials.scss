@@ -85,11 +85,11 @@
 
   .testimonials-text-wrapper {
     position: absolute;
-    top: 147px;
+    top: 0;
     left: 0;
     background: white;
     min-height: 200px;
-    width: 400px;
+    width: 650px;
     z-index: 100;
     padding: 0;
     border: 1px solid #7e7e7e;
@@ -97,21 +97,21 @@
     @include shadow(0 5px 5px #7e7e7e);
     
     &:before, &:after {
-      border-color: transparent transparent #7e7e7e;
+      border-color: #7e7e7e transparent transparent;
       border-style: solid;
-      border-width: 0 10px 26px;
+      border-width: 26px 10px 0;
       content: "";
       display: block;
       height: 0;
       left: 43px;
       position: absolute;
-      top: -26px;
+      bottom: -26px;
       width: 0;
     }
 
     &:after {
-      top: -25px;
-      border-color: transparent transparent #a3a3a3;
+      bottom: -25px;
+      border-color: white transparent transparent;
     }
     
     &.tilted-left {
@@ -128,13 +128,13 @@
       margin-bottom: 5px;
 
       .testimonial-name {
-        font-size: 19px;
+        font-size: 17px;
         display: inline;
         font-weight: bold;
       }
       
       .testimonial-position {
-        font-size: 15px;
+        font-size: 14px;
         display: block;
         color: #021d23;
       }
@@ -142,8 +142,9 @@
 
     .testimonial-text {
       padding: 0 10px;
-      font-family: Cambria, Georgia, "Times New Roman", Times, serif;
-      font-size: 140%;
+      font-family: Arial, Cambria, Georgia, "Times New Roman", Times, serif;
+      font-size: 12px;
+      font-weight: normal;
     }
 
     .testimonial-company-logo {

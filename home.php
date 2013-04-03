@@ -125,6 +125,10 @@
       <?php _e('Servula is trusted by...', 'servula'); ?>
     </h3>
     <?php include TEMPLATEPATH . '/testimonials.php'; ?>
+
+    <div id="featured-clients">
+      <img src="https://s3.amazonaws.com/servula/assets/wp/featured-clients.png" />
+    </div>
   </div>
   
   <div id="recent-posts">

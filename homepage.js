@@ -16,7 +16,8 @@ $(function () {
       step : 350,
       li_width : 116,
       strip_width : 848,
-      duration : 700
+      duration : 700,
+      texts_width : 650
     }
   });
   
@@ -31,7 +32,7 @@ $(function () {
       t = $(this);
       key = t.data('testimonial-key');
       
-      texts_wrapper = testimonials_wrapper.find('.testimonials-text-wrapper').removeClass('hidden tilted-left')
+      texts_wrapper = testimonials_wrapper.find('.testimonials-text-wrapper').removeClass('hidden tilted-left').width(Servula.testimonials.texts_width)
 
       // add .hidden to all the text_wrappers
       text_wrapper = texts_wrapper.find('.testimonial-text-wrapper').addClass('hidden').filter('[data-key="' + key + '"]')
@@ -41,27 +42,45 @@ $(function () {
       if (Servula.locale.is_rtl) {
         li_count              = ul.find('.testimonial-wrapper').length;
         lis_width             = Servula.testimonials.li_width * li_count;
-        right_position_of_ul  = parseInt(ul.css('right'));
-        new_right             = (lis_width - t.position().left) + right_position_of_ul - 30;
-        if (new_right + 400 > 960) {
-          new_right -= 295;
+        right_position_of_ul  = parseInt(ul.css('right'), 10);
+        new_right             = lis_width - (t.position().left + Servula.testimonials.li_width) + right_position_of_ul + 49;
+
+        if (new_right + Servula.testimonials.texts_width > 960) {
+          overflow_right = new_right + Servula.testimonials.li_width - Servula.testimonials.texts_width;
+          if (overflow_right < 0) {
+            texts_wrapper.css('width', (new_right + Servula.testimonials.li_width) + 'px');
+            new_right = 0;
+          }
+          else {
+            new_right = overflow_right;
+          }
           texts_wrapper.addClass('tilted-left');
         }
 
         texts_wrapper.css('right', new_right);
       }
       else {
-        left_position_of_ul = parseInt(ul.css('left'));
-        new_left = t.position().left + left_position_of_ul + 49;
+        left_position_of_ul = parseInt(ul.css('left'), 10);
+        new_left = t.position().left + left_position_of_ul + 49; // navigation arrow width
 
-        if (new_left + 400 > 960) {
-          new_left -= 300;
+        if (new_left + Servula.testimonials.texts_width > 960) {
+          overflow_left = new_left + Servula.testimonials.li_width - Servula.testimonials.texts_width;
+          if (overflow_left < 0) {
+            texts_wrapper.css('width', (new_left + Servula.testimonials.li_width) + 'px');
+            new_left = 0;
+          }
+          else {
+            new_left = overflow_left;
+          }
           texts_wrapper.addClass('tilted-left');
         }
 
         texts_wrapper.css('left', new_left)
       }
+
       text_wrapper.removeClass('hidden');
+      height = texts_wrapper.height();
+      texts_wrapper.css('top', -20 - height);
     },
     
     mouseout : function(e) {
