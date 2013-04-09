@@ -187,7 +187,7 @@
 
   .service-intro {
     color: #444;
-    font-size: 16px;
+    font-size: 14px;
     min-height: 150px;
   }
 
@@ -345,9 +345,10 @@
       li {
         float: left;
         margin: 10px 4px 0;
-        font-weight: bold;
+        font-weight: normal;
         text-align: center;
         width: 59px;
+        font-size: 12px;
 
         &:before {
           display: none;
