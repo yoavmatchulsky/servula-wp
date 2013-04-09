@@ -35,8 +35,8 @@
               <li class="service-item service-item-web-copywriting">
                 <div class="title"><span><?php _e('Copywriting', 'servula'); ?></span></div>
                 <div class="actions">
-                  <a href="<?php print servula_info('full_url'); ?>/orders/new/article-writing?style=3" class="order-now"><?php _e('Start Now', 'servula'); ?></a>
-                  <a href="<?php print site_url('services/article-writing/'); ?>" class="more-info"><?php _e('More Info', 'servula'); ?></a>
+                  <a href="<?php print servula_info('full_url'); ?>/orders/new/copywriting" class="order-now"><?php _e('Start Now', 'servula'); ?></a>
+                  <a href="<?php print site_url('services/copywriting/'); ?>" class="more-info"><?php _e('More Info', 'servula'); ?></a>
                 </div>
               </li>
               <li class="service-item service-item-translation">
