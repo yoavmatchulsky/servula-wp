@@ -1,0 +1,40 @@
+.author-details {
+  h1, h4 {
+    text-align: left;
+  }
+
+  background: #F8F8F8;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  clear: both;
+  overflow: hidden;
+  padding: 10px;
+
+  img {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    float: left;
+    margin-right: 10px;
+    padding: 4px;    
+  }
+}
+
+body.author {
+  .author-details {
+    margin-top: 20px;
+  }
+
+  h2 {
+    margin-top: 20px;
+    text-align: left;
+
+    &.title {
+      margin: 0;
+    }
+  }
+
+  article {
+    border-bottom: 1px dashed #ccc;
+  }
+}
