@@ -22,7 +22,7 @@ get_header(); ?>
 	<div class="post" id="post-<?php the_ID(); ?>">
     <h1><?php the_title(); ?></h1>
     <div class="postdata">
-      <?php _e('By:', 'servula'); ?> <?php the_author(); ?> | <?php the_time('F jS, Y'); ?>
+      <?php _e('By:', 'servula'); ?> <a rel="author" href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><?php the_author(); ?></a> | <?php the_time('F jS, Y'); ?>
       
       <ul class="social-links">
         <li><iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink() ?>&locale=en_US&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
