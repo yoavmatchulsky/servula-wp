@@ -1,3 +1,13 @@
+body.post-single {
+  #rightcolumn {
+    float: right;
+  }
+
+  #leftcolumn {
+    float: left;
+  }
+}
+
 .post {
   text-align: right;
 
@@ -6,7 +16,7 @@
     font-weight: bold;
   }
   
-  h2, h3 {
+  h1, h2, h3 {
     font-family: 'Alef';
     font-weight: normal;
   }
@@ -26,8 +36,12 @@
   }
 }
 
+.post-credentials {
+  text-align: right;
+}
+
 #related h3, h3#comments, #respond h3 {
-  background: url(images/title.png) no-repeat 0 8px;
+  background-position: right 8px;
   padding: 5px 38px 0 15px;
 }
 

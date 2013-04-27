@@ -11,6 +11,7 @@ li.widget_nav_menu {
 li.widget {
   text-align: left;
   margin-top: 20px;
+  list-style: none;
   
   &:first-child {
     margin-top: 0;
@@ -44,16 +45,48 @@ li.widget {
     }
   }
   
-  &.widget_recent_entries, &.widget_recent_comments {
+  &.widget {
     h2 {
-      font-family: 'Alef';
-      font-weight: normal;
       color: orange;
       margin-left: 20px;
       margin-bottom: 0.3em;
       border-bottom: 2px solid #ebebdc;
     }
-    
+
+    table {
+      th, td {
+        border: 0;
+      }
+    }
+
+    &#text-7 {
+      .textwidget {
+        margin-bottom: 40px;
+
+        #contact input, #contact textarea {
+          border: 1px solid #ddd;
+          margin-bottom: 10px;
+          padding: 8px;
+          width: 200px;
+        }
+
+        #contact input.submit, .wpcf7-submit {
+          background: url("http://www.servula.com/blog/wp-content/themes/alltuts/images/but_addcomment.png") no-repeat;
+          border: medium none;
+          color: #fff;
+          cursor: pointer;
+          font-size: 12px;
+          font-weight: bold;
+          height: 30px;
+          margin: 10px 85px 16px 0;
+          padding: 0;
+          width: 151px;
+        }
+      }
+    }
+  }
+
+  &.widget_recent_entries, &.widget_recent_comments {
     ul {
       li {
         list-style: disc outside;
