@@ -18,7 +18,7 @@ $servula['body_class'] = 'author';
   ?>
   <div class="author-details">
     <h1><?php print $curauth->display_name; ?></h1>
-    <?php userphoto_the_author_thumbnail(); ?>
+    <?php if (function_exists('userphoto_the_author_thumbnail')) { userphoto_the_author_thumbnail(); } ?>
     
     <?php print $curauth->description; ?>
     <?php if (!empty($curauth->googleplus)) : ?>

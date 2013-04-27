@@ -63,7 +63,7 @@ get_header(); ?>
 
   <div class="post-credentials">
     <div class="author-details">
-      <?php userphoto_the_author_thumbnail(); ?>
+      <?php if (function_exists('userphoto_the_author_thumbnail')) { userphoto_the_author_thumbnail(); } ?>
       <h4><?php _e('An article by:', 'servula'); ?> <a rel="author" href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><?php the_author_meta('display_name'); ?></a></h4>
       <p><?php the_author_description(); ?></p>
     </div>
