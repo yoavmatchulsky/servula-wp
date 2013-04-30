@@ -147,27 +147,44 @@
 	  <div id="posts-wrapper">
     
     <?php
+      if (servula_info('language_slug') == 'he') :
+        $count = 0;
+        if (have_posts()) :
+          while (have_posts() && $count < 6) : the_post(); $count += 1; ?>
+          <article>
+            <div class="post">
+              <?php the_post_thumbnail(array('73', '66'), array('class' => 'attachment-post-thumbnail wp-post-image')); ?>
+              
+              <h2 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-    $feed_items_columns = servula_get_feed_items(6);
-    if (!empty($feed_items_columns)) :
-    foreach ($feed_items_columns as $feed_items_column) : ?>
-      <div class="articles-column">
-      <?php foreach ($feed_items_column as $item) : ?>
-        <?php $title = $item->get_title(); ?>
-        <article>
-          <div class="post">
-            <?php $enclosure = $item->get_enclosure(); ?>
-            <img src="<?php print $enclosure->link; ?>" width="73" height="66" title="<?php print esc_attr(strip_tags($title)); ?>" class="attachment-post-thumbnail wp-post-image" />
-            
-            <h2 class="title"><a href="<?php print $item->get_permalink() ?>" rel="bookmark" title="Permanent Link to <?php print esc_attr(strip_tags($title)); ?>"><?php print $title; ?></a></h2>
+              <div class="post-date"><?php the_time('F jS, Y'); ?></div>
+            </div>
+          </article>
+      <?php endwhile;
+        endif;
+      else : 
 
-            <div class="post-date"><?php print $item->get_date(); ?></div>
+      $feed_items_columns = servula_get_feed_items(6);
+      if (!empty($feed_items_columns)) :
+        foreach ($feed_items_columns as $feed_items_column) : ?>
+          <div class="articles-column">
+          <?php foreach ($feed_items_column as $item) : ?>
+            <?php $title = $item->get_title(); ?>
+            <article>
+              <div class="post">
+                <?php $enclosure = $item->get_enclosure(); ?>
+                <img src="<?php print $enclosure->link; ?>" width="73" height="66" title="<?php print esc_attr(strip_tags($title)); ?>" class="attachment-post-thumbnail wp-post-image" />
+                
+                <h2 class="title"><a href="<?php print $item->get_permalink() ?>" rel="bookmark" title="Permanent Link to <?php print esc_attr(strip_tags($title)); ?>"><?php print $title; ?></a></h2>
+
+                <div class="post-date"><?php print $item->get_date(); ?></div>
+              </div>
+            </article>
+          <?php endforeach; ?>
           </div>
-        </article>
-      <?php endforeach; ?>
-      </div>
-    <?php endforeach;
-    endif;  ?>
+        <?php endforeach;
+      endif;
+    endif; ?>
       	  
   	  <a class="to-all-posts" href="<?php print site_url('blog/'); ?>"><?php _e('All Posts &raquo;', 'servula'); ?></a>
     </div>
