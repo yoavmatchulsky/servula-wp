@@ -5,6 +5,22 @@ body.post-single {
 
   #leftcolumn {
     float: left;
+    border-right: 1px solid #eee;
+    padding-right: 20px;
+  }
+
+  li.widget.widget {
+    h2 {
+      margin-left: 0;    
+    }
+
+    ul {
+      margin-left: 0;
+
+      li {
+        width: auto;
+      }
+    }
   }
 }
 
@@ -38,6 +54,14 @@ body.post-single {
 
 .post-credentials {
   text-align: right;
+}
+
+.postdata {
+  .social-links {
+    li {
+      float: right;
+    }
+  }
 }
 
 #related h3, h3#comments, #respond h3 {

@@ -308,3 +308,4 @@ function servula_theme_setup(){
   load_theme_textdomain('servula', get_template_directory() . '/languages');
 }
 include 'functions-page.php';
+include 'functions-googleplus.php';
