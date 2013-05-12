@@ -79,8 +79,9 @@
           
           &.service-item-new {
             .title:after {
+              background-position: 0 -15px;
               right: auto;
-              left: 6px;
+              left: 1px;
             }
           }
         }
