@@ -116,6 +116,15 @@
                 </div>
               </li>
             </ul>
+            <ul>
+              <li class="service-item service-item-site-review">
+                <div class="title"><span><?php _e('Usability Test', 'servula'); ?></span></div>
+                <div class="actions">
+                  <a href="<?php print servula_info('full_url'); ?>/orders/new/usability-test" class="order-now"><?php _e('Start Now', 'servula'); ?></a>
+                  <a href="<?php print site_url('services/usability-test/'); ?>" class="more-info"><?php _e('More Info', 'servula'); ?></a>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
