@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Servula\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-05-12 12:45+0200\n"
-"PO-Revision-Date: 2013-05-12 12:46+0200\n"
+"PO-Revision-Date: 2013-05-13 12:20+0200\n"
 "Last-Translator: Yoav Matchulsky <yoavmatchulsky@gmail.com>\n"
 "Language-Team: Servula <admin@servula.com>\n"
 "Language: \n"
@@ -200,7 +200,7 @@ msgstr "פרילנסר ייעודי"
 
 #: ../home.php:121
 msgid "Usability Test"
-msgstr "בדיקת שימושיות"
+msgstr "בדיקת שמישות"
 
 #: ../home.php:133
 msgid "Coming soon!"
