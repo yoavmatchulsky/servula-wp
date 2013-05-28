@@ -103,14 +103,10 @@ $(function () {
 
   /* Homepage scripts */
   if (body.hasClass('homepage')) {
-    (function() {
-      jQuery(function($) {
-        $('.tabs').tabs({
-          selected : 0,
-          fx : { height : 'toggle', duration : 'slow'}
-        }).find('.tabs-content .hidden').removeClass('hidden');
-      });
-    }).call(this);
+    $('.tabs').tabs({
+      selected : 0,
+      fx : { height : 'toggle', duration : 'slow'}
+    }).find('.tabs-content .hidden').removeClass('hidden');
 
     $(function () {
       testimonials_wrapper = $('.testimonials-wrapper')
@@ -234,7 +230,7 @@ $(function () {
   }
 
   /* Services page */
-  if (body.hasClass('page-services')) {
+  if (body.hasClass('body-services-page')) {
     $('.page-services .service-column').on('change', '#service-example-group-select', function (e) {
       t = $(this);
       selected = t.find('option:selected').val();
