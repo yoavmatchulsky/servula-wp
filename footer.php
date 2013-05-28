@@ -106,6 +106,8 @@ if(typeof ClickTale=='function') ClickTale(23332,1,"www02");
 
 <?php wp_footer(); ?>
 
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script.js"></script>
+
 <?php if (servula_info('env') == 'production') : ?>
 <script type="text/javascript" src="<?php print servula_info('full_url'); ?>/sessions/info.json?jsonp=update_session_info"></script>
 <?php endif; ?>
