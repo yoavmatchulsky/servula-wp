@@ -9,10 +9,7 @@
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/print.css" type="text/css" media="print" />
   <!--[if IE]><link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
-    
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/jquery.fancybox.js" type="text/javascript"></script>
-
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script.js"></script>
   <script type="text/javascript">
   /* <![CDATA[ */

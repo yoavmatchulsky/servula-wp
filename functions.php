@@ -287,6 +287,10 @@ add_filter('the_content', 'servula_template_tags');
 
 add_action('wp_enqueue_scripts', 'servula_enqueue_scripts');
 function servula_enqueue_scripts() {
+  wp_deregister_script('jquery');
+  wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', false, '1.7.2');
+  wp_enqueue_script('jquery');
+
   if (is_front_page()) {
     wp_enqueue_script('jquery-ui-core');
     wp_enqueue_script('jquery-ui-tabs');
