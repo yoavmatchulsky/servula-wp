@@ -291,6 +291,8 @@ function servula_enqueue_scripts() {
   wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', false, '1.7.2');
   wp_enqueue_script('jquery');
 
+  wp_enqueue_script('fancybox', get_template_directory_uri() . '/jquery.fancybox.js', array('jquery'), false, true);
+
   if (is_front_page()) {
     wp_enqueue_script('jquery-ui-core');
     wp_enqueue_script('jquery-ui-tabs');

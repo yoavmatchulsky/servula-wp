@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/print.css" type="text/css" media="print" />
   <!--[if IE]><link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
-  <script src="<?php bloginfo('template_url'); ?>/jquery.fancybox.js" type="text/javascript"></script>
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script.js"></script>
   <script type="text/javascript">
   /* <![CDATA[ */
