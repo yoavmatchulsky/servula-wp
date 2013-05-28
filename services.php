@@ -117,6 +117,4 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
   <?php get_sidebar(); ?>
 </div>
 
-<?php wp_enqueue_script('services'); ?>
-
 <?php get_footer(); ?>

@@ -126,6 +126,4 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
   </div>
 </div>
 
-<?php wp_enqueue_script('ebook'); ?>
-
 <?php get_footer(); ?>
