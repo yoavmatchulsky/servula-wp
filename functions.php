@@ -39,6 +39,22 @@ function servula_register_menu() {
     ));
 }
 
+add_action('send_headers', 'servula_affiliates');
+function servula_affiliates() {
+  if (isset($_REQUEST['aff_id'])) {
+    $aff_id = intval($_REQUEST['aff_id']);
+    if ($aff_id > 0) {
+      $time = time();
+      $next_month = $time + 2592000;
+      $domain = servula_info('cookie_domain');
+      
+      setcookie('aff_tag', $aff_id, $next_month, '/', $domain);
+      setcookie('aff_from', $_SERVER['HTTP_REFERER'], $next_month, '/', $domain);
+      setcookie('aff_time', $time, $next_month, '/', $domain);
+    }
+  }
+}
+
 add_filter('the_content', 'servula_service_page');
 function servula_service_page($content) {
   global $post;
@@ -237,6 +253,14 @@ function servula_info($key = '') {
         
       case 'rtl' :
         return (get_bloginfo('text_direction') == 'rtl');
+
+      case 'cookie_domain':
+        if ($env == 'production') {
+          return '.servula.com';
+        }
+        else {
+          return '.servula.local';
+        }
     }
   }
   
