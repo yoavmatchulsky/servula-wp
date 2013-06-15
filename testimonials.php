@@ -39,7 +39,7 @@ Finding good freelancers takes a long time and involves checking them prior to s
     'company'      => 'Log-On',
     'company-logo' => 'log-on',
     'position'     => 'CHRO',
-    'img-position' => 0,
+    'img-position' => 19,
     'text'         => "In the last few months we have been in the process of promoting our company's websites and Servula's services have been helping us a great deal. Thanks to Servula we can focus on our promotion strategy and take care of the important matters instead of having to deal with all the difficult little details. The services we received from Servula were of the highest quality, the Servula team quickly understood what we do so that we didn't have to explain what our needs are over and over, and the service was quick and efficient. We highly recommend Servula!",
   ),
   array(
