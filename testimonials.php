@@ -35,12 +35,12 @@ Finding good freelancers takes a long time and involves checking them prior to s
     'text'      => "Fast, high-quality and professional service. It saves time, they already know what works and what doesn't and the best way to operate - giving me the most professional and up-to-date service",
   ),
   array(
-    'name'      => 'Michael Weiss',
-    'company'   => 'GoJerusalem',
-    'company-logo' => 'gojerusalem',
-    'position'  => 'Founder & CEO',
-    'img-position' => 3,
-    'text'      => "We used Servula's services for obtaining link juice to our hotel category page by seeding in several dozen blogs and forums relevant content directing to our page. Their delivery was super-fast, and we got in less than a week an organized list of all the new links they had achieved for us. We'll definitely use their services in the future",
+    'name'         => 'Tomer Vikinsky',
+    'company'      => 'Log-On',
+    'company-logo' => 'log-on',
+    'position'     => 'CHRO',
+    'img-position' => 0,
+    'text'         => "In the last few months we have been in the process of promoting our company's websites and Servula's services have been helping us a great deal. Thanks to Servula we can focus on our promotion strategy and take care of the important matters instead of having to deal with all the difficult little details. The services we received from Servula were of the highest quality, the Servula team quickly understood what we do so that we didn't have to explain what our needs are over and over, and the service was quick and efficient. We highly recommend Servula!",
   ),
   array(
     'name'      => 'Yuli Desiatnikov',
@@ -176,6 +176,14 @@ Finding good freelancers takes a long time and involves checking them prior to s
     'text'      => 'Servula has provided me with the perfect solution for two important issues: quality and efficiency. Before I registered to the service I was a little concerned, since I used to work directly with my own freelancers, whom I trusted deeply. However, my worries were soon extinguished.
 I found Servula to be a trustworthy mediating agent that saves me time and a lot of money, without comprising the quality of work.',
   ),  
+  array(
+    'name'      => 'Michael Weiss',
+    'company'   => 'GoJerusalem',
+    'company-logo' => 'gojerusalem',
+    'position'  => 'Founder & CEO',
+    'img-position' => 3,
+    'text'      => "We used Servula's services for obtaining link juice to our hotel category page by seeding in several dozen blogs and forums relevant content directing to our page. Their delivery was super-fast, and we got in less than a week an organized list of all the new links they had achieved for us. We'll definitely use their services in the future",
+  ),
   array(
     'active'    => false,
     'name'      => '',
