@@ -3,6 +3,8 @@
  * Servula
  */
 
+define('SERVULA_AFFILIATES_QUERY_PARAMETER', 'ul');
+
 add_theme_support('post-thumbnails');
 
 if ( function_exists('register_sidebar') ) {
@@ -41,16 +43,17 @@ function servula_register_menu() {
 
 add_action('send_headers', 'servula_affiliates');
 function servula_affiliates() {
-  if (isset($_REQUEST['aff_id'])) {
-    $aff_id = intval($_REQUEST['aff_id']);
+  if (isset($_REQUEST[SERVULA_AFFILIATES_QUERY_PARAMETER])) {
+    $aff_id = intval($_REQUEST[SERVULA_AFFILIATES_QUERY_PARAMETER]);
     if ($aff_id > 0) {
-      $time = time();
+      $time       = time();
       $next_month = $time + 2592000;
-      $domain = servula_info('cookie_domain');
+      $domain     = servula_info('cookie_domain');
+      $path       = '/';
       
-      setcookie('aff_tag', $aff_id, $next_month, '/', $domain);
-      setcookie('aff_from', $_SERVER['HTTP_REFERER'], $next_month, '/', $domain);
-      setcookie('aff_time', $time, $next_month, '/', $domain);
+      setcookie('aff_tag', $aff_id, $next_month, $path $domain);
+      setcookie('aff_from', $_SERVER['HTTP_REFERER'], $next_month, $path, $domain);
+      setcookie('aff_time', $time, $next_month, $path, $domain);
     }
   }
 }
