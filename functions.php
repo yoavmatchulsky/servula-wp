@@ -3,8 +3,6 @@
  * Servula
  */
 
-define('SERVULA_AFFILIATES_QUERY_PARAMETER', 'ul');
-
 add_theme_support('post-thumbnails');
 
 if ( function_exists('register_sidebar') ) {
@@ -39,23 +37,6 @@ function servula_register_menu() {
       'primary' => __('Primary menu'),
       'sidebar' => __('Sidebar menu'),
     ));
-}
-
-add_action('send_headers', 'servula_affiliates');
-function servula_affiliates() {
-  if (isset($_REQUEST[SERVULA_AFFILIATES_QUERY_PARAMETER])) {
-    $aff_id = intval($_REQUEST[SERVULA_AFFILIATES_QUERY_PARAMETER]);
-    if ($aff_id > 0) {
-      $time       = time();
-      $next_month = $time + 2592000;
-      $domain     = servula_info('cookie_domain');
-      $path       = '/';
-      
-      setcookie('aff_tag', $aff_id, $next_month, $path $domain);
-      setcookie('aff_from', $_SERVER['HTTP_REFERER'], $next_month, $path, $domain);
-      setcookie('aff_time', $time, $next_month, $path, $domain);
-    }
-  }
 }
 
 add_filter('the_content', 'servula_service_page');
@@ -337,5 +318,7 @@ add_action('after_setup_theme', 'servula_theme_setup');
 function servula_theme_setup(){
   load_theme_textdomain('servula', get_template_directory() . '/languages');
 }
-include 'functions-page.php';
-include 'functions-googleplus.php';
+
+include 'functions/affiliates.php';
+include 'functions/page.php';
+include 'functions/googleplus.php';
