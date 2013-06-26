@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Servula\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-12 12:45+0200\n"
-"PO-Revision-Date: 2013-06-02 16:19+0200\n"
+"POT-Creation-Date: 2013-06-26 18:05+0200\n"
+"PO-Revision-Date: 2013-06-26 18:05+0200\n"
 "Last-Translator: Yoav Matchulsky <yoavmatchulsky@gmail.com>\n"
 "Language-Team: Servula <admin@servula.com>\n"
 "Language: \n"
@@ -104,12 +104,12 @@ msgid "Cart is Empty"
 msgstr "העגלה ריקה"
 
 #: ../home.php:6
-msgid "One-Stop Shop for Inbound Marketing Services"
-msgstr "כל השירותים שמקדם אתרים צריך במקום אחד."
+msgid "Stop searching for freelancers, just tell us what you need."
+msgstr "תפסיק לחפש פרילנסרים, רק תגיד לנו מה אתה צריך."
 
 #: ../home.php:7
-msgid "All services in one place, done by top professionals, including QA."
-msgstr "העבודה מתבצעת על ידי מקצוענים ועוברת בקרת איכות לפני שנשלחת אליך"
+msgid "We will find the right freelancer and check the quality of the work when it is completed"
+msgstr "אנחנו נמצא את הפרילנסר המתאים למשימה, ונבדוק את איכות העבודה כשתסתיים לפני שנשלח אליך"
 
 #: ../home.php:12
 msgid "<strong>450+</strong> Professionals are waiting your instructions"
@@ -226,14 +226,6 @@ msgstr "זה יותר פשוט ממה שתיארת לעצמך! כדאי לנסו
 msgid "Get Started Now"
 msgstr "התחל כעת"
 
-#: ../functions-page.php:21
-msgid "Download eBook title"
-msgstr "הורד ספר אלקטרוני"
-
-#: ../functions-page.php:26
-msgid "PDF size"
-msgstr "גודל PDF"
-
 #: ../services.php:42
 msgid "Description &amp; Examples"
 msgstr "הסבר ודוגמאות"
@@ -315,74 +307,74 @@ msgstr "אתר"
 msgid "Submit Comment"
 msgstr "השאר תגובה"
 
-#: ../header.php:132
+#: ../header.php:128
 msgid "Servula is currently in Beta"
 msgstr "Servula - שירותים למקדמי אתרים"
 
-#: ../header.php:142
+#: ../header.php:138
 msgid "&#9654;"
 msgstr "&#9664;"
 
-#: ../header.php:150
+#: ../header.php:146
 #, php-format
 msgid "Buy Credits %s"
 msgstr "קנה קרדיטים %s"
 
-#: ../header.php:157
+#: ../header.php:153
 #, php-format
 msgid "Order Services %s"
 msgstr "הזמן שירותים %s"
 
-#: ../header.php:167
+#: ../header.php:163
 msgid "Dashboard"
 msgstr "עמוד חשבון"
 
-#: ../header.php:168
+#: ../header.php:164
 msgid "Account Settings"
 msgstr "הגדרות"
 
-#: ../header.php:170
+#: ../header.php:166
 msgid "Buy Credits"
 msgstr "קנה קרדיטים"
 
-#: ../header.php:171
+#: ../header.php:167
 #, php-format
 msgid "(%s left)"
 msgstr "(נותרו %s)"
 
-#: ../header.php:174
+#: ../header.php:170
 msgid "Logout"
 msgstr "התנתק"
 
-#: ../header.php:181
+#: ../header.php:177
 msgid "Login/Register"
 msgstr "התחבר/הירשם"
 
-#: ../header.php:187
+#: ../header.php:183
 msgid "Email:"
 msgstr "אימייל:"
 
-#: ../header.php:192
+#: ../header.php:188
 msgid "Forgot Password?"
 msgstr "שכחת סיסמא?"
 
-#: ../header.php:193
+#: ../header.php:189
 msgid "Password:"
 msgstr "סיסמא:"
 
-#: ../header.php:199
+#: ../header.php:195
 msgid "Remember Me"
 msgstr "זכור אותי"
 
-#: ../header.php:202
+#: ../header.php:198
 msgid "Login"
 msgstr "התחבר"
 
-#: ../header.php:203
+#: ../header.php:199
 msgid "Or"
 msgstr "או"
 
-#: ../header.php:204
+#: ../header.php:200
 msgid "Register now"
 msgstr "הירשם כעת"
 
@@ -407,7 +399,6 @@ msgid "Full name"
 msgstr "שם מלא"
 
 #: ../ebook.php:91
-#: ../footer.php:73
 msgid "Email"
 msgstr "אימייל"
 
@@ -490,6 +481,20 @@ msgstr ""
 #: ../footer.php:78
 msgid "All right reserved."
 msgstr "כל הזכויות שמורות."
+
+#: ../functions/page.php:21
+msgid "Download eBook title"
+msgstr "הורד ספר אלקטרוני"
+
+#: ../functions/page.php:26
+msgid "PDF size"
+msgstr "גודל PDF"
+
+#~ msgid "One-Stop Shop for Inbound Marketing Services"
+#~ msgstr "כל השירותים שמקדם אתרים צריך במקום אחד."
+
+#~ msgid "All services in one place, done by top professionals, including QA."
+#~ msgstr "העבודה מתבצעת על ידי מקצוענים ועוברת בקרת איכות לפני שנשלחת אליך"
 
 #~ msgid "An article by:"
 #~ msgstr "המאמר נכתב ע\"י:"

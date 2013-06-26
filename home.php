@@ -3,8 +3,8 @@
 
 <div id="homepage-wrapper">
 
-  <h1><?php _e('One-Stop Shop for Inbound Marketing Services', 'servula'); ?></h1>
-  <h2><?php _e('All services in one place, done by top professionals, including QA.', 'servula'); ?></h2>
+  <h1><?php _e('Stop searching for freelancers, just tell us what you need.', 'servula'); ?></h1>
+  <h2><?php _e('We will find the right freelancer and check the quality of the work when it is completed', 'servula'); ?></h2>
 
   <div class="tabs">
     <div class="tabs-header">
