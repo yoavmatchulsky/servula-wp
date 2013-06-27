@@ -295,17 +295,21 @@ add_filter('the_content', 'servula_template_tags');
 
 add_action('wp_enqueue_scripts', 'servula_enqueue_scripts');
 function servula_enqueue_scripts() {
+  /* Replace local jquery with a CDN */
   wp_deregister_script('jquery');
   wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', false, '1.7.2');
   wp_enqueue_script('jquery');
 
   wp_enqueue_script('fancybox', get_template_directory_uri() . '/jquery.fancybox.js', array('jquery'), false, true);
 
+  /*
+   * Remove tabs from homepage
   if (is_front_page()) {
     wp_deregister_script('jquery-ui-tabs');
     wp_register_script('jquery-ui-tabs', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.20/jquery-ui.min.js', false, '1.8.20');
     wp_enqueue_script('jquery-ui-tabs');
   }
+  */
 }
 
 function get_page_by_slug($page_slug, $output = OBJECT, $post_type = 'page' ) {

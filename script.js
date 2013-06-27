@@ -103,10 +103,13 @@ $(function () {
 
   /* Homepage scripts */
   if (body.hasClass('homepage')) {
+    /*
+     * Removed tabs from homepage
     $('.tabs').tabs({
       selected : 0,
       fx : { height : 'toggle', duration : 'slow'}
     }).find('.tabs-content .hidden').removeClass('hidden');
+    */
 
     $(function () {
       testimonials_wrapper = $('.testimonials-wrapper')
