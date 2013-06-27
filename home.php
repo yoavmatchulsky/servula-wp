@@ -11,12 +11,8 @@
       <div class="current-credits-wrapper">
         <?php _e('<strong>450+</strong> Professionals are waiting your instructions', 'servula'); ?>
       </div>
-    
-      <ul>
-        <li><a href="#all-services"><?php _e('All Services', 'servula'); ?></a></li>
-        <li><a href="#packages"><?php _e('Packages', 'servula'); ?></a></li>
-      </ul>
 
+      <p><?php _e('I need the following service:', 'servula'); ?></p>
     </div>
     
     <div class="tabs-content">
@@ -127,10 +123,6 @@
             </ul>
           </div>
         </div>
-      </div>
-      
-      <div id="packages" class="hidden">
-        <?php _e('Coming soon!', 'servula'); ?>
       </div>
     </div>
   </div>

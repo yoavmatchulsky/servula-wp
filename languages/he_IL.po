@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Servula\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-26 18:05+0200\n"
-"PO-Revision-Date: 2013-06-26 18:05+0200\n"
+"POT-Creation-Date: 2013-06-27 12:06+0200\n"
+"PO-Revision-Date: 2013-06-27 12:06+0200\n"
 "Last-Translator: Yoav Matchulsky <yoavmatchulsky@gmail.com>\n"
 "Language-Team: Servula <admin@servula.com>\n"
 "Language: \n"
@@ -68,16 +68,16 @@ msgid "Sidebar menu"
 msgstr ""
 
 #: ../functions.php:65
-#: ../home.php:31
-#: ../home.php:38
-#: ../home.php:45
-#: ../home.php:52
-#: ../home.php:64
-#: ../home.php:71
-#: ../home.php:78
-#: ../home.php:85
-#: ../home.php:97
-#: ../home.php:123
+#: ../home.php:27
+#: ../home.php:34
+#: ../home.php:41
+#: ../home.php:48
+#: ../home.php:60
+#: ../home.php:67
+#: ../home.php:74
+#: ../home.php:81
+#: ../home.php:93
+#: ../home.php:119
 #: ../services.php:40
 #: ../services.php:80
 msgid "Start Now"
@@ -115,114 +115,106 @@ msgstr "אנחנו נמצא את הפרילנסר המתאים למשימה, ו�
 msgid "<strong>450+</strong> Professionals are waiting your instructions"
 msgstr "<strong>450+</strong> אנשי מקצוע מחכים להוראות שלך"
 
-#: ../home.php:16
-msgid "All Services"
-msgstr "כל השירותים"
+#: ../home.php:15
+msgid "I need the following service:"
+msgstr "אני צריך את השירות הבא:"
 
-#: ../home.php:17
-msgid "Packages"
-msgstr "חבילות"
-
-#: ../home.php:26
+#: ../home.php:22
 msgid "Content"
 msgstr "תוכן"
 
-#: ../home.php:29
+#: ../home.php:25
 msgid "Article Writing"
 msgstr "כתיבת תוכן"
 
-#: ../home.php:32
-#: ../home.php:39
-#: ../home.php:46
-#: ../home.php:53
-#: ../home.php:65
-#: ../home.php:72
-#: ../home.php:79
-#: ../home.php:86
-#: ../home.php:98
-#: ../home.php:104
-#: ../home.php:115
-#: ../home.php:124
+#: ../home.php:28
+#: ../home.php:35
+#: ../home.php:42
+#: ../home.php:49
+#: ../home.php:61
+#: ../home.php:68
+#: ../home.php:75
+#: ../home.php:82
+#: ../home.php:94
+#: ../home.php:100
+#: ../home.php:111
+#: ../home.php:120
 msgid "More Info"
 msgstr "הסבר ודוגמאות"
 
-#: ../home.php:36
+#: ../home.php:32
 msgid "Copywriting"
 msgstr "קופירייטינג"
 
-#: ../home.php:43
+#: ../home.php:39
 msgid "Press Release Writing"
 msgstr "כתיבת הודעה לעיתונות"
 
-#: ../home.php:50
+#: ../home.php:46
 msgid "Translation"
 msgstr "תרגום"
 
-#: ../home.php:59
+#: ../home.php:55
 msgid "SEO"
 msgstr "SEO"
 
-#: ../home.php:62
+#: ../home.php:58
 msgid "Article Submission"
 msgstr "הפצת מאמרים"
 
-#: ../home.php:69
+#: ../home.php:65
 msgid "Directory Submission"
 msgstr "הוספה לאינדקסים"
 
-#: ../home.php:76
+#: ../home.php:72
 msgid "Local Listing"
 msgstr "קידום ב-Google Local"
 
-#: ../home.php:83
+#: ../home.php:79
 msgid "Answers Posting"
 msgstr "שאלות ותשובות"
 
-#: ../home.php:92
+#: ../home.php:88
 msgid "Social"
 msgstr "חברתי"
 
-#: ../home.php:95
+#: ../home.php:91
 msgid "Social Bookmarking"
 msgstr "סימניות חברתיות"
 
-#: ../home.php:102
+#: ../home.php:98
 msgid "Blog Building"
 msgstr "בניית בלוג"
 
-#: ../home.php:110
+#: ../home.php:106
 msgid "Other"
 msgstr "שונות"
 
-#: ../home.php:113
+#: ../home.php:109
 msgid "Dedicated Freelancer"
 msgstr "פרילנסר ייעודי"
 
-#: ../home.php:121
+#: ../home.php:117
 msgid "Usability Test"
 msgstr "בדיקת שמישות"
 
 #: ../home.php:133
-msgid "Coming soon!"
-msgstr "בקרוב!"
-
-#: ../home.php:141
 msgid "Servula is trusted by..."
 msgstr "לקוחות אומרים עלינו ש.."
 
-#: ../home.php:153
+#: ../home.php:145
 msgid "Recent Posts From our Blog"
 msgstr "פוסטים אחרונים מהבלוג"
 
-#: ../home.php:198
+#: ../home.php:190
 msgid "All Posts &raquo;"
 msgstr "כל הפוסטים &raquo;"
 
-#: ../home.php:203
+#: ../home.php:195
 msgid "If you're interested in getting high quality Inbound Marketing Services, you can start using Servula now"
 msgstr "זה יותר פשוט ממה שתיארת לעצמך! כדאי לנסות כבר היום את שירותי הקידום שלנו"
 
-#: ../home.php:205
+#: ../home.php:197
 msgid "Get Started Now"
 msgstr "התחל כעת"
 
@@ -489,6 +481,15 @@ msgstr "הורד ספר אלקטרוני"
 #: ../functions/page.php:26
 msgid "PDF size"
 msgstr "גודל PDF"
+
+#~ msgid "All Services"
+#~ msgstr "כל השירותים"
+
+#~ msgid "Packages"
+#~ msgstr "חבילות"
+
+#~ msgid "Coming soon!"
+#~ msgstr "בקרוב!"
 
 #~ msgid "One-Stop Shop for Inbound Marketing Services"
 #~ msgstr "כל השירותים שמקדם אתרים צריך במקום אחד."
