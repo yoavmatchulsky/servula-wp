@@ -54,7 +54,7 @@ body.homepage {
     .tabs-header {
       @include gradient-background(#f6f6f6, #e5e5e5);
       @include round-corners(4px 4px 0 0);
-      padding-top: 0
+      padding-top: 0;
       
       .current-credits-wrapper {
         float: right;
