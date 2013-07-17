@@ -23,6 +23,17 @@ body.post-single {
       }
     }
   }
+
+  .post {
+    h1 {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+
+    .entry {
+      clear: both;
+    }
+  }
 }
 
 .post {
@@ -88,7 +99,6 @@ img.avatar {
   float: left;
 }
 
-.post-single .post h1 {
-  font-size: 35px;
-  margin-bottom: 10px;
+.wp_rp_wrap .related_post_title {
+  text-align: right !important;
 }

@@ -46,10 +46,26 @@ get_header(); ?>
 
 		<?php wp_link_pages(); ?>
 
-    <div class="bottom_postdata">
+    <div class="bottom_postdata postdata">
       <?php _e('Published in:', 'servula'); ?> <?php the_category(', '); ?><br />
       <?php the_tags( __('Tags:'), ', ', '<br />' ); ?>
+      
+      <ul class="social-links">
+        <li><iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink() ?>&locale=en_US&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+        </li>
+
+        <li><a href="http://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="horizontal" data-via="askpavel">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+        </li>
+
+        <li><g:plusone size="medium"></g:plusone></li>
+
+        <li>
+          <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+          <script type="IN/Share" data-counter="right"></script>
+        </li>
+      </ul>
     </div>
+
 	</div><!-- end .post -->
 
 	<?php
