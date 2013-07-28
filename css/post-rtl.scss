@@ -22,11 +22,6 @@ body.post-single {
         width: auto;
       }
     }
-    &.widget_recent_entries, &.widget_recent_comments {
-      ul li {
-        width: 157px;
-      }
-    }
   }
 
   .post {
@@ -106,4 +101,15 @@ img.avatar {
 
 #related .wp_rp_wrap .related_post_title {
   text-align: right !important;
+}
+
+li.widget {
+  &.widget_recent_entries, &.widget_recent_comments {
+    h2 {
+      margin-left: 0;
+    }
+    ul li {
+      width: 157px;
+    }
+  }
 }
