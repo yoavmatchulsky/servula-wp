@@ -86,7 +86,9 @@
   
   #recent-posts {
     #posts-wrapper {
+      height: 321px;
       .to-all-posts {
+        clear: right;
         float: left;
       }
     }
@@ -96,7 +98,8 @@
     }
     
     article {
-      clear: right;
+      float: right;
+      clear: none;
 
       .attachment-post-thumbnail {
         float: right;
