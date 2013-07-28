@@ -17,6 +17,17 @@
 }
 
 body.author {
+  #leftcolumn {
+    border-right: 1px solid #EEEEEE;
+    float: left;
+    padding-right: 20px;
+  }
+
+  #rightcolumn {
+    float: right;
+    width: 625px;
+  }
+
   h2 {
     font-family: 'Alef';
     text-align: right;
