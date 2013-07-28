@@ -17,6 +17,11 @@ $servula['body_class'] = 'author category';
 
   <?php while (have_posts()) : the_post(); ?>
   <article>
+    <?php if ( has_post_thumbnail() ) : ?>
+    <div class="post-thumbnail-wrapper">
+      <?php the_post_thumbnail( array( 106, 104 ) ); ?>
+    </div>
+    <?php endif; ?>
     <div class="post" id="post-<?php the_ID(); ?>">
 	    <h2 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
       <div class="postdata">

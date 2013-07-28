@@ -28,4 +28,19 @@ body.category {
     font-family: 'Alef';
     text-align: right;
   }
+  article {
+    .post-thumbnail-wrapper {
+      float: right;
+      img {
+        margin-top: 10px;
+      }
+    }
+
+    .post {
+      margin-right: 110px;      
+      h2 {
+        clear: none;
+      }
+    }
+  }
 }
