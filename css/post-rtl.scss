@@ -22,6 +22,11 @@ body.post-single {
         width: auto;
       }
     }
+    &.widget_recent_entries, &.widget_recent_comments {
+      ul li {
+        width: 157px;
+      }
+    }
   }
 
   .post {
