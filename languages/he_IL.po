@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Servula\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-27 12:06+0200\n"
-"PO-Revision-Date: 2013-06-27 12:06+0200\n"
+"POT-Creation-Date: 2013-07-28 15:58+0200\n"
+"PO-Revision-Date: 2013-07-28 15:59+0200\n"
 "Last-Translator: Yoav Matchulsky <yoavmatchulsky@gmail.com>\n"
 "Language-Team: Servula <admin@servula.com>\n"
 "Language: \n"
@@ -29,14 +29,14 @@ msgstr "פורסם בקטגוריה:"
 msgid "Tags:"
 msgstr "תגיות:"
 
-#: ../single.php:77
+#: ../single.php:93
 #: ../404.php:16
 #: ../page.php:30
 #: ../no-sidebar.php:31
 msgid "Not Found"
 msgstr "העמוד לא נמצא"
 
-#: ../single.php:78
+#: ../single.php:94
 #: ../page.php:31
 #: ../no-sidebar.php:32
 msgid "Sorry, but you are looking for something that isn't here."
@@ -370,6 +370,11 @@ msgstr "או"
 msgid "Register now"
 msgstr "הירשם כעת"
 
+#: ../category.php:16
+#, php-format
+msgid "Recent Posts about \"%s\""
+msgstr "פוסטים אחרונים בקטגוריית \"%s\""
+
 #: ../author.php:26
 msgid "Google+ Profile:"
 msgstr "פרופיל גוגל+:"
@@ -391,6 +396,7 @@ msgid "Full name"
 msgstr "שם מלא"
 
 #: ../ebook.php:91
+#: ../footer.php:73
 msgid "Email"
 msgstr "אימייל"
 
