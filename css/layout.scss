@@ -94,3 +94,20 @@ body.body-no-sidebar-page {
   display: none;
 }
   
+body.iframe {
+  width: $iframe-width;
+  background: none;
+  margin: 0 auto;
+
+  .wrapper {
+    width: $iframe-width;
+    margin-top: 0;
+    #leftcolumn {
+      float: none;
+      width: $iframe-width;
+      .post {
+        border: 0;
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 </div>
+<?php if ( !IN_IFRAME ) :?>
 <footer>
   <div class="wrapper">
     <ul>
@@ -80,6 +81,8 @@
   </div>
 </footer>
 
+<?php endif; ?>
+
 <script type="text/javascript">
   window.___gcfg = {
     lang: '<?php print servula_info('google_plus_language'); ?>'
@@ -98,7 +101,7 @@
 
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script.js"></script>
 
-<?php if (servula_info('env') == 'production') : ?>
+<?php if (servula_info('env') === 'production' and (!IN_IFRAME)) : ?>
 <script type="text/javascript" src="<?php print servula_info('full_url'); ?>/sessions/info.json?jsonp=update_session_info"></script>
 <?php endif; ?>
 

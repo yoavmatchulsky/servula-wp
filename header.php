@@ -108,7 +108,8 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 ?>
 </head>
 
-<body<?php if (isset($servula['body_class'])) { print ' class="' . $servula['body_class'] . '"'; } ?>>
+<body <?php body_class( isset($servula['body_class']) ? $servula['body_class'] : '' ); ?>>
+
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -117,6 +118,8 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
     js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
+
+  <?php if ( !IN_IFRAME) : ?>
   
 	<header id="header">
 	  <div class="wrapper">
@@ -230,4 +233,6 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
     <?php endif; ?>
     
   </header>
+
+  <?php endif; ?>
   <div class="wrapper clearfix">

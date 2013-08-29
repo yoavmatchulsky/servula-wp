@@ -35,6 +35,7 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
 
 ?>
 <div id="leftcolumn" class="<?php print implode(' ', $classes); ?>">
+  <?php if ( !IN_IFRAME ) : ?>
   <div class="service-header-tabs">
     <?php if ($order_now) : ?>
     <span class="service-header-tab"><a href="<?php print $order_now; ?>"><?php _e('Start Now', 'servula'); ?></a></span>
@@ -46,7 +47,8 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
   </div>
     
   <span class="more-link-in-header"><a href="<?php print servula_info('full_url'); ?>"><?php _e('Back to Services page', 'servula'); ?></a></span>
-  
+  <?php endif; ?>
+
   <?php the_post(); ?>
   <div class="post" id="post-<?php the_ID(); ?>">
     <ul class="social-links">
@@ -76,7 +78,7 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
       </div>
       <?php endforeach; ?>
       
-      <?php if ($order_now) : ?>
+      <?php if ($order_now and ( !IN_IFRAME )) : ?>
         <a href="<?php print $order_now; ?>" class="order-now"><?php _e('Start Now', 'servula'); ?></a>
       <?php endif; ?>
     </div>
@@ -87,7 +89,8 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
     </div>
 
     <?php $related_services = $post_custom['related-service']; ?>
-    <?php if ($related_services) : ?>
+    <?php if ($related_services and (!IN_IFRAME)) : ?>
+
     <div class="related-services">
       <h3><?php _e('Related Services:', 'servula'); ?></h3>
       
@@ -112,9 +115,10 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
 
 </div>
 
-
+<?php if ( !IN_IFRAME ) : ?>
 <div id="rightcolumn" class="page-services">
   <?php get_sidebar(); ?>
 </div>
+<?php endif; ?>
 
 <?php get_footer(); ?>
