@@ -23,9 +23,6 @@
     }
   }
   /* ]]> */
-
-  // ClickTale Top part
-  var WRInitTime=(new Date()).getTime();
   </script>
 
   <title><?php wp_title(' '); ?> </title>
