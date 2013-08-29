@@ -23,3 +23,12 @@ body.body-no-sidebar-page {
     margin-right: 0;
   }
 }
+
+body.iframe {
+  .wrapper {
+    #rightcolumn {
+      float: none;
+      width: $iframe-width;
+    }
+  }
+}
