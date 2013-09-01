@@ -51,6 +51,7 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
 
   <?php the_post(); ?>
   <div class="post" id="post-<?php the_ID(); ?>">
+    <?php if (!IN_IFRAME) : ?>
     <ul class="social-links">
       <?php $url = get_permalink(); ?>
       <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="servulashop" data-url="<?php print $url; ?>" data-lang="<?php print servula_info('language_slug'); ?>">Tweet</a>
@@ -58,6 +59,7 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
       <li><iframe src="http://www.facebook.com/plugins/like.php?href=<?php print $url; ?>&locale=en_US&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21&amp;locale=<?php print servula_info('language_underscore'); ?>" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></li>
       <li><g:plusone size="medium" href="<?php print $url; ?>"></g:plusone></li>
     </ul>
+    <?php endif; ?>
     
     <h1 class="title">
       <?php

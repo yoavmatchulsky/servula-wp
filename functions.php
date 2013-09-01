@@ -60,17 +60,22 @@ function servula_service_page($content) {
   }
 
   if (preg_match_all('!\[\[service\-order-now\]\]!', $content, $matches)) {
-    $order_service_link = get_post_custom_values('service-order-link');
-
-    $order_now_start = '<div class="service-order-now">';
-    $order_now_end = '</div>';
-        
-    if (count($order_service_link) > 0 and (!IN_IFRAME)) {
-      $order_now_end = '<a href="' . reset($order_service_link) . '" class="order-now">' . __('Start Now', 'servula') . '</a>' . $order_now_end;
+    if ( IN_IFRAME ) {
+      $content = preg_replace('!\[\[service-order-now\]\].+\[\[service-order-now-end\]\]!', '', $content);
     }
+    else {
+      $order_service_link = get_post_custom_values('service-order-link');
 
-    $content = preg_replace('!\[\[service-order-now\]\]!', $order_now_start, $content, 1);
-    $content = preg_replace('!\[\[service-order-now-end\]\]!', $order_now_end, $content);
+      $order_now_start = '<div class="service-order-now">';
+      $order_now_end = '</div>';
+          
+      if (count($order_service_link) > 0) {
+        $order_now_end = '<a href="' . reset($order_service_link) . '" class="order-now">' . __('Start Now', 'servula') . '</a>' . $order_now_end;
+      }
+
+      $content = preg_replace('!\[\[service-order-now\]\]!', $order_now_start, $content, 1);
+      $content = preg_replace('!\[\[service-order-now-end\]\]!', $order_now_end, $content);
+    }
   }
 
   $urls_search = array(

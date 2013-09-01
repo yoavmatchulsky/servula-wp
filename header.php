@@ -75,7 +75,7 @@
     
   </script>
   
-<?php if (servula_info('env') == 'production') : ?>
+<?php if ((servula_info('env') == 'production') && !IN_IFRAME) : ?>
 <!--Start of Zopim Live Chat Script-->
 <script type="text/javascript">
 window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
