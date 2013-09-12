@@ -71,6 +71,7 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
       <?php print $title; ?>
     </h1>
     
+    <?php if (!IN_IFRAME) : ?>
     <?php $header = $post_custom['header']; ?>
     <?php if ($header) : ?>
     <div class="post-header">
@@ -80,10 +81,11 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
       </div>
       <?php endforeach; ?>
       
-      <?php if ($order_now and ( !IN_IFRAME )) : ?>
+      <?php if ($order_now) : ?>
         <a href="<?php print $order_now; ?>" class="order-now"><?php _e('Start Now', 'servula'); ?></a>
       <?php endif; ?>
     </div>
+    <?php endif; ?>
     <?php endif; ?>
     
     <div class="entry">
