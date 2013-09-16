@@ -61,6 +61,7 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
     </ul>
     <?php endif; ?>
     
+    <?php if (!IN_IFRAME) : ?>
     <h1 class="title">
       <?php
         $title = get_the_title();
@@ -70,8 +71,7 @@ if ($post_custom['service-icon'] and !empty($post_custom['service-icon'])) {
       <?php endif; ?>
       <?php print $title; ?>
     </h1>
-    
-    <?php if (!IN_IFRAME) : ?>
+
     <?php $header = $post_custom['header']; ?>
     <?php if ($header) : ?>
     <div class="post-header">
