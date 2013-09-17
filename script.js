@@ -6,6 +6,8 @@ $(function () {
   // Check for placeholder support
   body = $('body')
 
+  var trigger_resize = function() { body.trigger('servula:iframe:resize'); }
+
   placeholder_test = document.createElement('input');
   if (!('placeholder' in placeholder_test)) {
     $('footer .newsletter-wrapper form').on({
@@ -242,7 +244,9 @@ $(function () {
     }).find('#service-example-group-select').trigger('change');
     
     $('.service-examples-wrapper li a').fancybox({
-      titlePosition : 'inside'
+      titlePosition : 'inside',
+      onComplete : trigger_resize,
+      onClosed   : trigger_resize
     });
   }
 

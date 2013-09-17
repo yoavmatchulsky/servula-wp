@@ -101,6 +101,15 @@
 
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script.js"></script>
 
+<?php if (IN_IFRAME) : ?>
+<script type="text/javascript" src="<?php print get_template_directory_uri(); ?>/iframe.js"></script>
+<script type="text/javascript">
+  jQuery(function () {
+    $('body').trigger('servula:iframe:loaded').trigger('servula:iframe:resize');
+  });
+</script>
+<?php endif; ?>
+
 <?php if (servula_info('env') === 'production' and (!IN_IFRAME)) : ?>
 <script type="text/javascript" src="<?php print servula_info('full_url'); ?>/sessions/info.json?jsonp=update_session_info"></script>
 <?php endif; ?>
