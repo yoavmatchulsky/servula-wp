@@ -17,8 +17,9 @@ jQuery(function() {
         });
       }
 
+      order_now_links = $('a.order-now').attr('target', '_top');
       if (Servula.iframe.order_now_href != null) {
-        $('a.order-now').attr('href', Servula.iframe.order_now_href)
+        order_now_links.attr('href', Servula.iframe.order_now_href);
       }
     }
   } catch (_error) {
