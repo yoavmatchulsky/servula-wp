@@ -16,6 +16,10 @@ jQuery(function() {
           Servula.iframe.trigger_loaded();
         });
       }
+
+      if (Servula.iframe.order_now_href != null) {
+        $('a.order-now').attr('href', Servula.iframe.order_now_href)
+      }
     }
   } catch (_error) {
     console && console.warn("I can't access my parent!", _error);
