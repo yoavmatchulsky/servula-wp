@@ -111,3 +111,15 @@ body.iframe {
     }
   }
 }
+
+img#wpstats {
+	position: absolute !important;
+	width: 0px !important;
+	height: 0px !important;
+	overflow: hidden !important;
+	display: none !important;
+	visibility: hidden !important;
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
