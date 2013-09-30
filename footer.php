@@ -81,8 +81,6 @@
   </div>
 </footer>
 
-<?php endif; ?>
-
 <script type="text/javascript">
   window.___gcfg = {
     lang: '<?php print servula_info('google_plus_language'); ?>'
@@ -96,6 +94,8 @@
 </script>
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<?php endif; // not IN_IFRAME ?>
 
 <?php wp_footer(); ?>
 
