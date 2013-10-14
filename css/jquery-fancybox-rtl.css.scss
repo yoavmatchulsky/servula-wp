@@ -13,6 +13,11 @@
 	left: 0px;
 }
 
+#fancybox-left-ico, #fancybox-right-ico {
+  left: auto;
+  right: -9999px;
+}
+
 #fancybox-left-ico {
   background-position: -40px -60px;
 }
