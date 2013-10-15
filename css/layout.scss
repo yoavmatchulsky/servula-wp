@@ -98,6 +98,7 @@ body.iframe {
   width: $iframe-width;
   background: none;
   margin: 0 auto;
+  overflow: hidden;
 
   .wrapper {
     width: $iframe-width;
