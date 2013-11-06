@@ -18,7 +18,7 @@ $servula['body_class'] = 'author category';
 
 <?php if (have_posts()) : ?>
 
-  <h1><?php _e('Recent Posts', 'servula'); ?></h1>
+  <h1><?php _e("Servula's Blog", 'servula'); ?></h1>
 
   <?php while (have_posts()) : the_post(); ?>
   <article>
