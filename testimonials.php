@@ -60,9 +60,9 @@ Finding good freelancers takes a long time and involves checking them prior to s
   ),
   array(
     'name'      => 'Ori Matarasso',
-    'company'   => 'The Nation Traffic',
-    'company-logo' => 'thenationtraffic',
-    'position'  => 'Head of Search & Business Development',
+    'company'   => 'Xwise',
+    'company-logo' => 'xwise',
+    'position'  => 'Head of Marketing',
     'img-position' => 6,
     'text'      => "With years of experience, and through countless SEO outsourcing service providers, the work around and management efforts has always been a hassle. Working with Servula has taken a lot of the work off my guys' back. An SEO marketplace like Servula can provide SEO experts with the instantaneous & professional feedback they were always seeking.",
   ),
