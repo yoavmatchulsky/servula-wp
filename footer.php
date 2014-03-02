@@ -25,7 +25,7 @@
         <ul>
           <li><a href="<?php print servula_info('full_url'); ?>"><?php _e('Our Services', 'servula'); ?></a></li>
           <li><a href="<?php print servula_info('full_url'); ?>/register"><?php _e('Register Now!', 'servula'); ?></a></li>
-          <li><a href="<?php print servula_info('full_url'); ?>/terms_of_service/client/current"><?php _e('Terms of Service', 'servula'); ?></a></li>
+          <li><a href="<?php print servula_info('full_url', false); ?>/terms_of_service/client/current"><?php _e('Terms of Service', 'servula'); ?></a></li>
         </ul>
       </li>
       <li>

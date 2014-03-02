@@ -172,7 +172,7 @@ function language_icon($slug = 'en') {
   return $icon;
 }
 
-function servula_info($key = '') {
+function servula_info($key = '', $with_locale = true) {
   global $servula;
     
   if (!empty($key) and isset($servula[$key])) {
@@ -187,7 +187,9 @@ function servula_info($key = '') {
         if (!in_array($port, array(80, 443))) {
           $url .= ':' . $port;
         }
-        $url .= servula_info('language_prefix');
+        if ($with_locale) {
+          $url .= servula_info('language_prefix');
+        }
         return $url;
         
       case 'system_url'   : return $env == 'production' ? 'https://my.servula.com' : 'http://test.servula.local';
